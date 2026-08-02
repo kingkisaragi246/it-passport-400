@@ -1,11 +1,357 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>ITパスポート400問</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ITパスポート400</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+
 </head>
+
 <body>
-    <h1>ITパスポート400問問題集</h1>
-    <p>サイト作成成功！</p>
+
+<header class="header">
+
+    <h1>ITパスポート400</h1>
+
+</header>
+
+<main class="home">
+
+<section class="hero">
+
+    <h2>
+
+        ITパスポート試験対策
+
+    </h2>
+
+    <p id="dailyMessage">
+
+        今日も一歩ずつ合格へ！
+
+    </p>
+
+</section>
+
+<section class="menuGrid">
+
+<button
+id="studyBtn"
+class="menuCard">
+
+<h3>📚 学習する</h3>
+
+<p>
+
+途中から続きます
+
+</p>
+
+</button>
+
+<button
+id="weakBtn"
+class="menuCard">
+
+<h3>⭐ 苦手問題</h3>
+
+<p>
+
+<span id="weakCount">
+
+0
+
+</span>
+
+問
+
+</p>
+
+</button>
+
+<button
+id="favoriteBtn"
+class="menuCard">
+
+<h3>❤️ お気に入り</h3>
+
+<p>
+
+<span id="favoriteCount">
+
+0
+
+</span>
+
+問
+
+</p>
+
+</button>
+
+<button
+id="randomBtn"
+class="menuCard">
+
+<h3>🎲 ランダム出題</h3>
+
+<p>
+
+全問題から出題
+
+</p>
+
+</button>
+
+</section>
+
+<section class="statusCard">
+
+<h2>
+
+学習状況
+
+</h2>
+
+<div class="progress">
+
+<div id="homeProgressBar">
+
+</div>
+
+</div>
+
+<table class="statusTable">
+
+<tr>
+
+<th>
+
+総問題数
+
+</th>
+
+<td id="homeQuestionCount">
+
+0問
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+現在位置
+
+</th>
+
+<td id="homeProgress">
+
+0 / 0
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+正解数
+
+</th>
+
+<td id="homeCorrect">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+回答数
+
+</th>
+
+<td id="homeAnswered">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+正答率
+
+</th>
+
+<td id="homeRate">
+
+0%
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+学習日数
+
+</th>
+
+<td id="studyDays">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+最終学習
+
+</th>
+
+<td id="homeLastStudy">
+
+まだ学習していません
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="statusCard mt30">
+
+<h2>
+
+📂 分野別に学ぶ
+
+</h2>
+
+<p class="categoryHint">
+
+苦手な分野、伸ばしたい分野を選んで集中的に学習できます
+
+</p>
+
+<div id="categoryButtons" class="categoryGrid">
+
+</div>
+
+</section>
+
+<section class="statusCard mt30">
+
+<h2>
+
+学習メニュー
+
+</h2>
+
+<div class="menuGrid">
+
+<button class="menuCard" disabled>
+
+📖 用語辞典
+
+<p>
+
+Version1.1
+
+</p>
+
+</button>
+
+<button class="menuCard" disabled>
+
+📝 模擬試験
+
+<p>
+
+Version2.0
+
+</p>
+
+</button>
+
+<button class="menuCard" disabled>
+
+📊 学習分析
+
+<p>
+
+Version2.0
+
+</p>
+
+</button>
+
+<button class="menuCard" disabled>
+
+🔍 検索
+
+<p>
+
+Version1.2
+
+</p>
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="data/security.js"></script>
+<script src="data/network.js"></script>
+<script src="data/database.js"></script>
+<script src="data/strategy.js"></script>
+<script src="data/projectManagement.js"></script>
+<script src="data/systemDevelopment.js"></script>
+<script src="data/systemHardware.js"></script>
+<script src="data/algorithm.js"></script>
+<script src="data/law.js"></script>
+<script src="data/serviceManagement.js"></script>
+<script src="data/aiCloud.js"></script>
+<script src="data/review.js"></script>
+<script src="data/calculation.js"></script>
+<script src="data/latestTrend.js"></script>
+
+<script src="js/questions.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/home.js"></script>
+
 </body>
+
 </html>

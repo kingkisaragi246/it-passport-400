@@ -1,0 +1,278 @@
+/* ==========================
+   Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:
+        "Yu Gothic UI",
+        "Meiryo",
+        sans-serif;
+
+    background:#f4f7fb;
+
+    color:#222;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   Link
+========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================
+   Header
+========================== */
+
+.header{
+
+    background:#1565c0;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px 25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+.header h1{
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+   Back Button
+========================== */
+
+.backButton{
+
+    background:#ffffff22;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    transition:.2s;
+
+}
+
+.backButton:hover{
+
+    background:#ffffff44;
+
+}
+
+/* ==========================
+   Button
+========================== */
+
+button{
+
+    font-family:inherit;
+
+}
+
+.primaryButton{
+
+    background:#1976d2;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px 24px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.primaryButton:hover{
+
+    background:#1565c0;
+
+}
+
+/* ==========================
+   Card
+========================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   Badge
+========================== */
+
+.badge{
+
+    display:inline-block;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    border-radius:999px;
+
+    padding:4px 12px;
+
+    font-size:13px;
+
+}
+
+/* ==========================
+   Utility
+========================== */
+
+.mt10{
+
+    margin-top:10px;
+
+}
+
+.mt20{
+
+    margin-top:20px;
+
+}
+
+.mt30{
+
+    margin-top:30px;
+
+}
+
+.center{
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+/* ==========================
+   Animation
+========================== */
+
+.fadeIn{
+
+    animation:fadeIn .35s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   ScrollBar
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#b7c5d8;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .header{
+
+        padding:15px;
+
+    }
+
+    .header h1{
+
+        font-size:22px;
+
+    }
+
+}

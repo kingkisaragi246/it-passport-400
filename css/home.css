@@ -1,0 +1,313 @@
+/* ==========================
+   Home
+========================== */
+
+.home{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#1976d2,#42a5f5);
+
+    color:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+/* ==========================
+   Menu
+========================== */
+
+.menuGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.menuCard{
+
+    background:#fff;
+
+    border:none;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    text-align:left;
+
+}
+
+.menuCard:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.menuCard h3{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:#1565c0;
+
+}
+
+.menuCard p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   Status
+========================== */
+
+.statusCard{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.statusCard h2{
+
+    margin-bottom:25px;
+
+    color:#1565c0;
+
+}
+
+/* ==========================
+   Category Study
+========================== */
+
+.categoryHint{
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+    margin-top:-15px;
+
+}
+
+.categoryGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+
+    gap:14px;
+
+}
+
+.categoryCard{
+
+    background:#f5f9ff;
+
+    border:1px solid #e0ecfb;
+
+    border-radius:12px;
+
+    padding:16px;
+
+}
+
+.categoryCard h3{
+
+    font-size:16px;
+
+    margin-bottom:6px;
+
+    color:#1565c0;
+
+}
+
+.categoryCard p{
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:14px;
+
+    background:#e0e0e0;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+#homeProgressBar{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#4CAF50,#81C784);
+
+    transition:.4s;
+
+}
+
+.statusTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.statusTable tr{
+
+    border-bottom:1px solid #eee;
+
+}
+
+.statusTable th{
+
+    width:180px;
+
+    text-align:left;
+
+    padding:16px 10px;
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+.statusTable td{
+
+    padding:16px 10px;
+
+    color:#222;
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:25px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .menuGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .categoryGrid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .menuCard{
+
+        padding:22px;
+
+    }
+
+    .statusCard{
+
+        padding:20px;
+
+    }
+
+    .statusTable th{
+
+        width:120px;
+
+        font-size:15px;
+
+    }
+
+    .statusTable td{
+
+        font-size:15px;
+
+    }
+
+}
