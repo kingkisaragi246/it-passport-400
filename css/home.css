@@ -190,6 +190,126 @@
 
 }
 
+/* ==========================
+   Sync
+========================== */
+
+.syncBox{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.syncBox label{
+
+    font-size:13px;
+
+    color:#666;
+
+    font-weight:bold;
+
+}
+
+.syncBox label.mt10{
+
+    margin-top:10px;
+
+}
+
+.syncCodeDisplay{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    color:#1565c0;
+
+    background:#f5f9ff;
+
+    border:1px solid #e0ecfb;
+
+    border-radius:10px;
+
+    padding:14px;
+
+    text-align:center;
+
+}
+
+.syncInputRow{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.syncInputRow input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.secondaryButton{
+
+    padding:12px 18px;
+
+    border:1px solid #1565c0;
+
+    background:#fff;
+
+    color:#1565c0;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+
+}
+
+.secondaryButton:hover{
+
+    background:#f0f7ff;
+
+}
+
+.syncStatus{
+
+    font-size:13px;
+
+    color:#2e7d32;
+
+    min-height:18px;
+
+}
+
+.syncStatus.error{
+
+    color:#c62828;
+
+}
+
 .progress{
 
     width:100%;

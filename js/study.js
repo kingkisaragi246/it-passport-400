@@ -6,8 +6,55 @@
 
 const progress = loadProgress();
 
+// クラウド同期（設定されていれば、最新データが他端末にあった場合だけ再読み込み）
+if (typeof syncOnLoad === "function") {
+
+    syncOnLoad(() => location.reload());
+
+}
+
 const studyMode =
 sessionStorage.getItem("studyMode") || "normal";
+
+// -------------------------------
+// Shuffle Utilities
+// -------------------------------
+
+function shuffleArray(array){
+
+    const result = [...array];
+
+    for(let i=result.length-1;i>0;i--){
+
+        const j = Math.floor(Math.random()*(i+1));
+
+        [result[i],result[j]] = [result[j],result[i]];
+
+    }
+
+    return result;
+
+}
+
+function shuffleQuestionChoices(q){
+
+    const indexOrder = shuffleArray(
+        q.choices.map((_,i)=>i)
+    );
+
+    return {
+        ...q,
+        choices: indexOrder.map(i=>q.choices[i]),
+        answer: indexOrder.indexOf(q.answer),
+        explanation: {
+            ...q.explanation,
+            choiceExplanation: indexOrder.map(
+                i=>q.explanation.choiceExplanation[i]
+            )
+        }
+    };
+
+}
 
 // -------------------------------
 // Question List
@@ -54,15 +101,6 @@ switch(studyMode){
 
         studyQuestions = [...questions];
 
-        for(let i=studyQuestions.length-1;i>0;i--){
-
-            const j=Math.floor(Math.random()*(i+1));
-
-            [studyQuestions[i],studyQuestions[j]]=
-            [studyQuestions[j],studyQuestions[i]];
-
-        }
-
         break;
 
     default:
@@ -80,6 +118,12 @@ if(studyQuestions.length===0){
     throw new Error("STOP_NO_QUESTIONS");
 
 }
+
+// 出題順と選択肢の順番を、開くたびに毎回シャッフルする
+studyQuestions =
+shuffleArray(studyQuestions).map(
+    shuffleQuestionChoices
+);
 
 // -------------------------------
 // Current Status

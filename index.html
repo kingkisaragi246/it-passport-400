@@ -151,7 +151,7 @@ class="menuCard">
 
 <th>
 
-現在位置
+学習済み
 
 </th>
 
@@ -271,6 +271,48 @@ class="menuCard">
 
 <h2>
 
+🔗 端末間の同期
+
+</h2>
+
+<p class="categoryHint">
+
+この端末の同期コードです。他の端末（スマホなど）でも下の入力欄に同じコードを入力すると、学習状況が自動で共有されます。
+
+</p>
+
+<div class="syncBox">
+
+<label>この端末の同期コード</label>
+
+<div class="syncCodeDisplay" id="syncCodeDisplay">
+
+読み込み中…
+
+</div>
+
+<label class="mt10">別の端末のコードを入力して連携する</label>
+
+<div class="syncInputRow">
+
+<input type="text" id="syncCodeInput" placeholder="例：AB3D9F2K" maxlength="8">
+
+<button id="syncCodeButton" class="secondaryButton">連携する</button>
+
+</div>
+
+<p class="syncStatus" id="syncStatus">
+
+</p>
+
+</div>
+
+</section>
+
+<section class="statusCard mt30">
+
+<h2>
+
 学習メニュー
 
 </h2>
@@ -349,6 +391,12 @@ Version1.2
 <script src="js/questions.js"></script>
 
 <script src="js/storage.js"></script>
+
+<!-- クラウド同期（複数端末で共有する場合に使用） -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebaseConfig.js"></script>
+<script src="js/sync.js"></script>
 
 <script src="js/home.js"></script>
 

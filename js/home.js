@@ -4,6 +4,13 @@
 
 const progress = loadProgress();
 
+// クラウド同期（設定されていれば、最新データが他端末にあった場合だけ再読み込み）
+if (typeof syncOnLoad === "function") {
+
+    syncOnLoad(() => location.reload());
+
+}
+
 // -------------------------------
 // Buttons
 // -------------------------------
@@ -171,6 +178,75 @@ if(categoryButtons){
 }
 
 // -------------------------------
+// Sync Code UI
+// -------------------------------
+
+const syncCodeDisplay =
+document.getElementById("syncCodeDisplay");
+
+const syncCodeInput =
+document.getElementById("syncCodeInput");
+
+const syncCodeButton =
+document.getElementById("syncCodeButton");
+
+const syncStatus =
+document.getElementById("syncStatus");
+
+if (syncCodeDisplay && typeof getSyncCode === "function") {
+
+    syncCodeDisplay.textContent = getSyncCode();
+
+}
+
+if (syncCodeButton) {
+
+    syncCodeButton.onclick = () => {
+
+        const code = syncCodeInput.value.trim();
+
+        if (code.length < 4) {
+
+            syncStatus.textContent =
+            "コードを正しく入力してください。";
+
+            syncStatus.className = "syncStatus error";
+
+            return;
+
+        }
+
+        syncStatus.textContent = "連携しています…";
+
+        syncStatus.className = "syncStatus";
+
+        relinkSyncCode(code, (found) => {
+
+            syncCodeDisplay.textContent = getSyncCode();
+
+            if (found) {
+
+                syncStatus.textContent =
+                "連携できました。この端末のデータを更新します。";
+
+                setTimeout(()=>location.reload(), 1000);
+
+            } else {
+
+                syncStatus.textContent =
+                "そのコードにはまだデータがありません。この端末のデータで新規開始します。";
+
+                saveProgress(loadProgress());
+
+            }
+
+        });
+
+    };
+
+}
+
+// -------------------------------
 // Home Status
 // -------------------------------
 
@@ -184,13 +260,27 @@ if(homeQuestionCount){
 
 }
 
+// 「現在位置」は、シャッフルされたセッション内の一時的な位置ではなく、
+// これまでに一度でも解答したことのある問題数（累計・重複なし）を表示する
+function getUniqueAnsweredCount(){
+
+    const answeredIds = new Set(
+
+        progress.studyHistory.map(h => h.id)
+
+    );
+
+    return answeredIds.size;
+
+}
+
 const homeProgress =
 document.getElementById("homeProgress");
 
 if(homeProgress){
 
     homeProgress.textContent =
-    `${progress.current} / ${getQuestionCount()}`;
+    `${getUniqueAnsweredCount()} / ${getQuestionCount()}`;
 
 }
 
@@ -287,7 +377,7 @@ if(homeProgressBar){
     const percent =
         getQuestionCount() === 0
         ? 0
-        : progress.current /
+        : getUniqueAnsweredCount() /
           getQuestionCount() * 100;
 
     homeProgressBar.style.width =

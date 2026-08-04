@@ -90,6 +90,8 @@ function loadProgress() {
 
 function saveProgress(progress) {
 
+    progress.updatedAt = Date.now();
+
     localStorage.setItem(
 
         STORAGE_KEY,
@@ -97,6 +99,12 @@ function saveProgress(progress) {
         JSON.stringify(progress)
 
     );
+
+    if (typeof pushProgressToCloud === "function") {
+
+        pushProgressToCloud(progress);
+
+    }
 
 }
 
