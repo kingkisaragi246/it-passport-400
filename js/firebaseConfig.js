@@ -35,11 +35,11 @@
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyDfRTkO5VWaA4RNACn42IebB95YcDAzFcc",
-  authDomain: "it-passport-400.firebaseapp.com",
-  projectId: "it-passport-400",
-  storageBucket: "it-passport-400.firebasestorage.app",
-  messagingSenderId: "441826256989",
-  appId: "1:441826256989:web:9f596dcfff8230bc9cc5b4",
+    apiKey: "ここに書き換える",
+    authDomain: "ここに書き換える",
+    projectId: "ここに書き換える",
+    storageBucket: "ここに書き換える",
+    messagingSenderId: "ここに書き換える",
+    appId: "ここに書き換える"
 
 };

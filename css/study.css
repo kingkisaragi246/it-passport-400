@@ -392,6 +392,18 @@
 
 }
 
+.good.selected,
+.normal.selected,
+.bad.selected{
+
+    outline:4px solid #333;
+
+    outline-offset:2px;
+
+    transform:scale(1.05);
+
+}
+
 /* ==========================
    Next
 ========================== */

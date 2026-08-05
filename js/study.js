@@ -184,6 +184,15 @@ document.getElementById("similarArea");
 const deepDiveArea =
 document.getElementById("deepDiveArea");
 
+const understandGood =
+document.getElementById("understandGood");
+
+const understandNormal =
+document.getElementById("understandNormal");
+
+const understandBad =
+document.getElementById("understandBad");
+
 const scoreText =
 document.getElementById("scoreText");
 
@@ -231,6 +240,29 @@ function showQuestion(){
     choices.innerHTML = "";
 
     result.style.display = "none";
+
+    // 理解度ボタンの選択状態を、この問題の記録に合わせてリセット・復元する
+    const savedLevel = progress.understanding[q.id];
+
+    [understandGood, understandNormal, understandBad].forEach(btn=>{
+
+        if (btn) btn.classList.remove("selected");
+
+    });
+
+    if (savedLevel === "good" && understandGood) {
+
+        understandGood.classList.add("selected");
+
+    } else if (savedLevel === "normal" && understandNormal) {
+
+        understandNormal.classList.add("selected");
+
+    } else if (savedLevel === "bad" && understandBad) {
+
+        understandBad.classList.add("selected");
+
+    }
 
     q.choices.forEach((choice,index)=>{
 
@@ -521,15 +553,6 @@ location.href = "../index.html";
 // Understanding Buttons
 // ===============================
 
-const understandGood =
-document.getElementById("understandGood");
-
-const understandNormal =
-document.getElementById("understandNormal");
-
-const understandBad =
-document.getElementById("understandBad");
-
 function setUnderstanding(level){
 
     const qId = studyQuestions[current].id;
@@ -539,6 +562,24 @@ function setUnderstanding(level){
     progress.lastStudy = new Date().toISOString();
 
     saveProgress(progress);
+
+    // クリックしたことが分かるよう、選択状態を見た目に反映する
+    [understandGood, understandNormal, understandBad].forEach(btn=>{
+
+        if (btn) btn.classList.remove("selected");
+
+    });
+
+    const selectedBtn =
+        level === "good" ? understandGood :
+        level === "normal" ? understandNormal :
+        understandBad;
+
+    if (selectedBtn) {
+
+        selectedBtn.classList.add("selected");
+
+    }
 
 }
 
