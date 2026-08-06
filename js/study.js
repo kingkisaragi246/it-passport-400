@@ -56,6 +56,41 @@ function shuffleQuestionChoices(q){
 
 }
 
+// 選択肢の内容そのものを、問題ごとに用意された複数パターンからランダムに選ぶ
+// （variants が用意されている問題のみ対象。無い問題は元のまま）
+function pickQuestionVariant(q){
+
+    if (!Array.isArray(q.variants) || q.variants.length === 0) {
+
+        return q;
+
+    }
+
+    const pool = [
+        {
+            choices: q.choices,
+            answer: q.answer,
+            choiceExplanation: q.explanation.choiceExplanation
+        },
+        ...q.variants
+    ];
+
+    const picked =
+        pool[Math.floor(Math.random() * pool.length)];
+
+    return {
+        ...q,
+        choices: picked.choices,
+        answer: picked.answer,
+        explanation: {
+            ...q.explanation,
+            correct: picked.choiceExplanation[picked.answer],
+            choiceExplanation: picked.choiceExplanation
+        }
+    };
+
+}
+
 // -------------------------------
 // Question List
 // -------------------------------
@@ -97,6 +132,18 @@ switch(studyMode){
 
         break;
 
+    case "review":
+
+        studyQuestions = questions.filter(q=>{
+
+            const level = progress.understanding[q.id];
+
+            return level === "normal" || level === "bad";
+
+        });
+
+        break;
+
     case "random":
 
         studyQuestions = [...questions];
@@ -119,11 +166,11 @@ if(studyQuestions.length===0){
 
 }
 
-// 出題順と選択肢の順番を、開くたびに毎回シャッフルする
+// 出題順と選択肢の内容・順番を、開くたびに毎回シャッフルする
 studyQuestions =
-shuffleArray(studyQuestions).map(
-    shuffleQuestionChoices
-);
+shuffleArray(studyQuestions)
+    .map(pickQuestionVariant)
+    .map(shuffleQuestionChoices);
 
 // -------------------------------
 // Current Status

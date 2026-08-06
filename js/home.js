@@ -108,6 +108,29 @@ if(randomBtn){
 }
 
 // -------------------------------
+// Review（理解できた以外の復習）
+// -------------------------------
+
+const reviewBtn =
+document.getElementById("reviewBtn");
+
+if(reviewBtn){
+
+    reviewBtn.onclick = ()=>{
+
+        sessionStorage.setItem(
+            "studyMode",
+            "review"
+        );
+
+        location.href =
+        "pages/study.html";
+
+    };
+
+}
+
+// -------------------------------
 // Category Study
 // -------------------------------
 
@@ -341,6 +364,18 @@ if(favoriteCount){
 
     favoriteCount.textContent =
     progress.favoriteQuestions.length;
+
+}
+
+const reviewCount =
+document.getElementById("reviewCount");
+
+if(reviewCount){
+
+    reviewCount.textContent =
+    Object.values(progress.understanding).filter(
+        level => level === "normal" || level === "bad"
+    ).length;
 
 }
 
