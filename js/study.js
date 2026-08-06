@@ -78,13 +78,16 @@ function pickQuestionVariant(q){
     const picked =
         pool[Math.floor(Math.random() * pool.length)];
 
+    const correctText = picked.choiceExplanation[picked.answer]
+        .replace(/^(正解です。|○\s*正しい。|◯\s*正しい。)\s*/, "");
+
     return {
         ...q,
         choices: picked.choices,
         answer: picked.answer,
         explanation: {
             ...q.explanation,
-            correct: picked.choiceExplanation[picked.answer],
+            correct: correctText,
             choiceExplanation: picked.choiceExplanation
         }
     };
