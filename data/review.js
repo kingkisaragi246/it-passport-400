@@ -7,7 +7,7 @@ const reviewQuestions = [
 
     level:3,
 
-    question:"SQLインジェクションの説明として最も適切なものはどれか。",
+    question:"SQL（Structured Query Language）インジェクションの説明として最も適切なものはどれか。",
 
     choices:[
         "偽のメールで金融機関を装い、個人情報を盗み取る攻撃",
@@ -536,7 +536,7 @@ const reviewQuestions = [
 
     level:3,
 
-    question:"HTTPSの説明として最も適切なものはどれか。",
+    question:"HTTPS（HTTP Secure）の説明として最も適切なものはどれか。",
 
     choices:[
         "電子メールを暗号化して送信するための仕組み",
@@ -624,7 +624,7 @@ const reviewQuestions = [
 
     level:3,
 
-    question:"TCP/IPにおけるIPアドレスの説明として最も適切なものはどれか。",
+    question:"TCP/IP（Transmission Control Protocol / Internet Protocol）におけるIPアドレスの説明として最も適切なものはどれか。",
 
     choices:[
         "ネットワーク上の機器を一意に識別するための番号",
@@ -1186,7 +1186,7 @@ const reviewQuestions = [
 
     level:4,
 
-    question:"データベースのトランザクションが満たすべき性質を示すACID特性のうち、「一連の処理がすべて実行されるか、すべて取り消されるかのいずれかである」性質を何というか。",
+    question:"データベースのトランザクションが満たすべき性質を示すACID（Atomicity・Consistency・Isolation・Durability）特性のうち、「一連の処理がすべて実行されるか、すべて取り消されるかのいずれかである」性質を何というか。",
 
     choices:[
         "独立性（Isolation）",
@@ -1289,7 +1289,7 @@ const reviewQuestions = [
 
     level:3,
 
-    question:"SWOT分析の説明として最も適切なものはどれか。",
+    question:"SWOT（Strength・Weakness・Opportunity・Threat）分析の説明として最も適切なものはどれか。",
 
     choices:[
         "自社の強み・弱みと、外部環境の機会・脅威を整理して分析する手法",
@@ -2560,7 +2560,7 @@ const reviewQuestions = [
 
     level:3,
 
-    question:"コンピュータの記憶装置のうち、CPUに最も近く、高速だが記憶容量が小さいものはどれか。",
+    question:"コンピュータの記憶装置のうち、CPU（Central Processing Unit）に最も近く、高速だが記憶容量が小さいものはどれか。",
 
     choices:[
         "光ディスク",
@@ -3092,7 +3092,7 @@ const reviewQuestions = [
 
     level:4,
 
-    question:"ISO/IEC 27001の説明として最も適切なものはどれか。",
+    question:"ISO（International Organization for Standardization）/IEC（International Electrotechnical Commission） 27001の説明として最も適切なものはどれか。",
 
     choices:[
         "プロジェクトマネジメントに関する国際規格",
@@ -3181,7 +3181,7 @@ const reviewQuestions = [
 
     level:4,
 
-    question:"あるシステムのMTBFが190時間、MTTRが10時間であるとき、このシステムの稼働率として最も適切なものはどれか。",
+    question:"あるシステムのMTBF（Mean Time Between Failures）が190時間、MTTR（Mean Time To Repair）が10時間であるとき、このシステムの稼働率として最も適切なものはどれか。",
 
     choices:[
         "10%",
@@ -3448,7 +3448,7 @@ const reviewQuestions = [
 
     level:4,
 
-    question:"無線LANのセキュリティを高めるための暗号化方式として、現在最も推奨されるものはどれか。",
+    question:"無線LAN（Local Area Network）のセキュリティを高めるための暗号化方式として、現在最も推奨されるものはどれか。",
 
     choices:[
         "WEP",

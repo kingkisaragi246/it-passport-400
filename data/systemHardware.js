@@ -7,7 +7,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"CPUの主な役割として最も適切なものはどれか。",
+    question:"CPU（Central Processing Unit）の主な役割として最も適切なものはどれか。",
 
     choices:[
         "演算や制御を行う",
@@ -105,7 +105,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"CPUに含まれる制御装置の役割はどれか。",
+    question:"CPU（Central Processing Unit）に含まれる制御装置の役割はどれか。",
 
     choices:[
         "画像を描画する",
@@ -191,7 +191,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"CPUの演算装置(ALU)の役割はどれか。",
+    question:"CPU（Central Processing Unit）の演算装置（ALU：Arithmetic Logic Unit）の役割はどれか。",
 
     choices:[
         "データを保存する",
@@ -363,7 +363,7 @@ const systemHardwareQuestions = [
 
     level:3,
 
-    question:"マルチコアCPUの特徴として、最も適切なものはどれか。",
+    question:"マルチコアCPU（Central Processing Unit）の特徴として、最も適切なものはどれか。",
 
     choices:[
         "通信速度が特に速いCPU",
@@ -538,7 +538,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"RAMの特徴として適切なものはどれか。",
+    question:"RAM（Random Access Memory）の特徴として適切なものはどれか。",
 
     choices:[
         "画面表示を担当する",
@@ -638,7 +638,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"ROMの特徴として適切なものはどれか。",
+    question:"ROM（Read Only Memory）の特徴として適切なものはどれか。",
 
     choices:[
         "CPUの演算装置である",
@@ -986,7 +986,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"SSDの特徴として最も適切なものはどれか。",
+    question:"SSD（Solid State Drive）の特徴として最も適切なものはどれか。",
 
     choices:[
         "磁気ディスクを回転させる",
@@ -1072,7 +1072,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"DVDやBlu-rayはどの種類の記憶媒体か。",
+    question:"DVD（Digital Versatile Disc）やBlu-rayはどの種類の記憶媒体か。",
 
     choices:[
         "半導体メモリ",
@@ -1160,7 +1160,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"USBメモリに利用されている記憶方式はどれか。",
+    question:"USB（Universal Serial Bus）メモリに利用されている記憶方式はどれか。",
 
     choices:[
         "フラッシュメモリ",
@@ -1248,7 +1248,7 @@ const systemHardwareQuestions = [
 
     level:2,
 
-    question:"GPUの役割として最も適切なものはどれか。",
+    question:"GPU（Graphics Processing Unit）の役割として最も適切なものはどれか。",
 
     choices:[
         "長期間データを保存する",
@@ -1335,7 +1335,7 @@ const systemHardwareQuestions = [
 
     level:3,
 
-    question:"VRAMの役割として適切なものはどれか。",
+    question:"VRAM（Video RAM：Random Access Memory）の役割として適切なものはどれか。",
 
     choices:[
         "画像データを一時的に保存する",
@@ -1766,7 +1766,7 @@ const systemHardwareQuestions = [
 
     level:3,
 
-    question:"RAIDの目的として最も適切なものはどれか。",
+    question:"RAID（Redundant Arrays of Inexpensive Disks）の目的として最も適切なものはどれか。",
 
     choices:[
         "ネットワークを暗号化する",
@@ -1853,7 +1853,7 @@ const systemHardwareQuestions = [
 
     level:4,
 
-    question:"RAID1の特徴として適切なものはどれか。",
+    question:"RAID1（Redundant Arrays of Inexpensive Disksのミラーリング構成）の特徴として適切なものはどれか。",
 
     choices:[
         "圧縮して保存する",
@@ -1938,7 +1938,7 @@ const systemHardwareQuestions = [
 
     level:4,
 
-    question:"RAID0の特徴として適切なものはどれか。",
+    question:"RAID0（Redundant Arrays of Inexpensive Disksのストライピング構成）の特徴として適切なものはどれか。",
 
     choices:[
         "ミラーリングを行う",
@@ -2022,7 +2022,7 @@ const systemHardwareQuestions = [
 
     level:5,
 
-    question:"RAID5の特徴として適切なものはどれか。",
+    question:"RAID5（Redundant Arrays of Inexpensive Disksのパリティ分散構成）の特徴として適切なものはどれか。",
 
     choices:[
         "ミラーリングのみ行う",
@@ -2446,7 +2446,7 @@ const systemHardwareQuestions = [
 
     level:4,
 
-    question:"電源装置(PSU)の役割として適切なものはどれか。",
+    question:"電源装置（PSU：Power Supply Unit）の役割として適切なものはどれか。",
 
     choices:[
         "各部品へ適切な電力を供給する",

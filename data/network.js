@@ -7,7 +7,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"IPアドレスの役割として最も適切なものはどれか。",
+    question:"IPアドレス（Internet Protocol Address）の役割として最も適切なものはどれか。",
 
     choices:[
         "利用者を識別するパスワード",
@@ -118,7 +118,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"MACアドレスの特徴として適切なものはどれか。",
+    question:"MACアドレス（Media Access Control Address）の特徴として適切なものはどれか。",
 
     choices:[
         "Webページの場所を示す文字列",
@@ -220,7 +220,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"DNSの役割として適切なものはどれか。",
+    question:"DNS（Domain Name System）の役割として適切なものはどれか。",
 
     choices:[
         "ドメイン名をIPアドレスへ変換する",
@@ -333,7 +333,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"DHCPサーバの役割はどれか。",
+    question:"DHCP（Dynamic Host Configuration Protocol）サーバの役割はどれか。",
 
     choices:[
         "IPアドレスを自動で割り当てる",
@@ -437,7 +437,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"LANの説明として適切なものはどれか。",
+    question:"LAN（Local Area Network）の説明として適切なものはどれか。",
 
     choices:[
         "限られた範囲のネットワーク",
@@ -539,7 +539,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"WANの説明として適切なものはどれか。",
+    question:"WAN（Wide Area Network）の説明として適切なものはどれか。",
 
     choices:[
         "同じ部屋の中だけのネットワーク",
@@ -1038,7 +1038,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"TCPの特徴として最も適切なものはどれか。",
+    question:"TCP（Transmission Control Protocol）の特徴として最も適切なものはどれか。",
 
     choices:[
         "通信相手との接続を確立し、確実にデータを届ける",
@@ -1139,7 +1139,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"UDPの特徴として適切なものはどれか。",
+    question:"UDP（User Datagram Protocol）の特徴として適切なものはどれか。",
 
     choices:[
         "接続を確立せず高速に通信する",
@@ -1237,7 +1237,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"HTTPの役割として適切なものはどれか。",
+    question:"HTTP（HyperText Transfer Protocol）の役割として適切なものはどれか。",
 
     choices:[
         "IPアドレスを割り当てる",
@@ -1335,7 +1335,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"HTTPSの特徴として適切なものはどれか。",
+    question:"HTTPS（HTTP Secure）の特徴として適切なものはどれか。",
 
     choices:[
         "ファイルを圧縮する",
@@ -1432,7 +1432,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"FTPの役割として適切なものはどれか。",
+    question:"FTP（File Transfer Protocol）の役割として適切なものはどれか。",
 
     choices:[
         "ファイルを送受信する",
@@ -1529,7 +1529,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"SMTPの役割として適切なものはどれか。",
+    question:"SMTP（Simple Mail Transfer Protocol）の役割として適切なものはどれか。",
 
     choices:[
         "Webページを表示する",
@@ -1627,7 +1627,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"POP3の役割として適切なものはどれか。",
+    question:"POP3（Post Office Protocol version 3）の役割として適切なものはどれか。",
 
     choices:[
         "メールサーバからメールを受信する",
@@ -1724,7 +1724,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"IMAPの特徴として適切なものはどれか。",
+    question:"IMAP（Internet Message Access Protocol）の特徴として適切なものはどれか。",
 
     choices:[
         "画像を圧縮する",
@@ -1820,7 +1820,7 @@ const networkQuestions = [
 
     level:2,
 
-    question:"URLの説明として適切なものはどれか。",
+    question:"URL（Uniform Resource Locator）の説明として適切なものはどれか。",
 
     choices:[
         "Webページの場所を表す文字列",
@@ -2123,7 +2123,7 @@ const networkQuestions = [
 
     level:3,
 
-    question:"無線LAN規格であるIEEE802.11シリーズの説明として最も適切なものはどれか。",
+    question:"無線LAN（Local Area Network）規格であるIEEE802.11（Institute of Electrical and Electronics Engineers策定の規格）シリーズの説明として最も適切なものはどれか。",
 
     choices:[
         "無線LANの通信方式を定めた標準規格群",
@@ -2923,7 +2923,7 @@ const networkQuestions = [
 
     level:4,
 
-    question:"OSI参照モデルの説明として最も適切なものはどれか。",
+    question:"OSI（Open Systems Interconnection）参照モデルの説明として最も適切なものはどれか。",
 
     choices:[
         "Webページのデザインを統一するための規格",

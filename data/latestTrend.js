@@ -104,7 +104,7 @@ const latestTrendQuestions = [
 
     level:4,
 
-    question:"生成AIへの指示文において、望ましい出力例をいくつか示したうえで質問を行う手法を何というか。",
+    question:"生成AI（Artificial Intelligence）への指示文において、望ましい出力例をいくつか示したうえで質問を行う手法を何というか。",
 
     choices:[
         "リバースエンジニアリング",
@@ -282,7 +282,7 @@ const latestTrendQuestions = [
 
     level:4,
 
-    question:"AIガバナンスの説明として最も適切なものはどれか。",
+    question:"AI（Artificial Intelligence）ガバナンスの説明として最も適切なものはどれか。",
 
     choices:[
         "AIモデルの計算処理を高速化するハードウェア技術",
@@ -1358,7 +1358,7 @@ const latestTrendQuestions = [
 
     level:3,
 
-    question:"IoT機器とエッジAIを組み合わせた活用例として最も適切なものはどれか。",
+    question:"IoT（Internet of Things）機器とエッジAI（Artificial Intelligence）を組み合わせた活用例として最も適切なものはどれか。",
 
     choices:[
         "工場のセンサーが取得したデータを、機器の近くでAIによりリアルタイムに解析し、異常を即座に検知する",
@@ -1713,7 +1713,7 @@ const latestTrendQuestions = [
 
     level:4,
 
-    question:"国内でAIの適切な開発・利用を促すために策定された「AI事業者ガイドライン」の説明として最も適切なものはどれか。",
+    question:"国内でAI（Artificial Intelligence）の適切な開発・利用を促すために策定された「AI事業者ガイドライン」の説明として最も適切なものはどれか。",
 
     choices:[
         "AI開発者・提供者・利用者それぞれが留意すべき事項を整理した、政府によるガイドライン",
@@ -1979,7 +1979,7 @@ const latestTrendQuestions = [
 
     level:3,
 
-    question:"生成AIを業務で活用する際の留意点として最も適切なものはどれか。",
+    question:"生成AI（Artificial Intelligence）を業務で活用する際の留意点として最も適切なものはどれか。",
 
     choices:[
         "出力された内容は必ず正しいため、確認作業は一切不要である",

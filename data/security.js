@@ -1275,7 +1275,7 @@ const securityQuestions = [
 
     level:4,
 
-    question:"SSL/TLSの役割として、最も適切なものはどれか。",
+    question:"SSL/TLS（Secure Sockets Layer / Transport Layer Security）の役割として、最も適切なものはどれか。",
 
     choices:[
         "インターネット上の通信を暗号化し、盗聴や改ざんを防ぐ",
@@ -1718,7 +1718,7 @@ const securityQuestions = [
 
     level:5,
 
-    question:"SQLインジェクション攻撃が主に狙う対象として、最も適切なものはどれか。",
+    question:"SQL（Structured Query Language）インジェクション攻撃が主に狙う対象として、最も適切なものはどれか。",
 
     choices:[
         "データベースと連携するWebアプリケーションの入力フォーム",
@@ -1805,7 +1805,7 @@ const securityQuestions = [
 
     level:5,
 
-    question:"クロスサイトスクリプティング（XSS）の説明として、最も適切なものはどれか。",
+    question:"クロスサイトスクリプティング（XSS：Cross Site Scripting）の説明として、最も適切なものはどれか。",
 
     choices:[
         "パスワードを総当たりで試行する攻撃",
@@ -2433,7 +2433,7 @@ const securityQuestions = [
 
     level:5,
 
-    question:"DDoS攻撃の特徴として、最も適切なものはどれか。",
+    question:"DDoS（Distributed Denial of Service）攻撃の特徴として、最も適切なものはどれか。",
 
     choices:[
         "対象の従業員に対して電話で情報を聞き出す",

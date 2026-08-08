@@ -182,7 +182,7 @@ const strategyQuestions = [
 
     level:4,
 
-    question:"SWOT分析で『Opportunity』が表すものはどれか。",
+    question:"SWOT（Strength・Weakness・Opportunity・Threat）分析で『Opportunity』が表すものはどれか。",
 
     choices:[
         "脅威",
@@ -474,7 +474,7 @@ const strategyQuestions = [
 
     level:4,
 
-    question:"PEST分析における『Political（政治的要因）』が表す内容として、最も適切なものはどれか。",
+    question:"PEST（Political・Economic・Social・Technological）分析における『Political（政治的要因）』が表す内容として、最も適切なものはどれか。",
 
     choices:[
         "自社の技術力や特許保有状況",
@@ -965,7 +965,7 @@ const strategyQuestions = [
 
     level:4,
 
-    question:"BCGマトリクス（PPM）の『金のなる木』の特徴として最も適切なものはどれか。",
+    question:"BCGマトリクス（Boston Consulting Groupが提唱したPPM：Product Portfolio Management）の『金のなる木』の特徴として最も適切なものはどれか。",
 
     choices:[
         "市場成長率は低いが市場占有率は高い",

@@ -635,7 +635,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのSELECT文の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のSELECT文の役割として適切なものはどれか。",
 
     choices:[
         "データを更新する",
@@ -720,7 +720,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのINSERT文の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のINSERT文の役割として適切なものはどれか。",
 
     choices:[
         "データを削除する",
@@ -805,7 +805,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのUPDATE文の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のUPDATE文の役割として適切なものはどれか。",
 
     choices:[
         "新しいデータを追加する",
@@ -892,7 +892,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのDELETE文の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のDELETE文の役割として適切なものはどれか。",
 
     choices:[
         "データを追加する",
@@ -980,7 +980,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのWHERE句の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のWHERE句の役割として適切なものはどれか。",
 
     choices:[
         "条件を指定する",
@@ -1072,7 +1072,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"SQLのORDER BY句の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のORDER BY句の役割として適切なものはどれか。",
 
     choices:[
         "データを追加する",
@@ -1159,7 +1159,7 @@ const databaseQuestions = [
 
     level:5,
 
-    question:"SQLのGROUP BY句の役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のGROUP BY句の役割として適切なものはどれか。",
 
     choices:[
         "同じ値ごとにグループ化する",
@@ -1251,7 +1251,7 @@ const databaseQuestions = [
 
     level:5,
 
-    question:"SQLにおけるJOINの役割として、最も適切なものはどれか。",
+    question:"SQL（Structured Query Language）におけるJOINの役割として、最も適切なものはどれか。",
 
     choices:[
         "テーブルからレコードを削除する",
@@ -1787,7 +1787,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"COMMITの役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のCOMMITの役割として適切なものはどれか。",
 
     choices:[
         "データを削除する",
@@ -1874,7 +1874,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"ROLLBACKの役割として適切なものはどれか。",
+    question:"SQL（Structured Query Language）のROLLBACKの役割として適切なものはどれか。",
 
     choices:[
         "データを追加する",
@@ -1959,7 +1959,7 @@ const databaseQuestions = [
 
     level:5,
 
-    question:"ACID特性に含まれないものはどれか。",
+    question:"ACID（Atomicity・Consistency・Isolation・Durability）特性に含まれないものはどれか。",
 
     choices:[
         "Consistency（一貫性）",
@@ -2400,7 +2400,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"ER図（実体関連図）の目的として、最も適切なものはどれか。",
+    question:"ER図（Entity Relationship Diagram：実体関連図）の目的として、最も適切なものはどれか。",
 
     choices:[
         "サーバのCPU使用率を管理する",
@@ -2576,7 +2576,7 @@ const databaseQuestions = [
 
     level:4,
 
-    question:"NoSQLの特徴として適切なものはどれか。",
+    question:"NoSQL（Not only SQL）の特徴として適切なものはどれか。",
 
     choices:[
         "SQLが一切使えない",

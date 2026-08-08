@@ -747,7 +747,7 @@ const aiCloudQuestions = [
 
     level:2,
 
-    question:"人工知能（AI）の説明として最も適切なものはどれか。",
+    question:"人工知能（AI：Artificial Intelligence）の説明として最も適切なものはどれか。",
 
     choices:[
         "人間の知的な活動をコンピュータで模倣・実現しようとする技術や研究分野",
@@ -2007,7 +2007,7 @@ const aiCloudQuestions = [
 
     level:3,
 
-    question:"自社のサービスに、地図情報や決済機能など外部の機能をWeb API経由で組み込む取り組みの利点として最も適切なものはどれか。",
+    question:"自社のサービスに、地図情報や決済機能など外部の機能をWeb API（Application Programming Interface）経由で組み込む取り組みの利点として最も適切なものはどれか。",
 
     choices:[
         "自社の情報を一切外部に出さずにサービスを提供できる",
@@ -2272,7 +2272,7 @@ const aiCloudQuestions = [
 
     level:2,
 
-    question:"AI・機械学習・ディープラーニングの関係を表す説明として最も適切なものはどれか。",
+    question:"AI（Artificial Intelligence）・機械学習・ディープラーニングの関係を表す説明として最も適切なものはどれか。",
 
     choices:[
         "機械学習の中にAIが含まれ、そのAIの中にディープラーニングが含まれる",
@@ -2450,7 +2450,7 @@ const aiCloudQuestions = [
 
     level:3,
 
-    question:"デジタルトランスフォーメーション（DX）の説明として最も適切なものはどれか。",
+    question:"デジタルトランスフォーメーション（DX：Digital Transformation）の説明として最も適切なものはどれか。",
 
     choices:[
         "紙の書類をすべてPDFに変換すること",

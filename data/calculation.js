@@ -617,7 +617,7 @@ const calculationQuestions = [
 
     level:4,
 
-    question:"2進数「1101」と「1011」の排他的論理和（XOR）を求めた結果として適切なものはどれか。",
+    question:"2進数「1101」と「1011」の排他的論理和（XOR：eXclusive OR）を求めた結果として適切なものはどれか。",
 
     choices:[
         "0110",
@@ -813,7 +813,7 @@ const calculationQuestions = [
 
     level:3,
 
-    question:"IPアドレス「130.20.1.5」が属するクラスとして適切なものはどれか。",
+    question:"IPアドレス（Internet Protocol Address）「130.20.1.5」が属するクラスとして適切なものはどれか。",
 
     choices:[
         "クラスC",
@@ -1019,7 +1019,7 @@ const calculationQuestions = [
 
     level:3,
 
-    question:"200GBのディスク4台をRAID0で構成した場合の総容量として適切なものはどれか。",
+    question:"200GBのディスク4台をRAID0（Redundant Arrays of Inexpensive Disksのストライピング構成）で構成した場合の総容量として適切なものはどれか。",
 
     choices:[
         "400GB",
@@ -1122,7 +1122,7 @@ const calculationQuestions = [
 
     level:3,
 
-    question:"200GBのディスク2台をRAID1で構成した場合、実際に利用できる容量として適切なものはどれか。",
+    question:"200GBのディスク2台をRAID1（Redundant Arrays of Inexpensive Disksのミラーリング構成）で構成した場合、実際に利用できる容量として適切なものはどれか。",
 
     choices:[
         "300GB",
@@ -1220,7 +1220,7 @@ const calculationQuestions = [
 
     level:4,
 
-    question:"200GBのディスク4台をRAID5で構成した場合の実効容量として適切なものはどれか。",
+    question:"200GBのディスク4台をRAID5（Redundant Arrays of Inexpensive Disksのパリティ分散構成）で構成した場合の実効容量として適切なものはどれか。",
 
     choices:[
         "800GB",

@@ -1389,7 +1389,7 @@ const lawQuestions = [
 
     level:3,
 
-    question:"PL法（製造物責任法）の説明として最も適切なものはどれか。",
+    question:"PL法（Product Liability法：製造物責任法）の説明として最も適切なものはどれか。",
 
     choices:[
         "特許権の存続期間を定めた法律",
@@ -1654,7 +1654,7 @@ const lawQuestions = [
 
     level:3,
 
-    question:"ISOやJISのように、公的な標準化機関によって策定される標準を何というか。",
+    question:"ISO（International Organization for Standardization）やJIS（Japanese Industrial Standards）のように、公的な標準化機関によって策定される標準を何というか。",
 
     choices:[
         "社内標準",
@@ -2271,7 +2271,7 @@ const lawQuestions = [
 
     level:3,
 
-    question:"秘密保持契約（NDA）の目的として最も適切なものはどれか。",
+    question:"秘密保持契約（NDA：Non-Disclosure Agreement）の目的として最も適切なものはどれか。",
 
     choices:[
         "契約当事者双方の特許の使用を許諾し合うこと",
@@ -2624,7 +2624,7 @@ const lawQuestions = [
 
     level:3,
 
-    question:"GDPR（EU一般データ保護規則）の説明として最も適切なものはどれか。",
+    question:"GDPR（EU（European Union）一般データ保護規則）の説明として最も適切なものはどれか。",
 
     choices:[
         "EU域内の個人データ保護を規定し、EU域外の事業者にも適用され得る規則",

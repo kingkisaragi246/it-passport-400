@@ -7,7 +7,7 @@ const serviceManagementQuestions = [
 
     level:2,
 
-    question:"ITサービスマネジメントの説明として最も適切なものはどれか。",
+    question:"IT（Information Technology）サービスマネジメントの説明として最も適切なものはどれか。",
 
     choices:[
         "コンピュータの部品を選定して調達する作業",
@@ -95,7 +95,7 @@ const serviceManagementQuestions = [
 
     level:2,
 
-    question:"ITILの説明として最も適切なものはどれか。",
+    question:"ITIL（Information Technology Infrastructure Library）の説明として最も適切なものはどれか。",
 
     choices:[
         "プログラミング言語の一種",
@@ -1886,7 +1886,7 @@ const serviceManagementQuestions = [
 
     level:2,
 
-    question:"無停電電源装置（UPS）の主な役割として最も適切なものはどれか。",
+    question:"無停電電源装置（UPS：Uninterruptible Power Supply）の主な役割として最も適切なものはどれか。",
 
     choices:[
         "ネットワークの通信を暗号化する",
@@ -2591,7 +2591,7 @@ const serviceManagementQuestions = [
 
     level:4,
 
-    question:"ITサービスマネジメントにおけるPDCAサイクルの説明として最も適切なものはどれか。",
+    question:"IT（Information Technology）サービスマネジメントにおけるPDCA（Plan・Do・Check・Act）サイクルの説明として最も適切なものはどれか。",
 
     choices:[
         "計画・実行・評価・改善を繰り返すことで継続的にサービス品質を向上させる考え方",

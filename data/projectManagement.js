@@ -102,7 +102,7 @@ const projectManagementQuestions = [
 
     level:3,
 
-    question:"プロジェクトマネージャ（PM）の役割として、最も適切なものはどれか。",
+    question:"プロジェクトマネージャ（PM：Project Manager）の役割として、最も適切なものはどれか。",
 
     choices:[
         "顧客からの製品の注文を直接受け付ける",
@@ -1000,7 +1000,7 @@ const projectManagementQuestions = [
 
     level:4,
 
-    question:"KPIの説明として適切なものはどれか。",
+    question:"KPI（Key Performance Indicator）の説明として適切なものはどれか。",
 
     choices:[
         "データベース管理システム",
@@ -1182,7 +1182,7 @@ const projectManagementQuestions = [
 
     level:3,
 
-    question:"PDCAサイクルのPは何を表すか。",
+    question:"PDCA（Plan・Do・Check・Act）サイクルのPは何を表すか。",
 
     choices:[
         "Process（処理）",
@@ -1806,7 +1806,7 @@ const projectManagementQuestions = [
 
     level:4,
 
-    question:"QC七つ道具を用いる目的として、最も適切なものはどれか。",
+    question:"QC（Quality Control）七つ道具を用いる目的として、最も適切なものはどれか。",
 
     choices:[
         "サーバのCPU性能を測定する",
@@ -2323,7 +2323,7 @@ const projectManagementQuestions = [
 
     level:3,
 
-    question:"QC七つ道具の1つであるチェックシートの目的として、最も適切なものはどれか。",
+    question:"QC（Quality Control）七つ道具の1つであるチェックシートの目的として、最も適切なものはどれか。",
 
     choices:[
         "SQL文を作成し、データベースを操作する",
@@ -2589,7 +2589,7 @@ const projectManagementQuestions = [
 
     level:5,
 
-    question:"アローダイアグラム（PERT図）の目的として、最も適切なものはどれか。",
+    question:"アローダイアグラム（PERT図：Program Evaluation and Review Technique）の目的として、最も適切なものはどれか。",
 
     choices:[
         "SQL文を実行し、データベースを検索する",

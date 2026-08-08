@@ -7,7 +7,7 @@ const systemDevelopmentQuestions = [
 
     level:3,
 
-    question:"システム開発ライフサイクル（SDLC）の説明として、最も適切なものはどれか。",
+    question:"システム開発ライフサイクル（SDLC：System Development Life Cycle）の説明として、最も適切なものはどれか。",
 
     choices:[
         "システムの企画から開発、運用・保守に至るまでの一連の流れ",
@@ -1528,7 +1528,7 @@ const systemDevelopmentQuestions = [
 
     level:3,
 
-    question:"APIの説明として、最も適切なものはどれか。",
+    question:"API（Application Programming Interface）の説明として、最も適切なものはどれか。",
 
     choices:[
         "あるソフトウェアの機能を、他のソフトウェアから呼び出して利用できるようにする窓口",
@@ -1616,7 +1616,7 @@ const systemDevelopmentQuestions = [
 
     level:3,
 
-    question:"SDKの説明として適切なものはどれか。",
+    question:"SDK（Software Development Kit）の説明として適切なものはどれか。",
 
     choices:[
         "ネットワーク監視ソフト",
@@ -3125,7 +3125,7 @@ const systemDevelopmentQuestions = [
 
     level:4,
 
-    question:"CI/CD（継続的インテグレーション／継続的デリバリー）の説明として最も適切なものはどれか。",
+    question:"CI/CD（Continuous Integration／Continuous Delivery：継続的インテグレーション／継続的デリバリー）の説明として最も適切なものはどれか。",
 
     choices:[
         "1年に1回だけ大規模なリリースを行う開発手法",
