@@ -70,16 +70,22 @@ function pickQuestionVariant(q){
         {
             choices: q.choices,
             answer: q.answer,
-            choiceExplanation: q.explanation.choiceExplanation
+            choiceExplanation: q.explanation.choiceExplanation,
+            correct: q.explanation.correct
         },
-        ...q.variants
+        ...q.variants.map(v => ({ ...v, correct: null }))
     ];
 
     const picked =
         pool[Math.floor(Math.random() * pool.length)];
 
-    const correctText = picked.choiceExplanation[picked.answer]
-        .replace(/^(正解です。|○\s*正しい。|◯\s*正しい。)\s*/, "");
+    // 元の（バリエーションではない）選択肢セットが選ばれた場合は、
+    // 正式名称などを含む詳しい元の説明文をそのまま使う。
+    // バリエーション側が選ばれた場合のみ、簡潔な選択肢解説から生成する。
+    const correctText =
+        picked.correct ||
+        picked.choiceExplanation[picked.answer]
+            .replace(/^(正解です。|○\s*正しい。|◯\s*正しい。)\s*/, "");
 
     return {
         ...q,

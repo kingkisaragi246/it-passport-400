@@ -21,7 +21,7 @@ const systemDevelopmentQuestions = [
     explanation:{
 
         correct:
-"正解です。企画から運用・保守までの一連の流れがSDLCです。",
+"システム開発ライフサイクル（SDLC：System Development Life Cycle）は、システムの企画から開発、運用・保守に至るまでの一連の流れを指す概念です。",
 
         choiceExplanation:[
 
@@ -98,7 +98,7 @@ const systemDevelopmentQuestions = [
                 "不正解です。半導体製造とは無関係です。",
                 "不正解です。配線作業とは無関係です。",
                 "不正解です。これはバックアップ作業の説明です。",
-                "正解です。企画から運用保守までの流れがSDLCです。",
+                "正解です。企画から運用・保守までの一連の流れがSDLC（System Development Life Cycle）です。",
             ]
         }
 
@@ -1542,7 +1542,7 @@ const systemDevelopmentQuestions = [
     explanation:{
 
         correct:
-"正解です。他のソフトウェアから機能を呼び出せるようにする窓口がAPIです。",
+"API（Application Programming Interface）は、あるソフトウェアの機能を、他のソフトウェアから呼び出して利用できるようにする窓口（インタフェース）です。",
 
         choiceExplanation:[
 
@@ -1601,7 +1601,7 @@ const systemDevelopmentQuestions = [
                 "不正解です。暗号化アルゴリズムとは異なります。",
                 "不正解です。ベンチマーク指標とは異なります。",
                 "不正解です。速度測定手法とは異なります。",
-                "正解です。機能を呼び出す窓口がAPIです。",
+                "正解です。他のソフトウェアから機能を呼び出せるようにする窓口がAPI（Application Programming Interface）です。",
             ]
         }
 

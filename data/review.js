@@ -638,7 +638,7 @@ const reviewQuestions = [
     explanation:{
 
         correct:
-"IPアドレスは、TCP/IPネットワーク上で通信を行う機器（コンピュータやスマートフォンなど）を一意に識別するために割り当てられる番号です。郵便物における住所のような役割を果たします。",
+"IPアドレスは、TCP/IP（Transmission Control Protocol/Internet Protocol）ネットワーク上で通信を行う機器を一意に識別するために割り当てられる番号です。",
 
         choiceExplanation:[
 
@@ -697,7 +697,7 @@ const reviewQuestions = [
                 "不正解です。拡張子とは異なります。",
                 "不正解です。マークアップ言語とは異なります。",
                 "不正解です。暗号鍵とは異なります。",
-                "正解です。機器を識別する番号がIPアドレスです。",
+                "正解です。機器を識別する番号がIPアドレスです（TCP/IP：Transmission Control Protocol/Internet Protocol）。",
             ]
         }
 
@@ -3195,7 +3195,7 @@ const reviewQuestions = [
     explanation:{
 
         correct:
-"稼働率は「MTBF ÷（MTBF＋MTTR）」で計算されます。この場合、190 ÷（190＋10）＝190 ÷ 200 ＝ 0.95、すなわち95%となります。",
+"稼働率は「MTBF（Mean Time Between Failures：平均故障間隔）÷（MTBF＋MTTR（Mean Time To Repair：平均修復時間））」で計算されます。この場合、190÷（190＋10）＝0.95（95%）です。",
 
         choiceExplanation:[
 

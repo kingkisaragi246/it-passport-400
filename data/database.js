@@ -1444,7 +1444,7 @@ const databaseQuestions = [
     explanation:{
 
         correct:
-"第1正規形では、1つの項目に複数の値を入れず、値を原子的にします。",
+"第1正規形（1NF：First Normal Form）では、1つの項目に複数の値を入れず、値を原子的（それ以上分割できない単一の値）にします。",
 
         choiceExplanation:[
 
@@ -1530,7 +1530,7 @@ const databaseQuestions = [
     explanation:{
 
         correct:
-"正解です。部分関数従属の排除が第2正規形の条件です。",
+"第2正規形（2NF：Second Normal Form）は、第1正規形の条件を満たしたうえで、主キーの一部だけに依存する項目（部分関数従属）を別表に分離した状態です。",
 
         choiceExplanation:[
 
@@ -1585,7 +1585,7 @@ const databaseQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。テーブルの統合ではありません。",
-                "正解です。部分関数従属の排除が第2正規形です。",
+                "正解です。部分関数従属の排除が第2正規形（2NF：Second Normal Form）の条件です。",
                 "不正解です。主キーは正規化後も必要です。",
                 "不正解です。列の削除とは無関係です。",
             ]
@@ -1616,7 +1616,7 @@ const databaseQuestions = [
     explanation:{
 
         correct:
-"正解です。推移的関数従属の解消が第3正規形の条件です。",
+"第3正規形（3NF：Third Normal Form）は、第2正規形の条件を満たしたうえで、主キー以外の項目同士が間接的に依存し合う関係（推移的関数従属）を解消した状態です。",
 
         choiceExplanation:[
 
@@ -1681,7 +1681,7 @@ const databaseQuestions = [
             choiceExplanation:[
                 "不正解です。テーブル削除とは無関係です。",
                 "不正解です。暗号化とは無関係です。",
-                "正解です。推移的関数従属の解消が第3正規形です。",
+                "正解です。推移的関数従属の解消が第3正規形（3NF：Third Normal Form）の条件です。",
                 "不正解です。通信速度とは無関係です。",
             ]
         }
@@ -2414,7 +2414,7 @@ const databaseQuestions = [
     explanation:{
 
         correct:
-"正解です。エンティティ同士の関連を図で表すのがER図の目的です。",
+"ER図（実体関連図、Entity Relationship Diagram）は、データベースに登場するエンティティ（実体）同士の関連を図で表し、設計を分かりやすくすることを目的とした図です。",
 
         choiceExplanation:[
 
@@ -2471,7 +2471,7 @@ const databaseQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。CPU管理とは無関係です。",
-                "正解です。実体同士の関連を図示するのがER図の目的です。",
+                "正解です。エンティティ同士の関連を図で表すのがER図（Entity Relationship Diagram）の目的です。",
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。通信経路の高速化とは無関係です。",
             ]

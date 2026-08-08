@@ -205,7 +205,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"ALUは加算・減算などの演算やAND・ORなどの論理演算を行います。",
+"ALU（Arithmetic Logic Unit：演算論理装置）は、四則演算や論理演算を行うCPU内部の装置です。",
 
         choiceExplanation:[
 
@@ -262,7 +262,7 @@ const systemHardwareQuestions = [
                 "不正解です。これは記憶装置の役割です。",
                 "不正解です。これはディスプレイの役割です。",
                 "不正解です。これはNIC等の役割です。",
-                "正解です。演算を行うのがALUの役割です。",
+                "正解です。演算を行うのがALU（Arithmetic Logic Unit）の役割です。",
             ]
         }
 
@@ -1349,7 +1349,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"VRAMはGPUが利用する映像用メモリです。",
+"VRAM（Video RAM）は、画面に表示する画像データを一時的に保存するための専用メモリで、主にGPUが利用します。",
 
         choiceExplanation:[
 
@@ -1406,7 +1406,7 @@ const systemHardwareQuestions = [
                 "不正解です。OS保存とは異なります。",
                 "不正解です。LAN通信の保存とは異なります。",
                 "不正解です。CPU命令の保存とは異なります。",
-                "正解です。画像データの一時保存がVRAMの役割です。",
+                "正解です。画像データを一時的に保存するのがVRAM（Video RAM）の役割です。",
             ]
         }
 
@@ -1780,7 +1780,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"RAIDは複数のストレージを組み合わせ、高速化や耐障害性を実現する技術です。",
+"RAID（Redundant Arrays of Inexpensive Disks）は、複数のディスクを組み合わせて性能や信頼性を向上させる技術です。",
 
         choiceExplanation:[
 
@@ -1838,7 +1838,7 @@ const systemHardwareQuestions = [
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。CPU高速化とは無関係です。",
                 "不正解です。メモリ容量とは無関係です。",
-                "正解です。複数ディスクの活用による性能・信頼性向上がRAIDの目的です。",
+                "正解です。複数ディスクの活用による性能・信頼性向上がRAID（Redundant Arrays of Inexpensive Disks）の目的です。",
             ]
         }
 
@@ -1867,7 +1867,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"RAID1はミラーリングにより同じ内容を複数のディスクへ保存します。",
+"RAID1（Redundant Arrays of Inexpensive Disksのミラーリング構成）は、同じデータを複数のディスクへ保存する方式です。",
 
         choiceExplanation:[
 
@@ -1923,7 +1923,7 @@ const systemHardwareQuestions = [
                 "不正解です。圧縮とは異なります。",
                 "不正解です。分割保存はRAID0の特徴です。",
                 "不正解です。パリティのみの保存ではありません。",
-                "正解です。同一データの複製保存がRAID1の特徴です。",
+                "正解です。同一データの複製保存がRAID1（ミラーリング構成）の特徴です。",
             ]
         }
 
@@ -1952,7 +1952,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"RAID0はストライピングで高速化しますが、冗長性はありません。",
+"RAID0（Redundant Arrays of Inexpensive Disksのストライピング構成）は、高速だが冗長性のない構成です。",
 
         choiceExplanation:[
 
@@ -2007,7 +2007,7 @@ const systemHardwareQuestions = [
                 "不正解です。ミラーリングはRAID1の特徴です。",
                 "不正解です。冗長性がないためバックアップにはなりません。",
                 "不正解です。パリティ保存はRAID5の特徴です。",
-                "正解です。高速だが冗長性がないのがRAID0の特徴です。",
+                "正解です。高速だが冗長性がないのがRAID0（ストライピング構成）の特徴です。",
             ]
         }
 
@@ -2036,7 +2036,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"RAID5はパリティを分散保存し、1台故障しても復旧できます。",
+"RAID5（Redundant Arrays of Inexpensive Disksのパリティ分散構成）は、パリティを利用して耐障害性を実現する構成です。",
 
         choiceExplanation:[
 
@@ -2093,7 +2093,7 @@ const systemHardwareQuestions = [
                 "不正解です。ミラーリングのみではありません。",
                 "不正解です。高速化のみが目的ではありません。",
                 "不正解です。SSD専用ではありません。",
-                "正解です。パリティによる耐障害性の実現がRAID5の特徴です。",
+                "正解です。パリティによる耐障害性の実現がRAID5（パリティ分散構成）の特徴です。",
             ]
         }
 
@@ -2460,7 +2460,7 @@ const systemHardwareQuestions = [
     explanation:{
 
         correct:
-"電源装置は家庭用交流電源を各部品が利用できる直流電源へ変換します。",
+"電源装置（PSU：Power Supply Unit）は、家庭用交流電源をコンピュータの各部品が利用できる直流電源へ変換し、供給する役割を持ちます。",
 
         choiceExplanation:[
 
@@ -2515,7 +2515,7 @@ const systemHardwareQuestions = [
                 "不正解です。データ保存とは異なります。",
                 "不正解です。通信速度向上とは異なります。",
                 "不正解です。演算処理とは異なります。",
-                "正解です。各部品への電力供給がPSUの役割です。",
+                "正解です。各部品への電力供給がPSU（Power Supply Unit：電源装置）の役割です。",
             ]
         }
 

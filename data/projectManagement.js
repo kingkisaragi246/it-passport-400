@@ -116,7 +116,7 @@ const projectManagementQuestions = [
     explanation:{
 
         correct:
-"正解です。進捗・コスト・品質・リスクなどを総合的に管理するのがPMの役割です。",
+"プロジェクトマネージャ（PM：Project Manager）は、プロジェクトの目標達成に向けて、進捗・コスト・品質・リスクなどを総合的に管理する役割を担います。",
 
         choiceExplanation:[
 
@@ -178,7 +178,7 @@ const projectManagementQuestions = [
                 "不正解です。これは保守運用担当者の役割です。",
                 "不正解です。これはプログラマの役割です。",
                 "不正解です。これは営業担当者の役割です。",
-                "正解です。プロジェクト全体の総合管理がPMの役割です。",
+                "正解です。進捗・コスト・品質・リスクなどを総合的に管理するのがPM（Project Manager）の役割です。",
             ]
         }
 
@@ -1731,7 +1731,7 @@ const projectManagementQuestions = [
     explanation:{
 
         correct:
-"正解です。品質を維持・向上させる仕組みの整備が品質保証の目的です。",
+"品質保証（QA：Quality Assurance）は、成果物の品質を継続的に維持・向上させるための仕組みを整備することを目的としています。",
 
         choiceExplanation:[
 
@@ -1791,7 +1791,7 @@ const projectManagementQuestions = [
                 "不正解です。CPU性能向上とは無関係です。",
                 "不正解です。これは個別のデバッグ作業の説明です。",
                 "不正解です。通信速度改善とは無関係です。",
-                "正解です。品質維持・向上の仕組み整備がQAの目的です。",
+                "正解です。品質を維持・向上させる仕組みの整備がQA（Quality Assurance：品質保証）の目的です。",
             ]
         }
 
@@ -1820,7 +1820,7 @@ const projectManagementQuestions = [
     explanation:{
 
         correct:
-"正解です。データを図表で分析し品質改善を行うのがQC七つ道具の目的です。",
+"QC七つ道具（QC：Quality Control、品質管理）は、収集したデータを図表を用いて分析し、品質の問題点を改善することを目的とした7種類のツールです。",
 
         choiceExplanation:[
 
@@ -1878,7 +1878,7 @@ const projectManagementQuestions = [
                 "不正解です。コード自動生成とは無関係です。",
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。CPU性能測定とは無関係です。",
-                "正解です。データを図表分析し改善するのがQC七つ道具の目的です。",
+                "正解です。データを図表で分析し品質改善を行うのがQC（Quality Control）七つ道具の目的です。",
             ]
         }
 
@@ -2337,7 +2337,7 @@ const projectManagementQuestions = [
     explanation:{
 
         correct:
-"正解です。確認項目を用意し効率よく記録・集計するのがチェックシートの目的です。",
+"チェックシートは、QC七つ道具（QC：Quality Control）の1つで、あらかじめ確認すべき項目を用意し、データを効率よく記録・集計することを目的としています。",
 
         choiceExplanation:[
 
@@ -2396,7 +2396,7 @@ const projectManagementQuestions = [
                 "不正解です。SQL操作とは無関係です。",
                 "不正解です。ネットワーク構成管理とは無関係です。",
                 "不正解です。通信速度記録に限定されません。",
-                "正解です。確認項目に基づく効率的な記録・集計がチェックシートの目的です。",
+                "正解です。確認項目を用意し効率よく記録・集計するのがチェックシート（QC七つ道具の1つ）の目的です。",
             ]
         }
 
@@ -2603,7 +2603,7 @@ const projectManagementQuestions = [
     explanation:{
 
         correct:
-"正解です。作業の順序・依存関係を表し、クリティカルパスを分析するのがアローダイアグラムです。",
+"アローダイアグラム（PERT図：Program Evaluation and Review Technique）は、作業の順序関係や依存関係を矢印で表し、クリティカルパスを分析することを目的とした図です。",
 
         choiceExplanation:[
 
@@ -2661,7 +2661,7 @@ const projectManagementQuestions = [
                 "不正解です。これはQC七つ道具に近い説明です。",
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。SQL実行とは無関係です。",
-                "正解です。依存関係の分析がアローダイアグラムの目的です。",
+                "正解です。作業の順序・依存関係を表し、クリティカルパスを分析するのがアローダイアグラム（PERT図：Program Evaluation and Review Technique）です。",
             ]
         }
 

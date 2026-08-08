@@ -1289,7 +1289,7 @@ const securityQuestions = [
     explanation:{
 
         correct:
-"正解です。通信の暗号化により盗聴・改ざんを防ぐのがSSL/TLSの役割です。",
+"SSL/TLS（Secure Sockets Layer / Transport Layer Security）は、通信の暗号化により盗聴・改ざんを防ぐための仕組みです。現在はTLSが主流ですが、慣習的にSSLと呼ばれることも多くあります。",
 
         choiceExplanation:[
 
@@ -1344,7 +1344,7 @@ const securityQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。通信の暗号化により盗聴・改ざんを防ぐのがSSL/TLSです。",
+                "正解です。SSL/TLS（Secure Sockets Layer / Transport Layer Security）による暗号化通信により盗聴を防ぐのがSSL/TLSの役割です。",
                 "不正解です。これはメールサーバの説明です。",
                 "不正解です。これはチェックデジット等の説明です。",
                 "不正解です。これはウイルス対策ソフトの説明です。",
@@ -1732,7 +1732,7 @@ const securityQuestions = [
     explanation:{
 
         correct:
-"正解です。Webアプリケーションの入力フォームを通じて不正なSQL文を注入する攻撃です。",
+"SQL（Structured Query Language）インジェクションは、Webアプリケーションの入力フォームなどに不正なSQL文を注入することで、データベースを不正に操作する攻撃です。主な標的はデータベースと連携するWebアプリケーションの入力フォームです。",
 
         choiceExplanation:[
 
@@ -1819,7 +1819,7 @@ const securityQuestions = [
     explanation:{
 
         correct:
-"正解です。悪意のスクリプトを埋め込み閲覧者のブラウザで実行させる攻撃がXSSです。",
+"XSS（クロスサイトスクリプティング、Cross Site Scripting）は、脆弱なWebサイトに悪意のあるスクリプトを埋め込み、閲覧者のブラウザ上でそれを実行させる攻撃です。",
 
         choiceExplanation:[
 
@@ -1874,7 +1874,7 @@ const securityQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。悪意のスクリプトを閲覧者のブラウザで実行させるのがXSSです。",
+                "正解です。悪意のスクリプトを埋め込み閲覧者のブラウザで実行させる攻撃がXSS（クロスサイトスクリプティング、Cross Site Scripting）です。",
                 "不正解です。これはSQLインジェクションの説明です。",
                 "不正解です。これはブルートフォース攻撃の説明です。",
                 "不正解です。これはDoS攻撃の説明です。",
@@ -2447,7 +2447,7 @@ const securityQuestions = [
     explanation:{
 
         correct:
-"正解です。多数の機器から分散して攻撃するのがDDoS攻撃の特徴です。",
+"DDoS（Distributed Denial of Service：分散型サービス妨害）攻撃は、多数の端末（ボットネットなど）から一斉に攻撃対象へ通信を送りつけ、対処を困難にする攻撃です。",
 
         choiceExplanation:[
 
@@ -2511,7 +2511,7 @@ const securityQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。多数の端末から分散して行われるのがDDoS攻撃の特徴です。",
+                "正解です。多数の機器から分散して攻撃するのがDDoS（Distributed Denial of Service）攻撃の特徴です。",
                 "不正解です。これは単純なDoS攻撃に近い説明です。",
                 "不正解です。これはゼロデイ攻撃の説明に近い内容です。",
                 "不正解です。これはソーシャルエンジニアリングの説明です。",
