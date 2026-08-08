@@ -703,7 +703,7 @@ const databaseQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。これはINSERT文の役割です。",
-                "正解です。データの検索がSELECT文の役割です。",
+                "正解です。データの検索がSELECT文（SQL：Structured Query Languageの命令）の役割です。",
                 "不正解です。これはDELETE文の役割です。",
                 "不正解です。これはUPDATE文の役割です。",
             ]
@@ -787,7 +787,7 @@ const databaseQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。新規レコードの追加がINSERT文の役割です。",
+                "正解です。新規レコードの追加がINSERT文（SQLの命令）の役割です。",
                 "不正解です。これはDELETE文の役割です。",
                 "不正解です。これはSELECT文の役割です。",
                 "不正解です。これはUPDATE文の役割です。",
@@ -875,7 +875,7 @@ const databaseQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。これはINSERT文の役割です。",
-                "正解です。既存データの更新がUPDATE文の役割です。",
+                "正解です。既存データの更新がUPDATE文（SQLの命令）の役割です。",
                 "不正解です。これはSELECT文の役割です。",
                 "不正解です。これはDELETE文の役割です。",
             ]
@@ -964,7 +964,7 @@ const databaseQuestions = [
             choiceExplanation:[
                 "不正解です。これはINSERT文の役割です。",
                 "不正解です。これはSELECT文の役割です。",
-                "正解です。レコードの削除がDELETE文の役割です。",
+                "正解です。レコードの削除がDELETE文（SQLの命令）の役割です。",
                 "不正解です。これはUPDATE文の役割です。",
             ]
         }
@@ -1054,7 +1054,7 @@ const databaseQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。条件の指定がWHERE句の役割です。",
+                "正解です。条件の指定がWHERE句（SQLの構文要素）の役割です。",
                 "不正解です。これはJOINの役割です。",
                 "不正解です。これはORDER BY句の役割です。",
                 "不正解です。これはINSERT文の役割です。",
@@ -1144,7 +1144,7 @@ const databaseQuestions = [
                 "不正解です。これはINSERT文の役割です。",
                 "不正解です。これはWHERE句の役割です。",
                 "不正解です。これはJOINの役割です。",
-                "正解です。並べ替えがORDER BY句の役割です。",
+                "正解です。並べ替えがORDER BY句（SQLの構文要素）の役割です。",
             ]
         }
 
@@ -1233,7 +1233,7 @@ const databaseQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。同じ値ごとにまとめるのがGROUP BY句の役割です。",
+                "正解です。同じ値ごとにまとめるのがGROUP BY句（SQLの構文要素）の役割です。",
                 "不正解です。これはUPDATE文の役割です。",
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。これはDELETE文の役割です。",
@@ -1324,7 +1324,7 @@ const databaseQuestions = [
             choiceExplanation:[
                 "不正解です。これはDELETE文の役割です。",
                 "不正解です。これはORDER BY句の役割です。",
-                "正解です。複数表の結合検索がJOINの役割です。",
+                "正解です。複数表の結合検索がJOIN（SQLの構文要素）の役割です。",
                 "不正解です。これはINSERT文の役割です。",
             ]
         }
@@ -1859,7 +1859,7 @@ const databaseQuestions = [
                 "不正解です。これはDELETE文の役割です。",
                 "不正解です。これはSELECT文の役割です。",
                 "不正解です。これはROLLBACKの役割です。",
-                "正解です。内容の確定がCOMMITの役割です。",
+                "正解です。内容の確定がCOMMIT（SQLの命令）の役割です。",
             ]
         }
 
@@ -1942,7 +1942,7 @@ const databaseQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。これはINSERT文の役割です。",
-                "正解です。開始前の状態へ戻すのがROLLBACKの役割です。",
+                "正解です。開始前の状態へ戻すのがROLLBACK（SQLの命令）の役割です。",
                 "不正解です。これはSELECT文の役割です。",
                 "不正解です。これはCOMMITの役割です。",
             ]

@@ -1072,7 +1072,7 @@ const projectManagementQuestions = [
                 "不正解です。これはKGIの説明です。",
                 "不正解です。予算とは無関係です。",
                 "不正解です。DBMSとは無関係です。",
-                "正解です。達成度を測る指標がKPIです。",
+                "正解です。達成度を測る指標がKPI（Key Performance Indicator）です。",
             ]
         }
 

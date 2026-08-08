@@ -1687,7 +1687,7 @@ const systemDevelopmentQuestions = [
                 "不正解です。ネットワーク監視ソフトとは異なります。",
                 "不正解です。ウイルス対策ソフトとは異なります。",
                 "不正解です。DBMSとは異なります。",
-                "正解です。開発に必要なツール群がSDKです。",
+                "正解です。開発に必要なツール群がSDK（Software Development Kit）です。",
             ]
         }
 

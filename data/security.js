@@ -1787,7 +1787,7 @@ const securityQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。データベース連携のあるWeb入力欄が主な標的です。",
+                "正解です。データベース連携のあるWeb入力欄が主な標的です（SQL：Structured Query Language）。",
                 "不正解です。無線LANルータの設定画面が直接の標的ではありません。",
                 "不正解です。ファイル圧縮機能とは無関係です。",
                 "不正解です。周辺機器ドライバとは無関係です。",

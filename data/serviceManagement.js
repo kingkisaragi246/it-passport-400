@@ -168,7 +168,7 @@ const serviceManagementQuestions = [
                 "不正解です。プログラミング言語ではありません。",
                 "不正解です。通信規格とは異なります。",
                 "不正解です。セキュリティの国際規格とは異なります。",
-                "正解です。ベストプラクティス集がITILです。",
+                "正解です。ベストプラクティス集がITIL（Information Technology Infrastructure Library）です。",
             ]
         }
 
@@ -1959,7 +1959,7 @@ const serviceManagementQuestions = [
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。処理速度の高速化とは無関係です。",
                 "不正解です。バックアップ機能とは異なります。",
-                "正解です。停電時の一時的な電力供給がUPSの役割です。",
+                "正解です。停電時の一時的な電力供給がUPS（Uninterruptible Power Supply：無停電電源装置）の役割です。",
             ]
         }
 

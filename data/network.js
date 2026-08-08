@@ -315,7 +315,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。ドメイン名とIPアドレスの変換がDNSの役割です。",
+                "正解です。ドメイン名とIPアドレスの変換がDNS（Domain Name System）の役割です。",
                 "不正解です。これはSSL/TLS等の役割です。",
                 "不正解です。これは圧縮ソフトの役割です。",
                 "不正解です。これはSMTPの役割です。",
@@ -419,7 +419,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。設定情報を自動配布するのがDHCPの役割です。",
+                "正解です。設定情報を自動配布するのがDHCP（Dynamic Host Configuration Protocol）の役割です。",
                 "不正解です。これはWebサーバの役割です。",
                 "不正解です。メール暗号化とは無関係です。",
                 "不正解です。ファイル圧縮とは無関係です。",
@@ -1121,7 +1121,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。接続確立と確実な到達がTCPの特徴です。",
+                "正解です。接続確立と確実な到達がTCP（Transmission Control Protocol）の特徴です。",
                 "不正解です。暗号化はTCP自体の役割ではありません。",
                 "不正解です。これはDHCPの役割です。",
                 "不正解です。これはUDPの特徴です。",
@@ -1219,7 +1219,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。接続確立せず高速に送るのがUDPの特徴です。",
+                "正解です。接続確立せず高速に送るのがUDP（User Datagram Protocol）の特徴です。",
                 "不正解です。これはTCPの特徴です。",
                 "不正解です。自動再送はTCPの機能です。",
                 "不正解です。接続確立の手間自体がありません。",
@@ -1318,7 +1318,7 @@ const networkQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。これはDHCPの役割です。",
-                "正解です。Webページの送受信を行うのがHTTPです。",
+                "正解です。Webページの送受信を行うのがHTTP（HyperText Transfer Protocol）です。",
                 "不正解です。これはSMTPの役割です。",
                 "不正解です。これはDNSの役割です。",
             ]
@@ -1416,7 +1416,7 @@ const networkQuestions = [
             choiceExplanation:[
                 "不正解です。ファイル圧縮とは無関係です。",
                 "不正解です。これはDHCPの役割です。",
-                "正解です。HTTP通信をSSL/TLSで暗号化するのがHTTPSです。",
+                "正解です。HTTP通信をSSL/TLSで暗号化するのがHTTPS（HTTP Secure）です。",
                 "不正解です。これはメール暗号化技術（S/MIME等）の説明です。",
             ]
         }
@@ -1511,7 +1511,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。ファイルの送受信を行うのがFTPです。",
+                "正解です。ファイルの送受信を行うのがFTP（File Transfer Protocol）です。",
                 "不正解です。これはHTTPの役割です。",
                 "不正解です。これはNAT等の役割です。",
                 "不正解です。これはPOP3/IMAPの役割です。",
@@ -1611,7 +1611,7 @@ const networkQuestions = [
             choiceExplanation:[
                 "不正解です。これはHTTPの役割です。",
                 "不正解です。これはPOP3/IMAPの役割です。",
-                "正解です。メールの送信を担うのがSMTPです。",
+                "正解です。メールの送信を担うのがSMTP（Simple Mail Transfer Protocol）です。",
                 "不正解です。ファイル圧縮とは無関係です。",
             ]
         }
@@ -1706,7 +1706,7 @@ const networkQuestions = [
             ],
             answer:0,
             choiceExplanation:[
-                "正解です。メールをダウンロードして受信するのがPOP3です。",
+                "正解です。メールをダウンロードして受信するのがPOP3（Post Office Protocol version 3）です。",
                 "不正解です。これはSMTPの役割です。",
                 "不正解です。暗号化とは無関係です。",
                 "不正解です。これはDNSサーバの役割です。",
@@ -1803,7 +1803,7 @@ const networkQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。画像圧縮とは無関係です。",
-                "正解です。サーバ上にメールを残し複数端末で共有できるのがIMAPです。",
+                "正解です。サーバ上にメールを残し複数端末で共有できるのがIMAP（Internet Message Access Protocol）です。",
                 "不正解です。これはSMTPの役割です。",
                 "不正解です。これはDHCPの役割です。",
             ]
@@ -2204,7 +2204,7 @@ const networkQuestions = [
             answer:1,
             choiceExplanation:[
                 "不正解です。有線LANの規格はIEEE802.3です。",
-                "正解です。無線LANの標準規格がIEEE802.11シリーズです。",
+                "正解です。無線LANの標準規格がIEEE802.11（Institute of Electrical and Electronics Engineers策定の規格）シリーズです。",
                 "不正解です。メール暗号化とは無関係です。",
                 "不正解です。画像圧縮とは無関係です。",
             ]
