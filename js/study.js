@@ -141,6 +141,23 @@ switch(studyMode){
 
         break;
 
+    case "categoryReview":
+
+        const reviewCategory =
+        sessionStorage.getItem("studyCategory");
+
+        studyQuestions = questions.filter(q=>{
+
+            if (q.category !== reviewCategory) return false;
+
+            const level = progress.understanding[q.id];
+
+            return level === "normal" || level === "bad";
+
+        });
+
+        break;
+
     case "review":
 
         studyQuestions = questions.filter(q=>{

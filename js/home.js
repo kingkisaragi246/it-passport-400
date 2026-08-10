@@ -166,18 +166,30 @@ if(categoryButtons){
         ? null
         : Math.round(correctCount / answeredCount * 100);
 
-        const btn =
-        document.createElement("button");
+        // この分野で「理解できた」以外（普通・苦手・未評価ではない）の問題数
+        const categoryReviewCount =
+        questions.filter(q=>{
 
-        btn.className = "menuCard categoryCard";
+            if (q.category !== category) return false;
 
-        btn.innerHTML =
+            const level = progress.understanding[q.id];
+
+            return level === "normal" || level === "bad";
+
+        }).length;
+
+        const card =
+        document.createElement("div");
+
+        card.className = "menuCard categoryCard";
+
+        card.innerHTML =
         `<h3>${category}</h3>` +
         `<p>${total}問` +
         (rate === null ? "" : `　正答率${rate}%`) +
         `</p>`;
 
-        btn.onclick = ()=>{
+        card.onclick = ()=>{
 
             sessionStorage.setItem(
                 "studyMode",
@@ -194,7 +206,40 @@ if(categoryButtons){
 
         };
 
-        categoryButtons.appendChild(btn);
+        if (categoryReviewCount > 0) {
+
+            const reviewLink =
+            document.createElement("button");
+
+            reviewLink.className = "categoryReviewLink";
+
+            reviewLink.textContent =
+            `🔁 この分野を復習（${categoryReviewCount}問）`;
+
+            reviewLink.onclick = (e)=>{
+
+                e.stopPropagation();
+
+                sessionStorage.setItem(
+                    "studyMode",
+                    "categoryReview"
+                );
+
+                sessionStorage.setItem(
+                    "studyCategory",
+                    category
+                );
+
+                location.href =
+                "pages/study.html";
+
+            };
+
+            card.appendChild(reviewLink);
+
+        }
+
+        categoryButtons.appendChild(card);
 
     });
 
