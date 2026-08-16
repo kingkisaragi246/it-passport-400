@@ -58,6 +58,10 @@ const questions = [
 
     ...(typeof latestTrendQuestions !== "undefined"
         ? latestTrendQuestions
+        : []),
+
+    ...(typeof businessDesignQuestions !== "undefined"
+        ? businessDesignQuestions
         : [])
 
 ];

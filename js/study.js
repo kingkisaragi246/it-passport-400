@@ -170,9 +170,56 @@ switch(studyMode){
 
         break;
 
+    case "examMistakes":
+
+        const examMistakeIds =
+        JSON.parse(sessionStorage.getItem("examMistakeIds") || "[]");
+
+        studyQuestions = questions.filter(q=>
+
+            examMistakeIds.includes(q.id)
+
+        );
+
+        break;
+
     case "random":
 
         studyQuestions = [...questions];
+
+        break;
+
+    case "exam":
+
+        function sampleQuestions(pool, n){
+
+            return shuffleArray(pool).slice(0, Math.min(n, pool.length));
+
+        }
+
+        const examStrategy =
+        sampleQuestions(
+            questions.filter(q=>q.category==="ストラテジ系"),
+            35
+        );
+
+        const examManagement =
+        sampleQuestions(
+            questions.filter(q=>q.category==="マネジメント系"),
+            20
+        );
+
+        const examTechnology =
+        sampleQuestions(
+            questions.filter(q=>q.category==="テクノロジ系"),
+            45
+        );
+
+        studyQuestions = shuffleArray([
+            ...examStrategy,
+            ...examManagement,
+            ...examTechnology
+        ]);
 
         break;
 
@@ -181,6 +228,11 @@ switch(studyMode){
         break;
 
 }
+
+const isExamMode = studyMode === "exam";
+
+let examAnswers = isExamMode ? [] : null;
+
 
 if(studyQuestions.length===0){
 
@@ -314,6 +366,9 @@ function showQuestion(){
 
     result.style.display = "none";
 
+    // 模擬試験モードでは「次の問題」ボタンを隠し、選択肢クリックで自動的に進める
+    nextBtn.style.display = isExamMode ? "none" : "";
+
     // 理解度ボタンの選択状態を、この問題の記録に合わせてリセット・復元する
     const savedLevel = progress.understanding[q.id];
 
@@ -371,6 +426,49 @@ function showQuestion(){
 function answer(index){
 
     const q = studyQuestions[current];
+
+    // -------------------------------
+    // 模擬試験モード：正誤を表示せず記録だけして次へ進む
+    // -------------------------------
+
+    if (isExamMode) {
+
+        const buttons =
+        document.querySelectorAll(".choice");
+
+        buttons.forEach(button=>{
+
+            button.disabled = true;
+
+        });
+
+        buttons[index].classList.add("examSelected");
+
+        examAnswers.push({
+            id: q.id,
+            category: q.category,
+            correct: index === q.answer
+        });
+
+        setTimeout(()=>{
+
+            current++;
+
+            if (current >= studyQuestions.length) {
+
+                finishExam();
+
+            } else {
+
+                showQuestion();
+
+            }
+
+        }, 200);
+
+        return;
+
+    }
 
     const buttons =
     document.querySelectorAll(".choice");
@@ -577,8 +675,101 @@ saveProgress(progress);
 }
 
 // ===============================
-// Next Question
+// Finish Exam（模擬試験の採点）
 // ===============================
+
+function finishExam(){
+
+    const categories = ["ストラテジ系","マネジメント系","テクノロジ系"];
+
+    const stats = {};
+
+    categories.forEach(cat=>{
+
+        const inCategory =
+        examAnswers.filter(a=>a.category===cat);
+
+        const correct =
+        inCategory.filter(a=>a.correct).length;
+
+        stats[cat] = {
+
+            total: inCategory.length,
+
+            correct: correct,
+
+            score: inCategory.length===0
+                ? 0
+                : Math.round(correct / inCategory.length * 1000)
+
+        };
+
+    });
+
+    const totalCorrect =
+    examAnswers.filter(a=>a.correct).length;
+
+    const incorrectIds =
+    examAnswers.filter(a=>!a.correct).map(a=>a.id);
+
+    const totalScore =
+    Math.round(totalCorrect / examAnswers.length * 1000);
+
+    const passed =
+    totalScore >= 600 &&
+    categories.every(cat=> stats[cat].score >= 300);
+
+    const examResult = {
+
+        date: new Date().toISOString(),
+
+        totalQuestions: examAnswers.length,
+
+        totalCorrect: totalCorrect,
+
+        totalScore: totalScore,
+
+        passed: passed,
+
+        stats: stats,
+
+        incorrectIds: incorrectIds
+
+    };
+
+    sessionStorage.setItem(
+
+        "examResult",
+
+        JSON.stringify(examResult)
+
+    );
+
+    // 模擬試験の受験履歴として簡易保存
+    progress.examHistory = progress.examHistory || [];
+
+    progress.examHistory.push({
+
+        date: examResult.date,
+
+        totalScore: totalScore,
+
+        passed: passed
+
+    });
+
+    if (progress.examHistory.length > 50) {
+
+        progress.examHistory.shift();
+
+    }
+
+    saveProgress(progress);
+
+    location.href = "result.html";
+
+}
+
 
 nextBtn.onclick = () => {
 

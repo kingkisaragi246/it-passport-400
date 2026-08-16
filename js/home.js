@@ -131,6 +131,44 @@ if(reviewBtn){
 }
 
 // -------------------------------
+// Mock Exam（模擬試験）
+// -------------------------------
+
+const examBtn =
+document.getElementById("examBtn");
+
+if(examBtn){
+
+    examBtn.onclick = ()=>{
+
+        const strategyCount = getCategoryCount("ストラテジ系");
+        const managementCount = getCategoryCount("マネジメント系");
+        const technologyCount = getCategoryCount("テクノロジ系");
+
+        if (strategyCount < 35 || managementCount < 20 || technologyCount < 45) {
+
+            alert(
+"模擬試験を実施するには、各分野に一定数以上の問題が必要です。\n" +
+`（ストラテジ系: ${strategyCount}/35、マネジメント系: ${managementCount}/20、テクノロジ系: ${technologyCount}/45）`
+            );
+
+            return;
+
+        }
+
+        sessionStorage.setItem(
+            "studyMode",
+            "exam"
+        );
+
+        location.href =
+        "pages/study.html";
+
+    };
+
+}
+
+// -------------------------------
 // Category Study
 // -------------------------------
 
