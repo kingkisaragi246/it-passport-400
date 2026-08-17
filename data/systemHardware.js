@@ -6,6 +6,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"CPU（Central Processing Unit）の主な役割として最も適切なものはどれか。",
@@ -96,6 +98,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"CPU（Central Processing Unit）に含まれる制御装置の役割はどれか。",
@@ -174,6 +178,8 @@ const systemHardwareQuestions = [
     id:603,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:2,
 
@@ -254,6 +260,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"クロック周波数の説明として適切なものはどれか。",
@@ -333,6 +341,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"マルチコアCPU（Central Processing Unit）の特徴として、最も適切なものはどれか。",
@@ -411,6 +421,8 @@ const systemHardwareQuestions = [
     id:606,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -492,6 +504,8 @@ const systemHardwareQuestions = [
     id:607,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:2,
 
@@ -586,6 +600,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"ROM（Read Only Memory）の特徴として適切なものはどれか。",
@@ -664,6 +680,8 @@ const systemHardwareQuestions = [
     id:609,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -745,6 +763,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"主記憶装置（メインメモリ）の役割として適切なものはどれか。",
@@ -824,6 +844,8 @@ const systemHardwareQuestions = [
     id:611,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:2,
 
@@ -905,6 +927,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"SSD（Solid State Drive）の特徴として最も適切なものはどれか。",
@@ -983,6 +1007,8 @@ const systemHardwareQuestions = [
     id:613,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:2,
 
@@ -1064,6 +1090,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"USB（Universal Serial Bus）メモリに利用されている記憶方式はどれか。",
@@ -1143,6 +1171,8 @@ const systemHardwareQuestions = [
     id:615,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:2,
 
@@ -1224,6 +1254,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"VRAM（Video RAM：Random Access Memory）の役割として適切なものはどれか。",
@@ -1302,6 +1334,8 @@ const systemHardwareQuestions = [
     id:617,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:4,
 
@@ -1382,6 +1416,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"ページングの説明として、最も適切なものはどれか。",
@@ -1461,6 +1497,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"スワッピングとはどのような処理か。",
@@ -1539,6 +1577,8 @@ const systemHardwareQuestions = [
     id:620,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -1620,6 +1660,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"RAID1（Redundant Arrays of Inexpensive Disksのミラーリング構成）の特徴として適切なものはどれか。",
@@ -1699,6 +1741,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"RAID0（Redundant Arrays of Inexpensive Disksのストライピング構成）の特徴として適切なものはどれか。",
@@ -1776,6 +1820,8 @@ const systemHardwareQuestions = [
     id:624,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:5,
 
@@ -1856,6 +1902,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"入力装置として適切なものはどれか。",
@@ -1933,6 +1981,8 @@ const systemHardwareQuestions = [
     id:626,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -2012,6 +2062,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"タッチパネルの特徴として適切なものはどれか。",
@@ -2089,6 +2141,8 @@ const systemHardwareQuestions = [
     id:628,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -2169,6 +2223,8 @@ const systemHardwareQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"電源装置（PSU：Power Supply Unit）の役割として適切なものはどれか。",
@@ -2246,6 +2302,8 @@ const systemHardwareQuestions = [
     id:630,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:4,
 

@@ -6,6 +6,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"ファイアウォールの機能として、最も適切なものはどれか。",
@@ -106,6 +108,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"ウイルス対策ソフトの機能として、最も適切なものはどれか。",
@@ -200,6 +204,8 @@ const securityQuestions = [
     id:3,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -302,6 +308,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"フィッシング詐欺の目的として、最も適切なものはどれか。",
@@ -393,6 +401,8 @@ const securityQuestions = [
     id:5,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -490,6 +500,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"ランサムウェアの特徴として、最も適切なものはどれか。",
@@ -570,6 +582,8 @@ const securityQuestions = [
     id:7,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -660,6 +674,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"VPN（Virtual Private Network）を利用する目的として、最も適切なものはどれか。",
@@ -740,6 +756,8 @@ const securityQuestions = [
     id:9,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -836,6 +854,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"デジタル署名の目的として、最も適切なものはどれか。",
@@ -926,6 +946,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"企業がテレワーク環境において、社外から社内ネットワークへ安全に接続する手段として、最も適切なものはどれか。",
@@ -1009,6 +1031,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"二要素認証を構成する組合せとして、最も適切なものはどれか。",
@@ -1088,6 +1112,8 @@ const securityQuestions = [
     id:13,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -1170,6 +1196,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"SSL/TLS（Secure Sockets Layer / Transport Layer Security）の役割として、最も適切なものはどれか。",
@@ -1249,6 +1277,8 @@ const securityQuestions = [
     id:15,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -1330,6 +1360,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"スパイウェアの説明として、最も適切なものはどれか。",
@@ -1410,6 +1442,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"キーロガーの目的として、最も適切なものはどれか。",
@@ -1489,6 +1523,8 @@ const securityQuestions = [
     id:18,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -1579,6 +1615,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"SQL（Structured Query Language）インジェクション攻撃が主に狙う対象として、最も適切なものはどれか。",
@@ -1659,6 +1697,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"クロスサイトスクリプティング（XSS：Cross Site Scripting）の説明として、最も適切なものはどれか。",
@@ -1738,6 +1778,8 @@ const securityQuestions = [
     id:21,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -1821,6 +1863,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"DLP（Data Loss Prevention）の説明として最も適切なものはどれか。",
@@ -1901,6 +1945,8 @@ const securityQuestions = [
     id:23,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -1984,6 +2030,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"クリックジャッキングの説明として最も適切なものはどれか。",
@@ -2066,6 +2114,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"ステガノグラフィの説明として最も適切なものはどれか。",
@@ -2146,6 +2196,8 @@ const securityQuestions = [
     id:26,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -2237,6 +2289,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"DDoS（Distributed Denial of Service）攻撃の特徴として、最も適切なものはどれか。",
@@ -2326,6 +2380,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"ブルートフォース攻撃の説明として、最も適切なものはどれか。",
@@ -2406,6 +2462,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"辞書攻撃の説明として、最も適切なものはどれか。",
@@ -2485,6 +2543,8 @@ const securityQuestions = [
     id:30,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -2568,6 +2628,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"パスワードリスト攻撃の説明として、最も適切なものはどれか。",
@@ -2648,6 +2710,8 @@ const securityQuestions = [
     id:32,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -2731,6 +2795,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"標的型攻撃メールの特徴として、最も適切なものはどれか。",
@@ -2811,6 +2877,8 @@ const securityQuestions = [
     id:34,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -2893,6 +2961,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"CSRF（クロスサイトリクエストフォージェリ）の説明として、最も適切なものはどれか。",
@@ -2972,6 +3042,8 @@ const securityQuestions = [
     id:36,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -3055,6 +3127,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"電子証明書の役割として、最も適切なものはどれか。",
@@ -3134,6 +3208,8 @@ const securityQuestions = [
     id:38,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:5,
 
@@ -3216,6 +3292,8 @@ const securityQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:5,
 
     question:"ハッシュ関数の特徴として、最も適切なものはどれか。",
@@ -3296,6 +3374,8 @@ const securityQuestions = [
     id:40,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 

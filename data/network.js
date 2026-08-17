@@ -6,6 +6,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"IPアドレス（Internet Protocol Address）の役割として最も適切なものはどれか。",
@@ -110,6 +112,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"MACアドレス（Media Access Control Address）の特徴として適切なものはどれか。",
@@ -204,6 +208,8 @@ const networkQuestions = [
     id:103,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:2,
 
@@ -311,6 +317,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"DHCP（Dynamic Host Configuration Protocol）サーバの役割はどれか。",
@@ -408,6 +416,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"LAN（Local Area Network）の説明として適切なものはどれか。",
@@ -503,6 +513,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"WAN（Wide Area Network）の説明として適切なものはどれか。",
@@ -597,6 +609,8 @@ const networkQuestions = [
     id:107,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -695,6 +709,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"スイッチ（L2スイッチ）の役割はどれか。",
@@ -786,6 +802,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"リピータハブの特徴として適切なものはどれか。",
@@ -875,6 +893,8 @@ const networkQuestions = [
     id:110,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -966,6 +986,8 @@ const networkQuestions = [
     id:111,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -1061,6 +1083,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"UDP（User Datagram Protocol）の特徴として適切なものはどれか。",
@@ -1151,6 +1175,8 @@ const networkQuestions = [
     id:113,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:2,
 
@@ -1243,6 +1269,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"HTTPS（HTTP Secure）の特徴として適切なものはどれか。",
@@ -1333,6 +1361,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"FTP（File Transfer Protocol）の役割として適切なものはどれか。",
@@ -1422,6 +1452,8 @@ const networkQuestions = [
     id:116,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:2,
 
@@ -1514,6 +1546,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"POP3（Post Office Protocol version 3）の役割として適切なものはどれか。",
@@ -1604,6 +1638,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"IMAP（Internet Message Access Protocol）の特徴として適切なものはどれか。",
@@ -1692,6 +1728,8 @@ const networkQuestions = [
     id:119,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:2,
 
@@ -1789,6 +1827,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"ドメイン名の役割として適切なものはどれか。",
@@ -1879,6 +1919,8 @@ const networkQuestions = [
     id:121,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:4,
 
@@ -1975,6 +2017,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"無線LAN（Local Area Network）規格であるIEEE802.11（Institute of Electrical and Electronics Engineers策定の規格）シリーズの説明として最も適切なものはどれか。",
@@ -2066,6 +2110,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:2,
 
     question:"Bluetoothの特徴として最も適切なものはどれか。",
@@ -2155,6 +2201,8 @@ const networkQuestions = [
     id:124,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -2250,6 +2298,8 @@ const networkQuestions = [
     id:125,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -2351,6 +2401,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:4,
 
     question:"パケット交換方式の説明として最も適切なものはどれか。",
@@ -2445,6 +2497,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:4,
 
     question:"NAT（Network Address Translation）の役割として最も適切なものはどれか。",
@@ -2535,6 +2589,8 @@ const networkQuestions = [
     id:128,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:4,
 
@@ -2628,6 +2684,8 @@ const networkQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"ネットワークの疎通確認に使われるpingコマンドの役割として最も適切なものはどれか。",
@@ -2718,6 +2776,8 @@ const networkQuestions = [
     id:130,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:4,
 

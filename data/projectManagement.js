@@ -6,6 +6,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"プロジェクトの説明として最も適切なものはどれか。",
@@ -94,6 +96,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"プロジェクトマネージャ（PM：Project Manager）の役割として、最も適切なものはどれか。",
@@ -176,6 +180,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"WBS（Work Breakdown Structure）の説明として、最も適切なものはどれか。",
@@ -254,6 +260,8 @@ const projectManagementQuestions = [
     id:304,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -334,6 +342,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:5,
 
     question:"プロジェクト管理におけるクリティカルパスとは何か。",
@@ -412,6 +422,8 @@ const projectManagementQuestions = [
     id:306,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -494,6 +506,8 @@ const projectManagementQuestions = [
     id:307,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -586,6 +600,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"システム開発においてレビューを実施する主な目的として、最も適切なものはどれか。",
@@ -667,6 +683,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:5,
 
     question:"PMO（Project Management Office）の役割として、最も適切なものはどれか。",
@@ -747,6 +765,8 @@ const projectManagementQuestions = [
     id:310,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -830,6 +850,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"SLA（Service Level Agreement）の説明として適切なものはどれか。",
@@ -911,6 +933,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"KPI（Key Performance Indicator）の説明として適切なものはどれか。",
@@ -990,6 +1014,8 @@ const projectManagementQuestions = [
     id:313,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -1079,6 +1105,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"PDCA（Plan・Do・Check・Act）サイクルのPは何を表すか。",
@@ -1160,6 +1188,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"ベンチマーキングの説明として、最も適切なものはどれか。",
@@ -1240,6 +1270,8 @@ const projectManagementQuestions = [
     id:316,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:5,
 
@@ -1323,6 +1355,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"プロジェクト管理におけるコスト管理の目的として、最も適切なものはどれか。",
@@ -1404,6 +1438,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"プロジェクト管理におけるスコープ管理とは、何を管理することか。",
@@ -1483,6 +1519,8 @@ const projectManagementQuestions = [
     id:319,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -1565,6 +1603,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:5,
 
     question:"品質保証（QA：Quality Assurance）の目的として、最も適切なものはどれか。",
@@ -1646,6 +1686,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"QC（Quality Control）七つ道具を用いる目的として、最も適切なものはどれか。",
@@ -1726,6 +1768,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"パレート図の特徴として適切なものはどれか。",
@@ -1805,6 +1849,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:4,
 
     question:"特性要因図（フィッシュボーン図）の目的はどれか。",
@@ -1882,6 +1928,8 @@ const projectManagementQuestions = [
     id:324,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -1962,6 +2010,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"ヒストグラムの特徴として適切なものはどれか。",
@@ -2041,6 +2091,8 @@ const projectManagementQuestions = [
     id:326,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -2123,6 +2175,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"QC（Quality Control）七つ道具の1つであるチェックシートの目的として、最も適切なものはどれか。",
@@ -2204,6 +2258,8 @@ const projectManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"フローチャートの目的として、最も適切なものはどれか。",
@@ -2283,6 +2339,8 @@ const projectManagementQuestions = [
     id:329,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:5,
 
@@ -2366,6 +2424,8 @@ const projectManagementQuestions = [
     id:330,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:5,
 

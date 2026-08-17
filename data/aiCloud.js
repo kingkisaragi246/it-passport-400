@@ -6,6 +6,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:2,
 
     question:"クラウドコンピューティングの説明として最も適切なものはどれか。",
@@ -87,6 +89,8 @@ const aiCloudQuestions = [
     id:1002,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -184,6 +188,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"PaaS（Platform as a Service）の説明として最も適切なものはどれか。",
@@ -274,6 +280,8 @@ const aiCloudQuestions = [
     id:1004,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -366,6 +374,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"特定の企業や組織だけが専用に利用するクラウド環境を何というか。",
@@ -446,6 +456,8 @@ const aiCloudQuestions = [
     id:1006,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:2,
 
@@ -528,6 +540,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"自社で保有するサーバ設備を用いて情報システムを構築・運用する形態を何というか。",
@@ -608,6 +622,8 @@ const aiCloudQuestions = [
     id:1008,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:4,
 
@@ -690,6 +706,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:2,
 
     question:"人工知能（AI：Artificial Intelligence）の説明として最も適切なものはどれか。",
@@ -770,6 +788,8 @@ const aiCloudQuestions = [
     id:1010,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -867,6 +887,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"ディープラーニング（深層学習）の説明として最も適切なものはどれか。",
@@ -949,6 +971,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"ニューラルネットワークの説明として最も適切なものはどれか。",
@@ -1029,6 +1053,8 @@ const aiCloudQuestions = [
     id:1013,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -1121,6 +1147,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"生成AIが、事実に基づかない情報をもっともらしく生成してしまう現象を何というか。",
@@ -1201,6 +1229,8 @@ const aiCloudQuestions = [
     id:1015,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -1284,6 +1314,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"AIの判断根拠を人間が理解できる形で説明できるようにする技術や考え方を何というか。",
@@ -1364,6 +1396,8 @@ const aiCloudQuestions = [
     id:1017,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -1446,6 +1480,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:2,
 
     question:"IoT（Internet of Things）の説明として最も適切なものはどれか。",
@@ -1527,6 +1563,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"ビッグデータの説明として最も適切なものはどれか。",
@@ -1607,6 +1645,8 @@ const aiCloudQuestions = [
     id:1020,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:4,
 
@@ -1690,6 +1730,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"RPA（Robotic Process Automation）の説明として最も適切なものはどれか。",
@@ -1770,6 +1812,8 @@ const aiCloudQuestions = [
     id:1022,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:2,
 
@@ -1852,6 +1896,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"自社のサービスに、地図情報や決済機能など外部の機能をWeb API（Application Programming Interface）経由で組み込む取り組みの利点として最も適切なものはどれか。",
@@ -1932,6 +1978,8 @@ const aiCloudQuestions = [
     id:1024,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:4,
 
@@ -2014,6 +2062,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"複数のクラウドサービスや自社設備を組み合わせて利用する形態を何というか。",
@@ -2095,6 +2145,8 @@ const aiCloudQuestions = [
     id:1026,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:2,
 
@@ -2179,6 +2231,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"新しい技術やアイディアの実現可能性を、開発の前段階で検証することを何というか。",
@@ -2259,6 +2313,8 @@ const aiCloudQuestions = [
     id:1028,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -2341,6 +2397,8 @@ const aiCloudQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"AIを開発・利用するにあたり、公平性、透明性、説明責任などに配慮する取り組みを総称して何というか。",
@@ -2422,6 +2480,8 @@ const aiCloudQuestions = [
     id:1030,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 

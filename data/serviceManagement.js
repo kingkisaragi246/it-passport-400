@@ -6,6 +6,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"IT（Information Technology）サービスマネジメントの説明として最も適切なものはどれか。",
@@ -87,6 +89,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"ITIL（Information Technology Infrastructure Library）の説明として最も適切なものはどれか。",
@@ -167,6 +171,8 @@ const serviceManagementQuestions = [
     id:903,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -258,6 +264,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:4,
 
     question:"SLM（サービスレベルマネジメント）の説明として最も適切なものはどれか。",
@@ -338,6 +346,8 @@ const serviceManagementQuestions = [
     id:905,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -429,6 +439,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"問題管理の目的として最も適切なものはどれか。",
@@ -509,6 +521,8 @@ const serviceManagementQuestions = [
     id:907,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -591,6 +605,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"構成管理の目的として最も適切なものはどれか。",
@@ -671,6 +687,8 @@ const serviceManagementQuestions = [
     id:909,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:2,
 
@@ -753,6 +771,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"システム監査の目的として最も適切なものはどれか。",
@@ -833,6 +853,8 @@ const serviceManagementQuestions = [
     id:911,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -915,6 +937,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"システム監査人に求められる「独立性」の説明として最も適切なものはどれか。",
@@ -995,6 +1019,8 @@ const serviceManagementQuestions = [
     id:913,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -1088,6 +1114,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:4,
 
     question:"システムに障害が発生した際、被害の拡大を防ぐために安全側に停止させる設計思想を何というか。",
@@ -1168,6 +1196,8 @@ const serviceManagementQuestions = [
     id:915,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -1251,6 +1281,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"BCP（事業継続計画）の説明として最も適切なものはどれか。",
@@ -1331,6 +1363,8 @@ const serviceManagementQuestions = [
     id:917,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -1413,6 +1447,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"システム障害に備えたデータのバックアップに関する説明として最も適切なものはどれか。",
@@ -1493,6 +1529,8 @@ const serviceManagementQuestions = [
     id:919,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -1575,6 +1613,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"システムの保守性を評価する指標であるMTTR（平均修復時間）の説明として最も適切なものはどれか。",
@@ -1655,6 +1695,8 @@ const serviceManagementQuestions = [
     id:921,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -1738,6 +1780,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"無停電電源装置（UPS：Uninterruptible Power Supply）の主な役割として最も適切なものはどれか。",
@@ -1819,6 +1863,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"データセンターにおける空調設備の主な目的として最も適切なものはどれか。",
@@ -1899,6 +1945,8 @@ const serviceManagementQuestions = [
     id:924,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -1982,6 +2030,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"ヘルプデスクにおけるエスカレーションの説明として最も適切なものはどれか。",
@@ -2062,6 +2112,8 @@ const serviceManagementQuestions = [
     id:926,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -2144,6 +2196,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"業務の一部を外部の専門業者に委託することを何というか。",
@@ -2224,6 +2278,8 @@ const serviceManagementQuestions = [
     id:928,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -2306,6 +2362,8 @@ const serviceManagementQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"システム開発や運用における「レビュー」の目的として最も適切なものはどれか。",
@@ -2386,6 +2444,8 @@ const serviceManagementQuestions = [
     id:930,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 

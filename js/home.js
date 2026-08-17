@@ -221,13 +221,18 @@ if(categoryButtons){
 
         card.className = "menuCard categoryCard";
 
-        card.innerHTML =
+        const mainArea =
+        document.createElement("div");
+
+        mainArea.className = "categoryMainArea";
+
+        mainArea.innerHTML =
         `<h3>${category}</h3>` +
         `<p>${total}問` +
         (rate === null ? "" : `　正答率${rate}%`) +
         `</p>`;
 
-        card.onclick = ()=>{
+        mainArea.onclick = ()=>{
 
             sessionStorage.setItem(
                 "studyMode",
@@ -243,6 +248,8 @@ if(categoryButtons){
             "pages/study.html";
 
         };
+
+        card.appendChild(mainArea);
 
         if (categoryReviewCount > 0) {
 
@@ -274,6 +281,92 @@ if(categoryButtons){
             };
 
             card.appendChild(reviewLink);
+
+        }
+
+        // -------------------------------
+        // サブカテゴリ（分野内の細かい分類）の開閉トグル
+        // -------------------------------
+
+        const subcategories =
+        getSubcategoryList(category);
+
+        if (subcategories.length > 0) {
+
+            const toggleBtn =
+            document.createElement("button");
+
+            toggleBtn.className = "subcategoryToggle";
+
+            toggleBtn.textContent =
+            `▼ 分野を絞り込む（${subcategories.length}分野）`;
+
+            const subcategoryList =
+            document.createElement("div");
+
+            subcategoryList.className = "subcategoryList";
+
+            subcategoryList.style.display = "none";
+
+            subcategories.forEach(subcategory=>{
+
+                const subTotal =
+                getSubcategoryCount(category, subcategory);
+
+                const subBtn =
+                document.createElement("button");
+
+                subBtn.className = "subcategoryButton";
+
+                subBtn.textContent =
+                `${subcategory}（${subTotal}問）`;
+
+                subBtn.onclick = (e)=>{
+
+                    e.stopPropagation();
+
+                    sessionStorage.setItem(
+                        "studyMode",
+                        "subcategory"
+                    );
+
+                    sessionStorage.setItem(
+                        "studyCategory",
+                        category
+                    );
+
+                    sessionStorage.setItem(
+                        "studySubcategory",
+                        subcategory
+                    );
+
+                    location.href =
+                    "pages/study.html";
+
+                };
+
+                subcategoryList.appendChild(subBtn);
+
+            });
+
+            toggleBtn.onclick = (e)=>{
+
+                e.stopPropagation();
+
+                const isHidden =
+                subcategoryList.style.display === "none";
+
+                subcategoryList.style.display =
+                isHidden ? "flex" : "none";
+
+                toggleBtn.textContent =
+                (isHidden ? "▲ 分野を絞り込む（" : "▼ 分野を絞り込む（") +
+                subcategories.length + "分野）";
+
+            };
+
+            card.appendChild(toggleBtn);
+            card.appendChild(subcategoryList);
 
         }
 

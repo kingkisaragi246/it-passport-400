@@ -6,6 +6,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"システム開発ライフサイクル（SDLC：System Development Life Cycle）の説明として、最も適切なものはどれか。",
@@ -100,6 +102,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"要件定義の目的として最も適切なものはどれか。",
@@ -179,6 +183,8 @@ const systemDevelopmentQuestions = [
     id:503,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -260,6 +266,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"内部設計（詳細設計）の説明として適切なものはどれか。",
@@ -338,6 +346,8 @@ const systemDevelopmentQuestions = [
     id:505,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -419,6 +429,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"単体テスト（Unit Test）の説明として最も適切なものはどれか。",
@@ -498,6 +510,8 @@ const systemDevelopmentQuestions = [
     id:507,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -579,6 +593,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"システムテストの説明として、最も適切なものはどれか。",
@@ -658,6 +674,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"受入テスト（Acceptance Test）の説明として適切なものはどれか。",
@@ -736,6 +754,8 @@ const systemDevelopmentQuestions = [
     id:516,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -828,6 +848,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"CI（継続的インテグレーション）の目的として、最も適切なものはどれか。",
@@ -909,6 +931,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:5,
 
     question:"CD（継続的デリバリー／継続的デプロイメント）の説明として、最も適切なものはどれか。",
@@ -988,6 +1012,8 @@ const systemDevelopmentQuestions = [
     id:520,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -1069,6 +1095,8 @@ const systemDevelopmentQuestions = [
     id:521,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -1153,6 +1181,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"UML（統一モデリング言語）の目的として、最も適切なものはどれか。",
@@ -1232,6 +1262,8 @@ const systemDevelopmentQuestions = [
     id:523,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -1313,6 +1345,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"SDK（Software Development Kit）の説明として適切なものはどれか。",
@@ -1391,6 +1425,8 @@ const systemDevelopmentQuestions = [
     id:525,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -1471,6 +1507,8 @@ const systemDevelopmentQuestions = [
     id:526,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -1554,6 +1592,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"フレームワークを利用する主な目的として、最も適切なものはどれか。",
@@ -1634,6 +1674,8 @@ const systemDevelopmentQuestions = [
     id:528,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -1717,6 +1759,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"デバッグの目的として、最も適切なものはどれか。",
@@ -1798,6 +1842,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"コードレビューやウォークスルーを実施する目的として、最も適切なものはどれか。",
@@ -1878,6 +1924,8 @@ const systemDevelopmentQuestions = [
     id:531,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -1971,6 +2019,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"プロトタイピングモデルの説明として最も適切なものはどれか。",
@@ -2061,6 +2111,8 @@ const systemDevelopmentQuestions = [
     id:533,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -2153,6 +2205,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"コードレビューの目的として最も適切なものはどれか。",
@@ -2243,6 +2297,8 @@ const systemDevelopmentQuestions = [
     id:535,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -2335,6 +2391,8 @@ const systemDevelopmentQuestions = [
     id:536,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -2433,6 +2491,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"ホワイトボックステストの説明として最も適切なものはどれか。",
@@ -2523,6 +2583,8 @@ const systemDevelopmentQuestions = [
     id:538,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -2615,6 +2677,8 @@ const systemDevelopmentQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"回帰テスト（リグレッションテスト）の目的として最も適切なものはどれか。",
@@ -2705,6 +2769,8 @@ const systemDevelopmentQuestions = [
     id:540,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 

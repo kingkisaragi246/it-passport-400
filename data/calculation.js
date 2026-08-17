@@ -6,6 +6,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"2進数「11001」を10進数に変換した値として適切なものはどれか。",
@@ -100,6 +102,8 @@ const calculationQuestions = [
     id:1202,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -196,6 +200,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"16進数「2A」を10進数に変換した値として適切なものはどれか。",
@@ -291,6 +297,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"8ビットの2の補数表現で「－5」を表したものとして適切なものはどれか。",
@@ -380,6 +388,8 @@ const calculationQuestions = [
     id:1205,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -478,6 +488,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"2進数「1010」と「0101」の論理和（OR）を求めた結果として適切なものはどれか。",
@@ -574,6 +586,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"2進数「1101」と「1011」の排他的論理和（XOR：eXclusive OR）を求めた結果として適切なものはどれか。",
@@ -665,6 +679,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"8ビットの2進数「00001111」の否定（NOT）を求めた結果として適切なものはどれか。",
@@ -755,6 +771,8 @@ const calculationQuestions = [
     id:1209,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -853,6 +871,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"サブネットマスク「255.255.255.192」（/26）を使用した場合、1つのサブネットに割り当てられるホストアドレスの数として適切なものはどれか。",
@@ -947,6 +967,8 @@ const calculationQuestions = [
     id:1211,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -1044,6 +1066,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"200GBのディスク2台をRAID1（Redundant Arrays of Inexpensive Disksのミラーリング構成）で構成した場合、実際に利用できる容量として適切なものはどれか。",
@@ -1135,6 +1159,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"200GBのディスク4台をRAID5（Redundant Arrays of Inexpensive Disksのパリティ分散構成）で構成した場合の実効容量として適切なものはどれか。",
@@ -1225,6 +1251,8 @@ const calculationQuestions = [
     id:1214,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:4,
 
@@ -1321,6 +1349,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"稼働率0.9の機器2台を並列（両方が故障したときのみ停止）で構成したとき、全体の稼働率として適切なものはどれか。",
@@ -1412,6 +1442,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"あるプログラムの処理のうち90%は並列化が可能で、残り10%は並列化できない場合、Amdahlの法則に基づき、プロセッサ数を無限に増やしたときの理論上の最大高速化率として適切なものはどれか。",
@@ -1501,6 +1533,8 @@ const calculationQuestions = [
     id:1217,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:4,
 
@@ -1592,6 +1626,8 @@ const calculationQuestions = [
     id:1218,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -1689,6 +1725,8 @@ const calculationQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"ハッシュ関数の性質として最も適切なものはどれか。",
@@ -1778,6 +1816,8 @@ const calculationQuestions = [
     id:1220,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:4,
 

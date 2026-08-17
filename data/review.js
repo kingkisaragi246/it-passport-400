@@ -6,6 +6,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"ソーシャルエンジニアリングの説明として最も適切なものはどれか。",
@@ -86,6 +88,8 @@ const reviewQuestions = [
     id:1104,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -168,6 +172,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"ISMS（情報セキュリティマネジメントシステム）の説明として最も適切なものはどれか。",
@@ -249,6 +255,8 @@ const reviewQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"マーケティングミックス（4P）に含まれる要素として適切な組合せはどれか。",
@@ -329,6 +337,8 @@ const reviewQuestions = [
     id:1117,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -412,6 +422,8 @@ const reviewQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"SCM（サプライチェーンマネジメント）の説明として最も適切なものはどれか。",
@@ -494,6 +506,8 @@ const reviewQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"ERP（統合基幹業務システム）の説明として最も適切なものはどれか。",
@@ -575,6 +589,8 @@ const reviewQuestions = [
     id:1120,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:3,
 
@@ -672,6 +688,8 @@ const reviewQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:2,
 
     question:"ガントチャートの説明として最も適切なものはどれか。",
@@ -761,6 +779,8 @@ const reviewQuestions = [
     id:1122,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -853,6 +873,8 @@ const reviewQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"ウォーターフォールモデルの説明として最も適切なものはどれか。",
@@ -933,6 +955,8 @@ const reviewQuestions = [
     id:1124,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -1015,6 +1039,8 @@ const reviewQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"システム開発のテスト工程のうち、プログラムの最小単位（モジュール）ごとに行うテストを何というか。",
@@ -1095,6 +1121,8 @@ const reviewQuestions = [
     id:1126,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -1178,6 +1206,8 @@ const reviewQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"発注者が、完成したシステムが要求仕様を満たしているかを最終的に確認するテストを何というか。",
@@ -1260,6 +1290,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:2,
 
     question:"OS（オペレーティングシステム）の役割として最も適切なものはどれか。",
@@ -1340,6 +1372,8 @@ const reviewQuestions = [
     id:1129,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -1422,6 +1456,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:3,
 
     question:"BIOS（Basic Input/Output System）の役割として、最も適切なものはどれか。",
@@ -1502,6 +1538,8 @@ const reviewQuestions = [
     id:1131,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -1585,6 +1623,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:4,
 
     question:"ハッシュ法の説明として最も適切なものはどれか。",
@@ -1666,6 +1706,8 @@ const reviewQuestions = [
     id:1133,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -1749,6 +1791,8 @@ const reviewQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"労働者派遣と請負を区別する最も重要な要素として適切なものはどれか。",
@@ -1831,6 +1875,8 @@ const reviewQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:4,
 
     question:"ISO（International Organization for Standardization）/IEC（International Electrotechnical Commission） 27001の説明として最も適切なものはどれか。",
@@ -1912,6 +1958,8 @@ const reviewQuestions = [
     id:1136,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:4,
 
@@ -1996,6 +2044,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"ブロックチェーンの説明として最も適切なものはどれか。",
@@ -2076,6 +2126,8 @@ const reviewQuestions = [
     id:1138,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -2159,6 +2211,8 @@ const reviewQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:4,
 
     question:"無線LAN（Local Area Network）のセキュリティを高めるための暗号化方式として、現在最も推奨されるものはどれか。",
@@ -2240,6 +2294,8 @@ const reviewQuestions = [
     id:1140,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 

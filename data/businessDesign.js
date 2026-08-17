@@ -6,6 +6,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"MOT（Management of Technology：技術経営）の説明として、最も適切なものはどれか。",
@@ -64,6 +66,8 @@ const businessDesignQuestions = [
     id:2002,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -125,6 +129,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"既存企業が、優れた技術や合理的な経営判断を積み重ねた結果、かえって新興企業の破壊的な技術革新に対応できなくなる現象を何というか。",
@@ -184,6 +190,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"利用者の視点に立ち、共感・課題定義・発想・試作・検証というプロセスを繰り返しながら問題解決を図る思考法を何というか。",
@@ -242,6 +250,8 @@ const businessDesignQuestions = [
     id:2005,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -303,6 +313,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:2,
 
     question:"POS（Point of Sales：販売時点情報管理）システムの説明として最も適切なものはどれか。",
@@ -361,6 +373,8 @@ const businessDesignQuestions = [
     id:2007,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -421,6 +435,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"スマートグリッドの説明として最も適切なものはどれか。",
@@ -479,6 +495,8 @@ const businessDesignQuestions = [
     id:2009,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -539,6 +557,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"MaaS（Mobility as a Service）の説明として最も適切なものはどれか。",
@@ -597,6 +617,8 @@ const businessDesignQuestions = [
     id:2011,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -657,6 +679,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"組込みシステムの説明として最も適切なものはどれか。",
@@ -715,6 +739,8 @@ const businessDesignQuestions = [
     id:2013,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:4,
 
@@ -775,6 +801,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"システム戦略・企画",
+
     level:4,
 
     question:"エンタープライズアーキテクチャ（EA）の説明として最も適切なものはどれか。",
@@ -833,6 +861,8 @@ const businessDesignQuestions = [
     id:2015,
 
     category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:4,
 
@@ -893,6 +923,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"システム戦略・企画",
+
     level:3,
 
     question:"システム企画における情報提供依頼（RFI：Request For Information）の説明として、最も適切なものはどれか。",
@@ -951,6 +983,8 @@ const businessDesignQuestions = [
     id:2017,
 
     category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:3,
 
@@ -1011,6 +1045,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"情報デザイン・メディア",
+
     level:3,
 
     question:"ユーザビリティの説明として最も適切なものはどれか。",
@@ -1069,6 +1105,8 @@ const businessDesignQuestions = [
     id:2019,
 
     category:"テクノロジ系",
+
+    subcategory:"情報デザイン・メディア",
 
     level:2,
 
@@ -1129,6 +1167,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"情報デザイン・メディア",
+
     level:3,
 
     question:"レスポンシブWebデザインの説明として最も適切なものはどれか。",
@@ -1187,6 +1227,8 @@ const businessDesignQuestions = [
     id:2022,
 
     category:"テクノロジ系",
+
+    subcategory:"情報デザイン・メディア",
 
     level:3,
 
@@ -1247,6 +1289,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"情報デザイン・メディア",
+
     level:3,
 
     question:"MPEG（Moving Picture Experts Group）の説明として最も適切なものはどれか。",
@@ -1305,6 +1349,8 @@ const businessDesignQuestions = [
     id:2024,
 
     category:"テクノロジ系",
+
+    subcategory:"情報デザイン・メディア",
 
     level:2,
 
@@ -1365,6 +1411,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"情報デザイン・メディア",
+
     level:3,
 
     question:"仮想現実（VR：Virtual Reality）と複合現実（MR：Mixed Reality）の違いとして、最も適切なものはどれか。",
@@ -1423,6 +1471,8 @@ const businessDesignQuestions = [
     id:2026,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -1483,6 +1533,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"損益分岐点の説明として最も適切なものはどれか。",
@@ -1541,6 +1593,8 @@ const businessDesignQuestions = [
     id:2028,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -1601,6 +1655,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"非機能要件の説明として最も適切なものはどれか。",
@@ -1659,6 +1715,8 @@ const businessDesignQuestions = [
     id:2030,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -1719,6 +1777,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"GPS（Global Positioning System）を活用したシステムの例として、最も適切なものはどれか。",
@@ -1777,6 +1837,8 @@ const businessDesignQuestions = [
     id:2032,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -1837,6 +1899,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"電子商取引におけるEDI（Electronic Data Interchange）の説明として最も適切なものはどれか。",
@@ -1896,6 +1960,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"トレーサビリティの説明として最も適切なものはどれか。",
@@ -1954,6 +2020,8 @@ const businessDesignQuestions = [
     id:2035,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:4,
 
@@ -2015,6 +2083,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"シェアリングエコノミーの説明として最も適切なものはどれか。",
@@ -2073,6 +2143,8 @@ const businessDesignQuestions = [
     id:2037,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -2133,6 +2205,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"経営組織における職能別組織の説明として最も適切なものはどれか。",
@@ -2192,6 +2266,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"マトリックス組織の説明として最も適切なものはどれか。",
@@ -2249,6 +2325,8 @@ const businessDesignQuestions = [
     id:2040,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:2,
 
@@ -2308,6 +2386,8 @@ const businessDesignQuestions = [
     id:2041,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -2369,6 +2449,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"キャッシュフロー計算書の説明として最も適切なものはどれか。",
@@ -2429,6 +2511,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"ROE（Return On Equity：自己資本利益率）の説明として最も適切なものはどれか。",
@@ -2488,6 +2572,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"ブレーンストーミングの説明として最も適切なものはどれか。",
@@ -2546,6 +2632,8 @@ const businessDesignQuestions = [
     id:2045,
 
     category:"マネジメント系",
+
+    subcategory:"システム監査",
 
     level:4,
 
@@ -2607,6 +2695,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム監査",
+
     level:3,
 
     question:"システム監査の実施プロセスにおける「監査計画」の説明として、最も適切なものはどれか。",
@@ -2666,6 +2756,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム監査",
+
     level:4,
 
     question:"システム監査における「フォローアップ」の説明として、最も適切なものはどれか。",
@@ -2724,6 +2816,8 @@ const businessDesignQuestions = [
     id:2048,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -2785,6 +2879,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"ワークライフバランスの説明として最も適切なものはどれか。",
@@ -2843,6 +2939,8 @@ const businessDesignQuestions = [
     id:2050,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -2903,6 +3001,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"ロードマップ（技術ロードマップ）の説明として最も適切なものはどれか。",
@@ -2961,6 +3061,8 @@ const businessDesignQuestions = [
     id:2052,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3021,6 +3123,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"生産方式におけるJIT（Just In Time）の説明として最も適切なものはどれか。",
@@ -3080,6 +3184,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:2,
 
     question:"e-ラーニングの説明として最も適切なものはどれか。",
@@ -3138,6 +3244,8 @@ const businessDesignQuestions = [
     id:2055,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -3199,6 +3307,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"ステークホルダーエンゲージメントの説明として最も適切なものはどれか。",
@@ -3257,6 +3367,8 @@ const businessDesignQuestions = [
     id:2057,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3318,6 +3430,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"ブルーオーシャン戦略の説明として最も適切なものはどれか。",
@@ -3376,6 +3490,8 @@ const businessDesignQuestions = [
     id:2059,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3437,6 +3553,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"差別化戦略の説明として最も適切なものはどれか。",
@@ -3497,6 +3615,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"バイラルマーケティングの説明として最も適切なものはどれか。",
@@ -3556,6 +3676,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"サブスクリプションモデルの説明として最も適切なものはどれか。",
@@ -3614,6 +3736,8 @@ const businessDesignQuestions = [
     id:2063,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3675,6 +3799,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"ロングテール戦略の説明として最も適切なものはどれか。",
@@ -3733,6 +3859,8 @@ const businessDesignQuestions = [
     id:2065,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3793,6 +3921,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"ナレッジマネジメントの説明として最も適切なものはどれか。",
@@ -3851,6 +3981,8 @@ const businessDesignQuestions = [
     id:2067,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -3912,6 +4044,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"業務提携（アライアンス）と合弁会社（ジョイントベンチャー）の違いとして、最も適切なものはどれか。",
@@ -3971,6 +4105,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:2,
 
     question:"コンビニエンスストアなどで導入されているセルフレジの目的として、最も適切なものはどれか。",
@@ -4029,6 +4165,8 @@ const businessDesignQuestions = [
     id:2070,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -4090,6 +4228,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"ベンチャーキャピタルの説明として最も適切なものはどれか。",
@@ -4150,6 +4290,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"サプライチェーンにおけるブルウィップ効果の説明として最も適切なものはどれか。",
@@ -4208,6 +4350,8 @@ const businessDesignQuestions = [
     id:2073,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -4269,6 +4413,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"アジャイルガバナンスの説明として最も適切なものはどれか。",
@@ -4328,6 +4474,8 @@ const businessDesignQuestions = [
     id:2075,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:2,
 
@@ -4389,6 +4537,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"デザイン経営の説明として最も適切なものはどれか。",
@@ -4449,6 +4599,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"スマートシティの説明として最も適切なものはどれか。",
@@ -4507,7 +4659,9 @@ const businessDesignQuestions = [
 
     id:2078,
 
-    category:"ストラテジ系",
+    category:"テクノロジ系",
+
+    subcategory:"情報デザイン・メディア",
 
     level:3,
 
@@ -4568,6 +4722,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"有機的成長（オーガニックグロース）の説明として最も適切なものはどれか。",
@@ -4626,6 +4782,8 @@ const businessDesignQuestions = [
     id:2080,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -4687,6 +4845,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"リスキリングとリカレント教育の違いとして、最も適切なものはどれか。",
@@ -4746,6 +4906,8 @@ const businessDesignQuestions = [
     id:2083,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -4808,6 +4970,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"モラルハザードの説明として最も適切なものはどれか。",
@@ -4868,6 +5032,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"プラットフォームビジネスの説明として最も適切なものはどれか。",
@@ -4926,6 +5092,8 @@ const businessDesignQuestions = [
     id:2087,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -4986,6 +5154,8 @@ const businessDesignQuestions = [
     id:2089,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -5048,6 +5218,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"3C分析の説明として最も適切なものはどれか。",
@@ -5107,6 +5279,8 @@ const businessDesignQuestions = [
     id:2093,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -5168,6 +5342,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"標準化戦略における「デファクトスタンダード」を獲得することの経営上のメリットとして、最も適切なものはどれか。",
@@ -5228,6 +5404,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"特定商取引法の目的として最も適切なものはどれか。",
@@ -5286,6 +5464,8 @@ const businessDesignQuestions = [
     id:2096,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -5347,6 +5527,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"障害者雇用促進法の趣旨として最も適切なものはどれか。",
@@ -5406,6 +5588,8 @@ const businessDesignQuestions = [
     id:2098,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -5467,6 +5651,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"自動運転レベルの説明として、レベル分けの考え方はどれか。",
@@ -5525,6 +5711,8 @@ const businessDesignQuestions = [
     id:2101,
 
     category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:4,
 
@@ -5586,6 +5774,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"システム戦略・企画",
+
     level:3,
 
     question:"情報システム戦略の策定における「情報システム化基本計画」の説明として、最も適切なものはどれか。",
@@ -5646,6 +5836,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"エンゲージメント（従業員エンゲージメント）の説明として最も適切なものはどれか。",
@@ -5704,6 +5896,8 @@ const businessDesignQuestions = [
     id:2107,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -5765,6 +5959,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"デジタルツインを活用したシミュレーションの経営上のメリットとして、最も適切なものはどれか。",
@@ -5823,6 +6019,8 @@ const businessDesignQuestions = [
     id:2110,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -5883,6 +6081,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"自己資本比率の説明として最も適切なものはどれか。",
@@ -5941,6 +6141,8 @@ const businessDesignQuestions = [
     id:2114,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:2,
 
@@ -6001,6 +6203,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"フィルターバブルの説明として最も適切なものはどれか。",
@@ -6060,6 +6264,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"エコーチェンバー現象の説明として最も適切なものはどれか。",
@@ -6117,6 +6323,8 @@ const businessDesignQuestions = [
     id:2117,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -6178,6 +6386,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"4C分析における『Customer Value（顧客価値）』の説明として、最も適切なものはどれか。",
@@ -6236,6 +6446,8 @@ const businessDesignQuestions = [
     id:2120,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:2,
 
@@ -6296,6 +6508,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:2,
 
     question:"フィンテック（FinTech）の説明として最も適切なものはどれか。",
@@ -6354,6 +6568,8 @@ const businessDesignQuestions = [
     id:2122,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:2,
 
@@ -6415,6 +6631,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"テレマティクスの説明として最も適切なものはどれか。",
@@ -6473,6 +6691,8 @@ const businessDesignQuestions = [
     id:2124,
 
     category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -6535,6 +6755,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"テスト駆動開発（TDD：Test Driven Development）の説明として、最も適切なものはどれか。",
@@ -6596,6 +6818,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"アジャイル開発の手法であるスクラムの説明として、最も適切なものはどれか。",
@@ -6655,6 +6879,8 @@ const businessDesignQuestions = [
     id:2128,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -6717,6 +6943,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:2,
 
     question:"サービスデスクにおけるチャットボットの活用目的として、最も適切なものはどれか。",
@@ -6777,6 +7005,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム監査",
+
     level:3,
 
     question:"システム監査における業務監査との違いとして、最も適切なものはどれか。",
@@ -6835,6 +7065,8 @@ const businessDesignQuestions = [
     id:2131,
 
     category:"マネジメント系",
+
+    subcategory:"システム監査",
 
     level:3,
 
@@ -6896,6 +7128,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"基盤モデル（Foundation Model）の説明として、最も適切なものはどれか。",
@@ -6955,6 +7189,8 @@ const businessDesignQuestions = [
     id:2135,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -7017,6 +7253,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"IPアドレスにおけるグローバルIPアドレスとプライベートIPアドレスの違いとして、最も適切なものはどれか。",
@@ -7076,6 +7314,8 @@ const businessDesignQuestions = [
     id:2138,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -7138,6 +7378,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"NFC（Near Field Communication：近距離無線通信）の説明として、最も適切なものはどれか。",
@@ -7197,6 +7439,8 @@ const businessDesignQuestions = [
     id:2140,
 
     category:"テクノロジ系",
+
+    subcategory:"ネットワーク",
 
     level:3,
 
@@ -7258,6 +7502,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"IoT機器向けの通信規格であるLPWA（Low Power Wide Area）の特徴として、最も適切なものはどれか。",
@@ -7318,6 +7564,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"プロキシサーバの役割として最も適切なものはどれか。",
@@ -7376,6 +7624,8 @@ const businessDesignQuestions = [
     id:2142,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -7438,6 +7688,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"IPS（Intrusion Prevention System：侵入防止システム）の説明として、最も適切なものはどれか。",
@@ -7498,6 +7750,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"IP-VPNとインターネットVPNの違いとして、最も適切なものはどれか。",
@@ -7555,6 +7809,8 @@ const businessDesignQuestions = [
     id:2145,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -7617,6 +7873,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:2,
 
     question:"バイオメトリクス認証（生体認証）の説明として、最も適切なものはどれか。",
@@ -7676,6 +7934,8 @@ const businessDesignQuestions = [
     id:2148,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -7737,6 +7997,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"セッションハイジャックの説明として最も適切なものはどれか。",
@@ -7794,6 +8056,8 @@ const businessDesignQuestions = [
     id:2150,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -7853,7 +8117,9 @@ const businessDesignQuestions = [
 
     id:2153,
 
-    category:"テクノロジ系",
+    category:"マネジメント系",
+
+    subcategory:"システム監査",
 
     level:3,
 
@@ -7915,6 +8181,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"リスクアセスメントの説明として最も適切なものはどれか。",
@@ -7973,6 +8241,8 @@ const businessDesignQuestions = [
     id:2155,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -8034,6 +8304,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"ネットワーク",
+
     level:3,
 
     question:"A社の情報システム部門では、ある日突然、社内の複数の利用者から「特定のWebサイトにだけアクセスできない」という問い合わせが相次いだ。調査の結果、そのWebサイトのドメイン名から正しいIPアドレスへの変換ができていないことが判明した。原因として考えられるサーバはどれか。",
@@ -8092,6 +8364,8 @@ const businessDesignQuestions = [
     id:2201,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -8153,6 +8427,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"C社では、あるスマートフォンアプリのログイン画面において、パスワードを1文字ずつ入力するたびにサーバへ問い合わせが発生し、応答時間から入力した文字が正しいかどうかが推測できてしまう不具合が見つかった。この不具合が悪用された場合、最も懸念される攻撃はどれか。",
@@ -8209,7 +8485,9 @@ const businessDesignQuestions = [
 
     id:2203,
 
-    category:"テクノロジ系",
+    category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -8270,6 +8548,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"E社では、あるデータベースのテーブルにおいて、同じ顧客の住所情報が複数のレコードに重複して登録されており、住所変更時にすべてのレコードを更新し忘れることで矛盾が生じる問題が発生していた。この問題を解決するために行うべき対応として、最も適切なものはどれか。",
@@ -8328,6 +8608,8 @@ const businessDesignQuestions = [
     id:2205,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -8388,6 +8670,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"G社のシステム開発プロジェクトでは、当初の計画よりも作業の進捗が遅れていることが判明した。プロジェクトマネージャが、遅延の原因となっている作業を特定するために確認すべき情報として、最も適切なものはどれか。",
@@ -8445,6 +8729,8 @@ const businessDesignQuestions = [
     id:2207,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -8505,6 +8791,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:4,
 
     question:"I社では、新しいシステムのリリース後、既存の機能の一部が動作しなくなるという不具合が複数の利用者から報告された。今後、同様の不具合を未然に防ぐために強化すべきテストとして、最も適切なものはどれか。",
@@ -8563,6 +8851,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"J社のサービスデスクでは、利用者からの問い合わせのうち、一次対応で解決できない専門的な内容が多く、対応の遅れが目立っている。この状況を改善するために整備すべき仕組みとして、最も適切なものはどれか。",
@@ -8620,7 +8910,9 @@ const businessDesignQuestions = [
 
     id:2210,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:4,
 
@@ -8681,6 +8973,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"L社は、既存の主力製品の売上が伸び悩む中、新たに開発した製品を、これまで参入していなかった海外市場に投入する計画を立てている。アンゾフの成長マトリクスにおいて、この戦略はどれに分類されるか。",
@@ -8739,6 +9033,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"M社は、自社製品の強みや弱み、業界の機会や脅威を整理した上で、経営戦略の見直しを行うことにした。この際に用いるフレームワークとして、最も適切なものはどれか。",
@@ -8796,6 +9092,8 @@ const businessDesignQuestions = [
     id:2213,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -8856,6 +9154,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"O社は、自社の主力製品と類似した機能を持つ製品が、複数の競合他社から相次いで低価格で発売され、価格competition以外での差別化が難しくなってきたと感じている。この状況を表す現象として、最も適切なものはどれか。",
@@ -8914,6 +9214,8 @@ const businessDesignQuestions = [
     id:2215,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -8974,6 +9276,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"Q社の従業員が出張先のホテルで、暗号化されていない無料の公衆Wi-Fiを使って、会社のメールにログインしようとしている。この行動に伴うリスクを軽減するために、最も適切な対策はどれか。",
@@ -9032,6 +9336,8 @@ const businessDesignQuestions = [
     id:2217,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -9092,6 +9398,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"S社の開発チームは、要件が固まりきっていない新規サービスの開発を依頼された。要件が開発の途中で頻繁に変更される可能性が高いことが予想される。このプロジェクトに最も適した開発モデルはどれか。",
@@ -9150,6 +9458,8 @@ const businessDesignQuestions = [
     id:2219,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:3,
 
@@ -9210,6 +9520,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:4,
 
     question:"U社の情報システム部門では、あるシステム障害の対応において、発生原因は特定できず暫定的な回避策で復旧させたものの、同じ障害が繰り返し発生している。この状況で、根本原因の特定と恒久対策を検討するために行うべき活動はどれか。",
@@ -9269,6 +9581,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"V社は、自社の主力事業が成熟期に入り成長率が鈍化する一方、高い成長が見込める新規事業への投資資金が不足していることに悩んでいる。この状況を分析するために、PPM（プロダクトポートフォリオマネジメント）の考え方を用いる場合、主力事業と新規事業はそれぞれどの象限に位置付けられると考えられるか。",
@@ -9327,6 +9641,8 @@ const businessDesignQuestions = [
     id:2222,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -9388,6 +9704,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"X社は、自社が持つ特殊な技術やノウハウについて、他社に真似されにくく、かつ複数の事業に応用可能な強みであると自負している。この強みを分析する際に用いる考え方として、最も適切なものはどれか。",
@@ -9445,7 +9763,9 @@ const businessDesignQuestions = [
 
     id:2224,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -9506,6 +9826,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"Z社は、自社の主要な取引先である下請事業者に対し、正当な理由なく発注後に代金を減額する行為を繰り返していた。この行為を規律する法律として、最も適切なものはどれか。",
@@ -9564,6 +9886,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"AA社は、これまで店舗での対面販売のみを行っていたが、新たにスマートフォンアプリを開発し、アプリ上で発行したクーポンを実店舗で利用できるようにする施策を開始した。この施策が狙う効果として、最も適切なものはどれか。",
@@ -9621,6 +9945,8 @@ const businessDesignQuestions = [
     id:2302,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -9681,6 +10007,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"AC社では、あるWebサービスにログイン中の利用者が、悪意のあるサイトを閲覧した際、そのサイトに埋め込まれた仕掛けにより、利用者が意図しないパスワード変更リクエストが自動的にAC社のサービスへ送信されてしまう被害が発生した。この攻撃はどれか。",
@@ -9740,6 +10068,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:3,
 
     question:"AD社のシステム部門は、あるバッチ処理の実行時間が想定より大幅に長くなっていることに気づいた。調査したところ、対象のテーブルに索引（インデックス）が設定されておらず、検索のたびにテーブル全体を走査していることが原因と判明した。この問題への対策として、最も適切なものはどれか。",
@@ -9797,6 +10127,8 @@ const businessDesignQuestions = [
     id:2305,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -9856,6 +10188,8 @@ const businessDesignQuestions = [
     id:2306,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -9917,6 +10251,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"AG社のシステム開発チームでは、これまで手作業で行っていたコードのビルド・テスト・デプロイの一連の作業を自動化する仕組みを導入した。この結果、コードの変更が頻繁に統合されるようになり、不具合の早期発見にもつながった。この仕組みが実現しているものとして、最も適切なものはどれか。",
@@ -9977,6 +10313,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"AH社では、新しいシステムの開発にあたり、利用者が実際に触れる試作品を早い段階で作成し、フィードバックを得ながら要件を固めていく方針を採用した。要件が曖昧な部分が多いプロジェクトにおいて、この方針を採用する理由として、最も適切なものはどれか。",
@@ -10035,6 +10373,8 @@ const businessDesignQuestions = [
     id:2309,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -10096,6 +10436,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"AJ社は、自社が開発した独自の技術規格について、あえて他社にもライセンスを提供し、多くの企業に採用してもらうことで、市場での標準的な地位を確立しようとしている。この狙いとして、最も適切なものはどれか。",
@@ -10153,6 +10495,8 @@ const businessDesignQuestions = [
     id:2311,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -10213,6 +10557,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"AL社では、生成AIを活用した業務効率化ツールの導入を検討しているが、AIが生成した情報の中に、事実に基づかない誤った内容が含まれることがあるという課題が報告されている。この課題を表す用語として、最も適切なものはどれか。",
@@ -10271,6 +10617,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"AM社の情報システム部門では、既存の基幹システムを新しいシステムへ移行するにあたり、旧システムのソースコードや設計書がほとんど残っていないことが判明した。旧システムの仕様を把握するために行うべき作業として、最も適切なものはどれか。",
@@ -10328,6 +10676,8 @@ const businessDesignQuestions = [
     id:2314,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -10389,6 +10739,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"AO社は、自社製品の販売実績データを分析し、特に売れ行きの良い上位2割の商品が、全体の売上の8割近くを占めていることを確認した。この分析結果を踏まえ、限られた経営資源を優先的に投入すべき対象を特定するために用いた考え方として、最も適切なものはどれか。",
@@ -10447,6 +10799,8 @@ const businessDesignQuestions = [
     id:2316,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -10507,6 +10861,8 @@ const businessDesignQuestions = [
     id:2317,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -10569,6 +10925,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"AR社は、自社の技術力だけでは実現が難しい新製品の開発にあたり、大学の研究室と共同で研究を行い、大学が持つ専門知識と自社の実用化ノウハウを組み合わせて開発を進めることにした。この取り組みとして、最も適切なものはどれか。",
@@ -10626,7 +10984,9 @@ const businessDesignQuestions = [
 
     id:2319,
 
-    category:"テクノロジ系",
+    category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:3,
 
@@ -10686,7 +11046,9 @@ const businessDesignQuestions = [
 
     id:2320,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:3,
 
@@ -10748,6 +11110,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"AU社の従業員が、私物のスマートフォンを業務にも利用したいと申請してきた。情報システム部門がこの制度を許可する場合、セキュリティ上あわせて整備すべき仕組みとして、最も適切なものはどれか。",
@@ -10806,6 +11170,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"コンピュータシステム",
+
     level:4,
 
     question:"AV社のシステム部門は、あるサーバのディスク使用量が急激に増加していることに気づいた。調査したところ、アプリケーションのログファイルが定期的に削除されず、無制限に蓄積され続けていたことが原因と判明した。この問題への恒久対策として、最も適切なものはどれか。",
@@ -10862,6 +11228,8 @@ const businessDesignQuestions = [
     id:2402,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -10921,6 +11289,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"AX社は、自社製品の販売実績データをもとに、優良顧客（Recency：最終購入日、Frequency：購入頻度、Monetary：購入金額）を分類し、優良顧客に対して重点的にキャンペーンを実施する方針を立てた。この分析手法として、最も適切なものはどれか。",
@@ -10979,6 +11349,8 @@ const businessDesignQuestions = [
     id:2404,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -11040,6 +11412,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"AZ社のプロジェクトマネージャは、プロジェクトの予算超過を防ぐため、各作業にかかる見積り工数を、過去の類似プロジェクトの実績データと比較しながら算出することにした。この見積り手法として、最も適切なものはどれか。",
@@ -11096,7 +11470,9 @@ const businessDesignQuestions = [
 
     id:2406,
 
-    category:"テクノロジ系",
+    category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -11155,6 +11531,8 @@ const businessDesignQuestions = [
     id:2407,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -11216,6 +11594,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"BC社は、自社の従業員に対し、業務に必要な新しいデジタルスキルを習得させるための研修プログラムを、社会人向けの学び直し施策として大規模に展開することにした。この取り組みを表す用語として、最も適切なものはどれか。",
@@ -11275,6 +11655,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"BD社のシステム運用チームは、あるサービスについて、利用者との間で「稼働率99.9%以上」「障害発生時は4時間以内に復旧」という具体的な数値目標を合意し、その達成状況を毎月報告している。この取り組みとして、最も適切なものはどれか。",
@@ -11332,6 +11714,8 @@ const businessDesignQuestions = [
     id:2410,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -11391,6 +11775,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"BF社の情報システム部門では、退職した従業員のアカウントが削除されずに残っていたため、退職後もそのアカウントで社内システムへアクセスできてしまう状態が発覚した。この問題への対策として、最も適切なものはどれか。",
@@ -11448,6 +11834,8 @@ const businessDesignQuestions = [
     id:2412,
 
     category:"マネジメント系",
+
+    subcategory:"サービスマネジメント",
 
     level:3,
 
@@ -11508,6 +11896,8 @@ const businessDesignQuestions = [
     id:2413,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -11570,6 +11960,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"情報デザイン・メディア",
+
     level:3,
 
     question:"BI社のWebサイトでは、モバイル端末からのアクセスが年々増加しているが、既存のサイトはパソコンでの表示を前提としたレイアウトのままであり、スマートフォンでは文字が小さく読みにくいという苦情が寄せられている。この課題への対応として、最も適切なものはどれか。",
@@ -11626,7 +12018,9 @@ const businessDesignQuestions = [
 
     id:2415,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:3,
 
@@ -11686,6 +12080,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"BK社は、社会的責任を果たす企業として、環境・社会・ガバナンスに配慮した経営を推進しており、機関投資家からもこの点を評価されて投資を受けるようになった。このような投資判断の考え方として、最も適切なものはどれか。",
@@ -11744,7 +12140,9 @@ const businessDesignQuestions = [
 
     id:2417,
 
-    category:"テクノロジ系",
+    category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -11803,7 +12201,9 @@ const businessDesignQuestions = [
 
     id:2418,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"システム戦略・企画",
 
     level:3,
 
@@ -11865,6 +12265,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"BN社は、自社工場の生産設備の稼働データをIoTセンサーで常時収集し、これまで定期的に行っていた部品交換を、実際の摩耗状況に応じたタイミングで行う方式に切り替えた。この取り組みの狙いとして、最も適切なものはどれか。",
@@ -11922,6 +12324,8 @@ const businessDesignQuestions = [
     id:2420,
 
     category:"テクノロジ系",
+
+    subcategory:"コンピュータシステム",
 
     level:3,
 
@@ -11981,6 +12385,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"プロジェクトマネジメント",
+
     level:3,
 
     question:"BP社では、あるシステムの開発プロジェクトにおいて、当初のスコープに含まれていなかった機能の追加要求が、開発の途中で次々と発注者から寄せられ、納期の遅延が懸念されている。この状況への対応として、最も適切なものはどれか。",
@@ -12038,6 +12444,8 @@ const businessDesignQuestions = [
     id:2422,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -12097,7 +12505,9 @@ const businessDesignQuestions = [
 
     id:2423,
 
-    category:"テクノロジ系",
+    category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -12156,6 +12566,8 @@ const businessDesignQuestions = [
     id:2424,
 
     category:"マネジメント系",
+
+    subcategory:"システム監査",
 
     level:4,
 
@@ -12216,6 +12628,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"BT社は、これまで社内に閉じていたシステムの機能の一部を、標準化されたインタフェースを通じて外部の企業やサービスから呼び出せるように公開した。この取り組みによって実現しようとしていることとして、最も適切なものはどれか。",
@@ -12275,6 +12689,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"BU社の従業員が、業務で使用しているノートパソコンを紛失した。このパソコンには、機密性の高い顧客情報が保存されていたが、ハードディスク全体が暗号化されていたため、情報漏えいには至らなかった。この事例において、被害を防いだ技術的対策として、最も適切なものはどれか。",
@@ -12332,6 +12748,8 @@ const businessDesignQuestions = [
     id:2427,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:3,
 
@@ -12392,6 +12810,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"BW社は、自社の新規事業の立ち上げにあたり、まず必要最小限の機能のみを持つ試作サービスを短期間でリリースし、実際の利用者の反応を見ながら、機能の追加や改善を繰り返していく方針を採用した。この進め方として、最も適切なものはどれか。",
@@ -12450,6 +12870,8 @@ const businessDesignQuestions = [
     id:2429,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -12510,6 +12932,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"BY社は、ITサービスマネジメントの国際的なベストプラクティス集を参考に、自社のインシデント管理・問題管理・変更管理のプロセスを体系的に整備することにした。この際に参考にする枠組みとして、最も適切なものはどれか。",
@@ -12569,6 +12993,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"著作権法における著作物に関する記述として、適切なものだけをすべて挙げたものはどれか。\na．原稿を用意せずに即興で行った講演も、著作物として保護される。\nb．時刻表に掲載されているバスの到着時刻は、著作物として保護される。\nc．高度な独創性を持つ技術の発明は、著作権法によって保護される。",
@@ -12626,7 +13052,9 @@ const businessDesignQuestions = [
 
     id:2501,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -12685,6 +13113,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"GDPR（EU一般データ保護規則）の適用範囲に関する記述として、適切なものだけをすべて挙げたものはどれか。\na．EU域内に拠点がある事業者が、EU域内に対してデータやサービスを提供している場合は、適用対象となる。\nb．EU域内に拠点がある事業者が、EU域外（アジアや米国など）に対してのみデータやサービスを提供している場合は、適用対象とならない。\nc．EU域内に拠点がない事業者が、EU域外に対してのみデータやサービスを提供している場合は、適用対象とならない。",
@@ -12741,6 +13171,8 @@ const businessDesignQuestions = [
     id:2503,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -12800,6 +13232,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"不正アクセス禁止法によって規制される行為として、適切なものだけをすべて挙げたものはどれか。\na．業務を代行してもらうために、社内データベースへアクセスするための自分のIDとパスワードを同僚に伝えた。\nb．自分のパソコンに、社内データベースへアクセスするための自分のパスワードのメモを貼り付けた。\nc．人気のショッピングサイトに登録されている他人のIDとパスワードを、無断で第三者に伝えた。",
@@ -12855,6 +13289,8 @@ const businessDesignQuestions = [
     id:2505,
 
     category:"マネジメント系",
+
+    subcategory:"プロジェクトマネジメント",
 
     level:4,
 
@@ -12914,6 +13350,8 @@ const businessDesignQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:4,
 
     question:"人間中心のAI社会原則における考え方として、適切なものだけをすべて挙げたものはどれか。\na．AIの利用にあたっては、人が判断・決定するのではなく、AI自身が自律的に判断・決定できるよう高度化すべきである。\nb．AIの利用は、憲法及び国際的な規範が保障する基本的人権を侵すものであってはならない。\nc．AIを早期に普及させるため、まず高度な情報リテラシーを持つ者に向けたシステムを実現し、その後段階的に情報弱者にも普及させるべきである。",
@@ -12969,7 +13407,9 @@ const businessDesignQuestions = [
 
     id:2507,
 
-    category:"マネジメント系",
+    category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -13026,7 +13466,9 @@ const businessDesignQuestions = [
 
     id:2508,
 
-    category:"マネジメント系",
+    category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -13085,6 +13527,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"情報セキュリティの3要素（機密性・完全性・可用性）に関して、次の事例a〜cのうち、完全性が損なわれた事例として、最も適切なものはどれか。\na．オペレーターが誤ったデータを入力し、顧客名簿に矛盾が生じた。\nb．ショッピングサイトがシステム障害で一時的に利用できなくなった。\nc．データベースで管理していた顧客の個人情報が漏えいした。",
@@ -13141,6 +13585,8 @@ const businessDesignQuestions = [
     id:2510,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:3,
 
@@ -13200,6 +13646,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:3,
 
     question:"ISMSクラウドセキュリティ認証に関する記述として、最も適切なものはどれか。",
@@ -13255,7 +13703,9 @@ const businessDesignQuestions = [
 
     id:2512,
 
-    category:"ストラテジ系",
+    category:"マネジメント系",
+
+    subcategory:"システム監査",
 
     level:3,
 
@@ -13314,7 +13764,9 @@ const businessDesignQuestions = [
 
     id:2513,
 
-    category:"テクノロジ系",
+    category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:3,
 
@@ -13376,6 +13828,8 @@ const businessDesignQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"サービスマネジメント",
+
     level:3,
 
     question:"SLA（サービスレベルアグリーメント）で規定される管理項目a〜cと、それぞれが該当するITサービスマネジメントのプロセスの組合せとして、最も適切なものはどれか。\na．サーバが稼働している時間の割合\nb．ディスク使用量がしきい値に達したことを検出後、担当者に通知するまでの時間\nc．不正アクセスの検知後、担当者に通知するまでの時間",
@@ -13432,7 +13886,9 @@ const businessDesignQuestions = [
 
     id:2515,
 
-    category:"テクノロジ系",
+    category:"ストラテジ系",
+
+    subcategory:"ビジネスインダストリ",
 
     level:4,
 
@@ -13491,6 +13947,8 @@ const businessDesignQuestions = [
     id:2516,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:3,
 
@@ -13551,6 +14009,8 @@ const businessDesignQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"エッジコンピューティングの説明として、最も適切なものはどれか。",
@@ -13608,6 +14068,8 @@ const businessDesignQuestions = [
     id:2518,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 

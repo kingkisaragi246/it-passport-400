@@ -172,6 +172,29 @@ function getCategoryCount(category){
 
 }
 
+function getSubcategoryList(category){
+
+    return [...new Set(
+
+        questions
+        .filter(q => q.category === category)
+        .map(q => q.subcategory)
+
+    )];
+
+}
+
+function getSubcategoryCount(category, subcategory){
+
+    return questions.filter(q =>
+
+        q.category === category &&
+        q.subcategory === subcategory
+
+    ).length;
+
+}
+
 function getLevelCount(level){
 
     return questions.filter(q =>

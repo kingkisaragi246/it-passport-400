@@ -141,6 +141,23 @@ switch(studyMode){
 
         break;
 
+    case "subcategory":
+
+        const subStudyCategory =
+        sessionStorage.getItem("studyCategory");
+
+        const subStudySubcategory =
+        sessionStorage.getItem("studySubcategory");
+
+        studyQuestions = questions.filter(q=>
+
+            q.category === subStudyCategory &&
+            q.subcategory === subStudySubcategory
+
+        );
+
+        break;
+
     case "categoryReview":
 
         const reviewCategory =
@@ -254,11 +271,9 @@ shuffleArray(studyQuestions)
 // Current Status
 // -------------------------------
 
-let current =
-Math.min(
-    progress.current,
-    studyQuestions.length-1
-);
+// 問題は毎回シャッフルされるため、前回の「途中の位置」を引き継ぐ意味がない。
+// どのモードでも必ず1問目から開始する。
+let current = 0;
 
 let correctCount =
 progress.correct || 0;
@@ -357,7 +372,10 @@ function showQuestion(){
     "★".repeat(q.level);
 
     category.textContent =
-    `${q.category}　${stars}`;
+    (q.subcategory
+        ? `${q.category}　＞　${q.subcategory}`
+        : q.category
+    ) + `　${stars}`;
 
     text.textContent =
     q.question;

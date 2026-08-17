@@ -6,6 +6,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"アルゴリズムにおける「線形探索（リニアサーチ）」の説明として適切なものはどれか。",
@@ -94,6 +96,8 @@ const algorithmQuestions = [
     id:702,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -188,6 +192,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"変数の説明として最も適切なものはどれか。",
@@ -267,6 +273,8 @@ const algorithmQuestions = [
     id:704,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -348,6 +356,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"配列の説明として適切なものはどれか。",
@@ -428,6 +438,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"配列の添字（インデックス）の説明として適切なものはどれか。",
@@ -507,6 +519,8 @@ const algorithmQuestions = [
     id:707,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -603,6 +617,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"フローチャートで「処理」を表す記号として適切なものはどれか。",
@@ -682,6 +698,8 @@ const algorithmQuestions = [
     id:709,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -763,6 +781,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"フローチャートで「開始」や「終了」を表す記号として適切なものはどれか。",
@@ -842,6 +862,8 @@ const algorithmQuestions = [
     id:711,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -923,6 +945,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"繰り返し処理の説明として適切なものはどれか。",
@@ -1002,6 +1026,8 @@ const algorithmQuestions = [
     id:713,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -1083,6 +1109,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"for文の説明として適切なものはどれか。",
@@ -1162,6 +1190,8 @@ const algorithmQuestions = [
     id:715,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -1243,6 +1273,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"キューの説明として適切なものはどれか。",
@@ -1322,6 +1354,8 @@ const algorithmQuestions = [
     id:717,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -1403,6 +1437,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"昇順の説明として適切なものはどれか。",
@@ -1482,6 +1518,8 @@ const algorithmQuestions = [
     id:719,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -1563,6 +1601,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"擬似言語の説明として適切なものはどれか。",
@@ -1642,6 +1682,8 @@ const algorithmQuestions = [
     id:721,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -1723,6 +1765,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"データ型の説明として適切なものはどれか。",
@@ -1802,6 +1846,8 @@ const algorithmQuestions = [
     id:723,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:2,
 
@@ -1883,6 +1929,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:2,
 
     question:"真偽値（ブール値）の説明として適切なものはどれか。",
@@ -1962,6 +2010,8 @@ const algorithmQuestions = [
     id:725,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 
@@ -2043,6 +2093,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"論理演算の説明として適切なものはどれか。",
@@ -2122,6 +2174,8 @@ const algorithmQuestions = [
     id:727,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:4,
 
@@ -2203,6 +2257,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"関数（手続き）の説明として適切なものはどれか。",
@@ -2283,6 +2339,8 @@ const algorithmQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"アルゴリズム・基礎理論",
+
     level:3,
 
     question:"引数の説明として適切なものはどれか。",
@@ -2362,6 +2420,8 @@ const algorithmQuestions = [
     id:730,
 
     category:"テクノロジ系",
+
+    subcategory:"アルゴリズム・基礎理論",
 
     level:3,
 

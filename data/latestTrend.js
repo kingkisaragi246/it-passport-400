@@ -6,6 +6,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:2,
 
     question:"LLM（大規模言語モデル）の説明として最も適切なものはどれか。",
@@ -96,6 +98,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"生成AI（Artificial Intelligence）への指示文において、望ましい出力例をいくつか示したうえで質問を行う手法を何というか。",
@@ -178,6 +182,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"RAG（Retrieval-Augmented Generation）の説明として最も適切なものはどれか。",
@@ -259,6 +265,8 @@ const latestTrendQuestions = [
     id:1304,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:4,
 
@@ -343,6 +351,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"DX認定制度の説明として最も適切なものはどれか。",
@@ -423,6 +433,8 @@ const latestTrendQuestions = [
     id:1306,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -506,6 +518,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"デジタル庁の役割として最も適切なものはどれか。",
@@ -587,6 +601,8 @@ const latestTrendQuestions = [
     id:1308,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -679,6 +695,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"ゼロトラストの考え方を実現するための具体的な取り組みとして最も適切なものはどれか。",
@@ -760,6 +778,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"SASE（Secure Access Service Edge）の説明として最も適切なものはどれか。",
@@ -840,6 +860,8 @@ const latestTrendQuestions = [
     id:1311,
 
     category:"マネジメント系",
+
+    subcategory:"システム開発",
 
     level:4,
 
@@ -923,6 +945,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"セキュリティ",
+
     level:4,
 
     question:"SBOM（ソフトウェア部品表）の説明として最も適切なものはどれか。",
@@ -1005,6 +1029,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:3,
 
     question:"クラウドネイティブの説明として最も適切なものはどれか。",
@@ -1086,6 +1112,8 @@ const latestTrendQuestions = [
     id:1314,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:4,
 
@@ -1170,6 +1198,8 @@ const latestTrendQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"AI・クラウド",
+
     level:4,
 
     question:"Kubernetesの説明として最も適切なものはどれか。",
@@ -1251,6 +1281,8 @@ const latestTrendQuestions = [
     id:1316,
 
     category:"テクノロジ系",
+
+    subcategory:"AI・クラウド",
 
     level:3,
 
@@ -1334,6 +1366,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"データ利活用（データドリブン経営）の説明として最も適切なものはどれか。",
@@ -1415,6 +1449,8 @@ const latestTrendQuestions = [
     id:1318,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 
@@ -1498,6 +1534,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"ビジネスインダストリ",
+
     level:3,
 
     question:"マイナンバーカードの主な目的として最も適切なものはどれか。",
@@ -1578,6 +1616,8 @@ const latestTrendQuestions = [
     id:1320,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:4,
 
@@ -1661,6 +1701,8 @@ const latestTrendQuestions = [
 
     category:"マネジメント系",
 
+    subcategory:"システム開発",
+
     level:3,
 
     question:"ローコード・ノーコード開発の説明として最も適切なものはどれか。",
@@ -1741,6 +1783,8 @@ const latestTrendQuestions = [
     id:1322,
 
     category:"テクノロジ系",
+
+    subcategory:"セキュリティ",
 
     level:4,
 
@@ -1824,6 +1868,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"企業活動・組織",
+
     level:3,
 
     question:"生成AI（Artificial Intelligence）を業務で活用する際の留意点として最も適切なものはどれか。",
@@ -1906,6 +1952,8 @@ const latestTrendQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"カーボンニュートラルの説明として最も適切なものはどれか。",
@@ -1986,6 +2034,8 @@ const latestTrendQuestions = [
     id:1325,
 
     category:"ストラテジ系",
+
+    subcategory:"企業活動・組織",
 
     level:3,
 

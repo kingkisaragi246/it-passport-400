@@ -6,6 +6,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"著作権法によって保護される著作物として最も適切なものはどれか。",
@@ -88,6 +90,8 @@ const lawQuestions = [
     id:802,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:2,
 
@@ -184,6 +188,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"従業員が職務上作成したプログラムの著作権の帰属について、就業規則等に特段の定めがない場合、最も適切なものはどれか。",
@@ -265,6 +271,8 @@ const lawQuestions = [
     id:804,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -349,6 +357,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"商標権によって保護される対象として最も適切なものはどれか。",
@@ -431,6 +441,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:4,
 
     question:"特許権を有する複数の企業が、互いの特許技術の使用を相互に許諾し合う契約形態を何というか。",
@@ -512,6 +524,8 @@ const lawQuestions = [
     id:807,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -609,6 +623,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:4,
 
     question:"個人情報保護法における「要配慮個人情報」に該当するものはどれか。",
@@ -689,6 +705,8 @@ const lawQuestions = [
     id:809,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -771,6 +789,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"サイバーセキュリティ基本法の目的として最も適切なものはどれか。",
@@ -851,6 +871,8 @@ const lawQuestions = [
     id:811,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -948,6 +970,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"請負契約の説明として最も適切なものはどれか。",
@@ -1040,6 +1064,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:4,
 
     question:"システム開発における準委任契約の説明として最も適切なものはどれか。",
@@ -1120,6 +1146,8 @@ const lawQuestions = [
     id:814,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -1202,6 +1230,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"独占禁止法が規制する行為として最も適切なものはどれか。",
@@ -1282,6 +1312,8 @@ const lawQuestions = [
     id:816,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -1364,6 +1396,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"労働基準法が定める内容として最も適切なものはどれか。",
@@ -1444,6 +1478,8 @@ const lawQuestions = [
     id:818,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -1527,6 +1563,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"ISO（International Organization for Standardization）やJIS（Japanese Industrial Standards）のように、公的な標準化機関によって策定される標準を何というか。",
@@ -1609,6 +1647,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:4,
 
     question:"OSS（オープンソースソフトウェア）のライセンスに関する説明として最も適切なものはどれか。",
@@ -1689,6 +1729,8 @@ const lawQuestions = [
     id:821,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -1771,6 +1813,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"コンプライアンスの説明として最も適切なものはどれか。",
@@ -1851,6 +1895,8 @@ const lawQuestions = [
     id:823,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:4,
 
@@ -1933,6 +1979,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"電子帳簿保存法の目的として最も適切なものはどれか。",
@@ -2013,6 +2061,8 @@ const lawQuestions = [
     id:825,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -2095,6 +2145,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:3,
 
     question:"秘密保持契約（NDA：Non-Disclosure Agreement）の目的として最も適切なものはどれか。",
@@ -2176,6 +2228,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"特定商取引法が主に規制する対象として最も適切なものはどれか。",
@@ -2256,6 +2310,8 @@ const lawQuestions = [
     id:828,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 
@@ -2339,6 +2395,8 @@ const lawQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"法務",
+
     level:2,
 
     question:"実用新案権の説明として最も適切なものはどれか。",
@@ -2419,6 +2477,8 @@ const lawQuestions = [
     id:830,
 
     category:"ストラテジ系",
+
+    subcategory:"法務",
 
     level:3,
 

@@ -6,6 +6,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:3,
 
     question:"データベースの説明として、最も適切なものはどれか。",
@@ -86,6 +88,8 @@ const databaseQuestions = [
     id:202,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:3,
 
@@ -168,6 +172,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:3,
 
     question:"レコードとは何か。",
@@ -248,6 +254,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:3,
 
     question:"フィールドとは何か。",
@@ -327,6 +335,8 @@ const databaseQuestions = [
     id:205,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -409,6 +419,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"外部キー（Foreign Key）の役割として、最も適切なものはどれか。",
@@ -488,6 +500,8 @@ const databaseQuestions = [
     id:207,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:3,
 
@@ -580,6 +594,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"SQL（Structured Query Language）のSELECT文の役割として適切なものはどれか。",
@@ -659,6 +675,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"SQL（Structured Query Language）のINSERT文の役割として適切なものはどれか。",
@@ -737,6 +755,8 @@ const databaseQuestions = [
     id:211,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -818,6 +838,8 @@ const databaseQuestions = [
     id:212,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -902,6 +924,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:5,
 
     question:"SQL（Structured Query Language）におけるJOINの役割として、最も適切なものはどれか。",
@@ -982,6 +1006,8 @@ const databaseQuestions = [
     id:216,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:5,
 
@@ -1065,6 +1091,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"第1正規形（1NF）の説明として適切なものはどれか。",
@@ -1144,6 +1172,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:5,
 
     question:"第2正規形（2NF）の説明として、最も適切なものはどれか。",
@@ -1222,6 +1252,8 @@ const databaseQuestions = [
     id:219,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:5,
 
@@ -1311,6 +1343,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:5,
 
     question:"データベースにおけるトランザクションの説明として、最も適切なものはどれか。",
@@ -1393,6 +1427,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"SQL（Structured Query Language）のCOMMITの役割として適切なものはどれか。",
@@ -1473,6 +1509,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"SQL（Structured Query Language）のROLLBACKの役割として適切なものはどれか。",
@@ -1551,6 +1589,8 @@ const databaseQuestions = [
     id:223,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:5,
 
@@ -1633,6 +1673,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:5,
 
     question:"データベースにおける排他制御（排他ロック）の目的として、最も適切なものはどれか。",
@@ -1711,6 +1753,8 @@ const databaseQuestions = [
     id:225,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:5,
 
@@ -1800,6 +1844,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:4,
 
     question:"データベースにおけるインデックスの役割として、最も適切なものはどれか。",
@@ -1877,6 +1923,8 @@ const databaseQuestions = [
     id:227,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -1957,6 +2005,8 @@ const databaseQuestions = [
     id:228,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 
@@ -2039,6 +2089,8 @@ const databaseQuestions = [
 
     category:"テクノロジ系",
 
+    subcategory:"データベース",
+
     level:3,
 
     question:"リレーショナルデータベースの特徴として、最も適切なものはどれか。",
@@ -2119,6 +2171,8 @@ const databaseQuestions = [
     id:230,
 
     category:"テクノロジ系",
+
+    subcategory:"データベース",
 
     level:4,
 

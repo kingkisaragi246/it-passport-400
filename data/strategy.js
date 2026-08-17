@@ -6,6 +6,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"企業理念の説明として、最も適切なものはどれか。",
@@ -87,6 +89,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"経営戦略の説明として、最も適切なものはどれか。",
@@ -165,6 +169,8 @@ const strategyQuestions = [
     id:403,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -262,6 +268,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"マーケティングの目的として、最も適切なものはどれか。",
@@ -341,6 +349,8 @@ const strategyQuestions = [
     id:405,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -432,6 +442,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"PEST（Political・Economic・Social・Technological）分析における『Political（政治的要因）』が表す内容として、最も適切なものはどれか。",
@@ -512,6 +524,8 @@ const strategyQuestions = [
     id:407,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:5,
 
@@ -609,6 +623,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:5,
 
     question:"アンゾフの成長マトリクスの目的として、最も適切なものはどれか。",
@@ -689,6 +705,8 @@ const strategyQuestions = [
     id:409,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:5,
 
@@ -789,6 +807,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:5,
 
     question:"バリューチェーン分析の目的として、最も適切なものはどれか。",
@@ -877,6 +897,8 @@ const strategyQuestions = [
     id:411,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -968,6 +990,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:5,
 
     question:"コアコンピタンスの説明として適切なものはどれか。",
@@ -1047,6 +1071,8 @@ const strategyQuestions = [
     id:413,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -1128,6 +1154,8 @@ const strategyQuestions = [
     id:414,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -1224,6 +1252,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"SFA（Sales Force Automation）の説明として、最も適切なものはどれか。",
@@ -1303,6 +1333,8 @@ const strategyQuestions = [
     id:416,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -1386,6 +1418,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"ERP（Enterprise Resource Planning）の説明として適切なものはどれか。",
@@ -1465,6 +1499,8 @@ const strategyQuestions = [
     id:418,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -1547,6 +1583,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"IoTを活用した経営の例として最も適切なものはどれか。",
@@ -1627,6 +1665,8 @@ const strategyQuestions = [
     id:420,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -1709,6 +1749,8 @@ const strategyQuestions = [
     id:421,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -1800,6 +1842,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"プロダクトミックスの説明として最も適切なものはどれか。",
@@ -1889,6 +1933,8 @@ const strategyQuestions = [
     id:423,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
@@ -1981,6 +2027,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"CSR（企業の社会的責任）の説明として最も適切なものはどれか。",
@@ -2071,6 +2119,8 @@ const strategyQuestions = [
     id:425,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -2163,6 +2213,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"ロジスティクスの説明として最も適切なものはどれか。",
@@ -2251,6 +2303,8 @@ const strategyQuestions = [
     id:427,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:4,
 
@@ -2343,6 +2397,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:3,
 
     question:"KPI（重要業績評価指標）の説明として最も適切なものはどれか。",
@@ -2434,6 +2490,8 @@ const strategyQuestions = [
 
     category:"ストラテジ系",
 
+    subcategory:"経営戦略",
+
     level:4,
 
     question:"コモディティ化の説明として最も適切なものはどれか。",
@@ -2524,6 +2582,8 @@ const strategyQuestions = [
     id:430,
 
     category:"ストラテジ系",
+
+    subcategory:"経営戦略",
 
     level:3,
 
