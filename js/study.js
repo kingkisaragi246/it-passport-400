@@ -6,15 +6,17 @@
 
 const progress = loadProgress();
 
+const studyMode =
+sessionStorage.getItem("studyMode") || "normal";
+
 // クラウド同期（設定されていれば、最新データが他端末にあった場合だけ再読み込み）
-if (typeof syncOnLoad === "function") {
+// ただし、模擬試験（100問）の最中にリロードされると回答が消えてしまうため、
+// 模擬試験モードのときは自動リロードを行わない。
+if (typeof syncOnLoad === "function" && studyMode !== "exam") {
 
     syncOnLoad(() => location.reload());
 
 }
-
-const studyMode =
-sessionStorage.getItem("studyMode") || "normal";
 
 // -------------------------------
 // Shuffle Utilities
@@ -384,9 +386,6 @@ function showQuestion(){
 
     result.style.display = "none";
 
-    // 模擬試験モードでは「次の問題」ボタンを隠し、選択肢クリックで自動的に進める
-    nextBtn.style.display = isExamMode ? "none" : "";
-
     // 理解度ボタンの選択状態を、この問題の記録に合わせてリセット・復元する
     const savedLevel = progress.understanding[q.id];
 
@@ -446,45 +445,17 @@ function answer(index){
     const q = studyQuestions[current];
 
     // -------------------------------
-    // 模擬試験モード：正誤を表示せず記録だけして次へ進む
+    // 模擬試験モード：正誤を記録したうえで、
+    // 通常モードと同じように答え合わせを表示する
     // -------------------------------
 
     if (isExamMode) {
-
-        const buttons =
-        document.querySelectorAll(".choice");
-
-        buttons.forEach(button=>{
-
-            button.disabled = true;
-
-        });
-
-        buttons[index].classList.add("examSelected");
 
         examAnswers.push({
             id: q.id,
             category: q.category,
             correct: index === q.answer
         });
-
-        setTimeout(()=>{
-
-            current++;
-
-            if (current >= studyQuestions.length) {
-
-                finishExam();
-
-            } else {
-
-                showQuestion();
-
-            }
-
-        }, 200);
-
-        return;
 
     }
 
@@ -799,6 +770,22 @@ nextBtn.onclick = () => {
     progress.lastStudy = new Date().toISOString();
 
     saveProgress(progress);
+
+    if (isExamMode) {
+
+        if (current >= studyQuestions.length) {
+
+            finishExam();
+
+        } else {
+
+            showQuestion();
+
+        }
+
+        return;
+
+    }
 
     if (current >= studyQuestions.length) {
 
