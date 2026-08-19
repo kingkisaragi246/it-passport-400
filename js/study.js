@@ -177,6 +177,28 @@ switch(studyMode){
 
         break;
 
+    case "subcategoryReview":
+
+        const reviewSubCategory =
+        sessionStorage.getItem("studyCategory");
+
+        const reviewSubSubcategory =
+        sessionStorage.getItem("studySubcategory");
+
+        studyQuestions = questions.filter(q=>{
+
+            if (q.category !== reviewSubCategory) return false;
+
+            if (q.subcategory !== reviewSubSubcategory) return false;
+
+            const level = progress.understanding[q.id];
+
+            return level === "normal" || level === "bad";
+
+        });
+
+        break;
+
     case "review":
 
         studyQuestions = questions.filter(q=>{

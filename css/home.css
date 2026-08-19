@@ -276,6 +276,16 @@
 
 }
 
+.subcategoryGroup{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+}
+
 .subcategoryButton{
 
     padding:8px 12px;
@@ -297,6 +307,32 @@
 .subcategoryButton:hover{
 
     background:#e3f0ff;
+
+}
+
+.subcategoryReviewButton{
+
+    padding:8px 10px;
+
+    background:#fff3e0;
+
+    border:1px solid #ffcc80;
+
+    border-radius:20px;
+
+    color:#e65100;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.subcategoryReviewButton:hover{
+
+    background:#ffe6bd;
 
 }
 

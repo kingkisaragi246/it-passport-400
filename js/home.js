@@ -313,6 +313,23 @@ if(categoryButtons){
                 const subTotal =
                 getSubcategoryCount(category, subcategory);
 
+                const subReviewCount =
+                questions.filter(q=>{
+
+                    if (q.category !== category) return false;
+                    if (q.subcategory !== subcategory) return false;
+
+                    const level = progress.understanding[q.id];
+
+                    return level === "normal" || level === "bad";
+
+                }).length;
+
+                const subGroup =
+                document.createElement("div");
+
+                subGroup.className = "subcategoryGroup";
+
                 const subBtn =
                 document.createElement("button");
 
@@ -345,7 +362,47 @@ if(categoryButtons){
 
                 };
 
-                subcategoryList.appendChild(subBtn);
+                subGroup.appendChild(subBtn);
+
+                if (subReviewCount > 0) {
+
+                    const subReviewBtn =
+                    document.createElement("button");
+
+                    subReviewBtn.className = "subcategoryReviewButton";
+
+                    subReviewBtn.textContent =
+                    `🔁 復習（${subReviewCount}）`;
+
+                    subReviewBtn.onclick = (e)=>{
+
+                        e.stopPropagation();
+
+                        sessionStorage.setItem(
+                            "studyMode",
+                            "subcategoryReview"
+                        );
+
+                        sessionStorage.setItem(
+                            "studyCategory",
+                            category
+                        );
+
+                        sessionStorage.setItem(
+                            "studySubcategory",
+                            subcategory
+                        );
+
+                        location.href =
+                        "pages/study.html";
+
+                    };
+
+                    subGroup.appendChild(subReviewBtn);
+
+                }
+
+                subcategoryList.appendChild(subGroup);
 
             });
 
