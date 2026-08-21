@@ -169,6 +169,43 @@ if(examBtn){
 }
 
 // -------------------------------
+// Scenario-Only Practice（シナリオ問題だけ演習）
+// -------------------------------
+
+const scenarioBtn =
+document.getElementById("scenarioBtn");
+
+if(scenarioBtn){
+
+    const scenarioCount =
+    questions.filter(q => q.isScenario).length;
+
+    if (scenarioCount === 0) {
+
+        scenarioBtn.disabled = true;
+
+    } else {
+
+        scenarioBtn.querySelector("p").textContent =
+        `「A社では〜」形式の応用問題（${scenarioCount}問）`;
+
+        scenarioBtn.onclick = ()=>{
+
+            sessionStorage.setItem(
+                "studyMode",
+                "scenario"
+            );
+
+            location.href =
+            "pages/study.html";
+
+        };
+
+    }
+
+}
+
+// -------------------------------
 // Category Study
 // -------------------------------
 

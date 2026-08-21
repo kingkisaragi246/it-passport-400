@@ -230,6 +230,16 @@ switch(studyMode){
 
         break;
 
+    case "scenario":
+
+        studyQuestions = questions.filter(q =>
+
+            q.isScenario === true
+
+        );
+
+        break;
+
     case "exam":
 
         function sampleQuestions(pool, n){
