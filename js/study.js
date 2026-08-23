@@ -240,6 +240,48 @@ switch(studyMode){
 
         break;
 
+    case "daily":
+
+        ensureDailyChallenge(progress, questions);
+
+        const remainingDailyIds =
+        getDailyRemainingIds(progress);
+
+        studyQuestions = questions.filter(q =>
+
+            remainingDailyIds.includes(q.id)
+
+        );
+
+        break;
+
+    case "threeDayTest":
+
+        const testIds =
+        progress.dailyChallenge &&
+        progress.dailyChallenge.threeDayTest
+            ? progress.dailyChallenge.threeDayTest.questionIds
+            : [];
+
+        const retakeOnly =
+        sessionStorage.getItem("threeDayTestRetake") === "true";
+
+        studyQuestions = questions.filter(q=>{
+
+            if (!testIds.includes(q.id)) return false;
+
+            if (retakeOnly) {
+
+                return progress.understanding[q.id] !== "good";
+
+            }
+
+            return true;
+
+        });
+
+        break;
+
     case "exam":
 
         function sampleQuestions(pool, n){
@@ -287,7 +329,21 @@ let examAnswers = isExamMode ? [] : null;
 
 if(studyQuestions.length===0){
 
-    alert("問題がありません。");
+    if (studyMode === "daily") {
+
+        alert("🎉 本日の学習はすべて「理解できた」になりました！お疲れさまでした。");
+
+    } else if (studyMode === "threeDayTest") {
+
+        alert("🎉 このテストの問題はすべて「理解できた」になりました！お疲れさまでした。");
+
+        sessionStorage.removeItem("threeDayTestRetake");
+
+    } else {
+
+        alert("問題がありません。");
+
+    }
 
     location.href="../index.html";
 
@@ -814,6 +870,55 @@ nextBtn.onclick = () => {
             showQuestion();
 
         }
+
+        return;
+
+    }
+
+    if ((studyMode === "daily" || studyMode === "threeDayTest") &&
+        current >= studyQuestions.length) {
+
+        // 1周したら、まだ「理解できた」になっていない問題だけに絞り直す
+        const idsInSession =
+        studyQuestions.map(q => q.id);
+
+        const stillRemaining =
+        idsInSession.filter(id =>
+
+            progress.understanding[id] !== "good"
+
+        );
+
+        if (stillRemaining.length === 0) {
+
+            if (studyMode === "daily") {
+
+                alert("🎉 本日の学習はすべて「理解できた」になりました！お疲れさまでした。");
+
+            } else {
+
+                alert("🎉 このテストの問題はすべて「理解できた」になりました！お疲れさまでした。");
+
+                sessionStorage.removeItem("threeDayTestRetake");
+
+            }
+
+            location.href = "../index.html";
+
+            return;
+
+        }
+
+        studyQuestions =
+        shuffleArray(
+            questions.filter(q => stillRemaining.includes(q.id))
+        )
+            .map(pickQuestionVariant)
+            .map(shuffleQuestionChoices);
+
+        current = 0;
+
+        showQuestion();
 
         return;
 

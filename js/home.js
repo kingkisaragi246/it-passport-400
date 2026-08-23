@@ -4,6 +4,13 @@
 
 const progress = loadProgress();
 
+// 「毎日の学習」の状態を、日付が変わっていれば更新する
+if (typeof ensureDailyChallenge === "function" && typeof questions !== "undefined") {
+
+    ensureDailyChallenge(progress, questions);
+
+}
+
 // クラウド同期（設定されていれば、最新データが他端末にあった場合だけ再読み込み）
 if (typeof syncOnLoad === "function") {
 
@@ -719,5 +726,193 @@ if(dailyMessage){
 
     dailyMessage.textContent =
     messages[index];
+
+}
+
+// ===============================
+// 毎日の学習（Daily Challenge）UI
+// ===============================
+
+const dailyChallengeCard =
+document.getElementById("dailyChallengeCard");
+
+if (dailyChallengeCard && progress.dailyChallenge) {
+
+    const daily = progress.dailyChallenge;
+
+    const remaining =
+    typeof getDailyRemainingIds === "function"
+        ? getDailyRemainingIds(progress)
+        : [];
+
+    const total = daily.questionIds.length;
+    const doneCount = total - remaining.length;
+    const percent =
+    total === 0 ? 0 : Math.round(doneCount / total * 100);
+
+    const statusEl =
+    document.getElementById("dailyChallengeStatus");
+
+    const progressBarEl =
+    document.getElementById("dailyChallengeProgressBar");
+
+    const descEl =
+    document.getElementById("dailyChallengeDesc");
+
+    const btnEl =
+    document.getElementById("dailyChallengeBtn");
+
+    if (statusEl) {
+
+        statusEl.textContent =
+        `${doneCount} / ${total} 問`;
+
+    }
+
+    if (progressBarEl) {
+
+        progressBarEl.style.width = `${percent}%`;
+
+        progressBarEl.classList.toggle(
+
+            "dailyChallengeProgressBarDone",
+            remaining.length === 0
+
+        );
+
+    }
+
+    if (descEl) {
+
+        descEl.textContent =
+        remaining.length === 0
+            ? "🎉 本日の学習は完了しました！お疲れさまでした。"
+            : "ストラテジ系・マネジメント系・テクノロジ系から5問ずつ、合計15問すべて「理解できた」を目指しましょう。";
+
+    }
+
+    if (btnEl) {
+
+        btnEl.textContent =
+        remaining.length === 0
+            ? "今日の分は完了しました"
+            : (doneCount === 0 ? "今日の学習を始める" : "今日の学習を続ける");
+
+        btnEl.disabled =
+        remaining.length === 0;
+
+        btnEl.onclick = () => {
+
+            sessionStorage.setItem(
+                "studyMode",
+                "daily"
+            );
+
+            location.href =
+            "pages/study.html";
+
+        };
+
+    }
+
+    // -------------------------------
+    // 3日間まとめテスト
+    // -------------------------------
+
+    const threeDayTestBtn =
+    document.getElementById("threeDayTestBtn");
+
+    if (threeDayTestBtn && daily.threeDayTest && daily.threeDayTest.available) {
+
+        const testIds = daily.threeDayTest.questionIds;
+
+        const testRemaining =
+        testIds.filter(id => progress.understanding[id] !== "good");
+
+        threeDayTestBtn.style.display = "block";
+
+        threeDayTestBtn.textContent =
+        testRemaining.length === 0
+            ? "✅ 3日間テスト達成済み（復習する）"
+            : `📝 3日間まとめテストを受ける（${testIds.length}問）`;
+
+        threeDayTestBtn.onclick = () => {
+
+            sessionStorage.setItem(
+                "threeDayTestRetake",
+
+                testRemaining.length < testIds.length
+                    ? "true"
+                    : "false"
+
+            );
+
+            sessionStorage.setItem(
+                "studyMode",
+                "threeDayTest"
+            );
+
+            location.href =
+            "pages/study.html";
+
+        };
+
+    }
+
+    // -------------------------------
+    // 週間の表（直近7日）
+    // -------------------------------
+
+    const weekly =
+    typeof getWeeklyTable === "function"
+        ? getWeeklyTable(progress)
+        : [];
+
+    const dayLabels =
+    ["日", "月", "火", "水", "木", "金", "土"];
+
+    const headerRow =
+    document.getElementById("weeklyTableHeaderRow");
+
+    const countRow =
+    document.getElementById("weeklyTableCountRow");
+
+    const clearedRow =
+    document.getElementById("weeklyTableClearedRow");
+
+    if (headerRow && countRow && clearedRow) {
+
+        headerRow.innerHTML =
+        `<th></th>` +
+        weekly.map(day=>{
+
+            const label = dayLabels[day.dayOfWeek];
+
+            return `<th${day.isToday ? ' class="weeklyTableToday"' : ''}>${label}</th>`;
+
+        }).join("");
+
+        countRow.innerHTML =
+        `<td>問題数</td>` +
+        weekly.map(day=>
+
+            `<td>${day.count}</td>`
+
+        ).join("");
+
+        clearedRow.innerHTML =
+        `<td>達成</td>` +
+        weekly.map(day=>{
+
+            const mark =
+            day.count === 0
+                ? "－"
+                : (day.cleared ? "◎" : (day.isToday ? "…" : "△"));
+
+            return `<td class="weeklyTableMark">${mark}</td>`;
+
+        }).join("");
+
+    }
 
 }

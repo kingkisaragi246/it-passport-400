@@ -577,3 +577,155 @@
     }
 
 }
+/* ==========================
+   Daily Challenge
+========================== */
+
+.dailyChallengeCard{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin:16px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.dailyChallengeHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+}
+
+.dailyChallengeHeader h3{
+
+    margin:0;
+
+    color:#1565c0;
+
+}
+
+.dailyChallengeStatus{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    color:#555;
+
+}
+
+.dailyChallengeProgressBarWrap{
+
+    background:#eee;
+
+    border-radius:20px;
+
+    height:14px;
+
+    overflow:hidden;
+
+    margin-bottom:10px;
+
+}
+
+.dailyChallengeProgressBar{
+
+    height:100%;
+
+    background:#1565c0;
+
+    border-radius:20px;
+
+    width:0%;
+
+    transition:width .4s;
+
+}
+
+.dailyChallengeProgressBar.dailyChallengeProgressBarDone{
+
+    background:#2e7d32;
+
+}
+
+.dailyChallengeDesc{
+
+    font-size:13px;
+
+    color:#666;
+
+    margin-bottom:14px;
+
+    line-height:1.6;
+
+}
+
+.dailyChallengeBtn{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+.weeklyTableWrap{
+
+    margin-top:14px;
+
+    overflow-x:auto;
+
+}
+
+.weeklyTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    font-size:12px;
+
+    text-align:center;
+
+}
+
+.weeklyTable th,
+.weeklyTable td{
+
+    padding:6px 4px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.weeklyTable th{
+
+    color:#888;
+
+    font-weight:bold;
+
+}
+
+.weeklyTableToday{
+
+    color:#1565c0 !important;
+
+}
+
+.weeklyTableMark{
+
+    font-size:15px;
+
+    font-weight:bold;
+
+}
