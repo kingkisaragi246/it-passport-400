@@ -920,16 +920,38 @@ nextBtn.onclick = () => {
 
         }
 
-        studyQuestions =
-        shuffleArray(
-            questions.filter(q => stillRemaining.includes(q.id))
-        )
-            .map(pickQuestionVariant)
-            .map(shuffleQuestionChoices);
+        // まだ「理解できた」になっていない問題が残っている場合も、
+        // 続けて自動で次の周へ進まず、一度ホームに戻る。
+        // 続きはホーム画面から改めて選んで再開できる。
+        if (studyMode === "daily") {
 
-        current = 0;
+            alert(
 
-        showQuestion();
+`ここまでお疲れさまでした！
+
+残り ${stillRemaining.length} 問
+
+続きはホーム画面の「今日の学習を続ける」から再開できます。`
+
+            );
+
+        } else {
+
+            sessionStorage.setItem("threeDayTestRetake", "true");
+
+            alert(
+
+`ここまでお疲れさまでした！
+
+残り ${stillRemaining.length} 問
+
+続きはホーム画面の「3日間まとめテストを受ける」から再開できます。`
+
+            );
+
+        }
+
+        location.href = "../index.html";
 
         return;
 
