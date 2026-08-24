@@ -827,7 +827,7 @@ if (dailyChallengeCard && progress.dailyChallenge) {
         const testIds = daily.threeDayTest.questionIds;
 
         const testRemaining =
-        testIds.filter(id => progress.understanding[id] !== "good");
+        testIds.filter(id => (daily.dailyStatus || {})[id] !== "good");
 
         threeDayTestBtn.style.display = "block";
 
@@ -860,58 +860,134 @@ if (dailyChallengeCard && progress.dailyChallenge) {
     }
 
     // -------------------------------
-    // 週間の表（直近7日）
+    // 月間カレンダー
     // -------------------------------
 
-    const weekly =
-    typeof getWeeklyTable === "function"
-        ? getWeeklyTable(progress)
-        : [];
+    const calendarTitle =
+    document.getElementById("calendarTitle");
 
-    const dayLabels =
-    ["日", "月", "火", "水", "木", "金", "土"];
+    const calendarWeekdays =
+    document.getElementById("calendarWeekdays");
 
-    const headerRow =
-    document.getElementById("weeklyTableHeaderRow");
+    const calendarGrid =
+    document.getElementById("calendarGrid");
 
-    const countRow =
-    document.getElementById("weeklyTableCountRow");
+    const calendarPrevBtn =
+    document.getElementById("calendarPrevBtn");
 
-    const clearedRow =
-    document.getElementById("weeklyTableClearedRow");
+    const calendarNextBtn =
+    document.getElementById("calendarNextBtn");
 
-    if (headerRow && countRow && clearedRow) {
+    if (calendarTitle && calendarGrid && typeof getMonthCalendarData === "function") {
 
-        headerRow.innerHTML =
-        `<th></th>` +
-        weekly.map(day=>{
+        const now = new Date();
 
-            const label = dayLabels[day.dayOfWeek];
+        let viewYear = now.getFullYear();
+        let viewMonth = now.getMonth() + 1;
 
-            return `<th${day.isToday ? ' class="weeklyTableToday"' : ''}>${label}</th>`;
+        const dayLabels =
+        ["日", "月", "火", "水", "木", "金", "土"];
 
-        }).join("");
+        function renderCalendar(){
 
-        countRow.innerHTML =
-        `<td>問題数</td>` +
-        weekly.map(day=>
+            const data =
+            getMonthCalendarData(progress, viewYear, viewMonth);
 
-            `<td>${day.count}</td>`
+            calendarTitle.textContent =
+            `${data.year}年${data.month}月`;
 
-        ).join("");
+            calendarWeekdays.innerHTML =
+            dayLabels.map(l=>`<span>${l}</span>`).join("");
 
-        clearedRow.innerHTML =
-        `<td>達成</td>` +
-        weekly.map(day=>{
+            calendarGrid.innerHTML =
+            data.cells.map(cell=>{
 
-            const mark =
-            day.count === 0
-                ? "－"
-                : (day.cleared ? "◎" : (day.isToday ? "…" : "△"));
+                if (!cell) {
 
-            return `<td class="weeklyTableMark">${mark}</td>`;
+                    return `<div class="calendarCell calendarCellEmpty"></div>`;
 
-        }).join("");
+                }
+
+                let markClass = "calendarCellNoData";
+                let mark = "";
+
+                if (cell.hasData || cell.isToday) {
+
+                    if (cell.count === 0) {
+
+                        markClass = "calendarCellNoData";
+                        mark = "";
+
+                    } else if (cell.cleared) {
+
+                        markClass = "calendarCellCleared";
+                        mark = "◎";
+
+                    } else {
+
+                        markClass = "calendarCellIncomplete";
+                        mark = "△";
+
+                    }
+
+                }
+
+                const todayClass =
+                cell.isToday ? " calendarCellToday" : "";
+
+                return (
+                    `<div class="calendarCell ${markClass}${todayClass}">` +
+                    `<div class="calendarCellDay">${cell.day}</div>` +
+                    (cell.count > 0
+                        ? `<div class="calendarCellCount">${cell.count}問</div><div class="calendarCellMark">${mark}</div>`
+                        : ``
+                    ) +
+                    `</div>`
+                );
+
+            }).join("");
+
+        }
+
+        renderCalendar();
+
+        if (calendarPrevBtn) {
+
+            calendarPrevBtn.onclick = () => {
+
+                viewMonth--;
+
+                if (viewMonth < 1) {
+
+                    viewMonth = 12;
+                    viewYear--;
+
+                }
+
+                renderCalendar();
+
+            };
+
+        }
+
+        if (calendarNextBtn) {
+
+            calendarNextBtn.onclick = () => {
+
+                viewMonth++;
+
+                if (viewMonth > 12) {
+
+                    viewMonth = 1;
+                    viewYear++;
+
+                }
+
+                renderCalendar();
+
+            };
+
+        }
 
     }
 

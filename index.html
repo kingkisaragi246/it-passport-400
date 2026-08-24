@@ -71,25 +71,29 @@
 
 </button>
 
-<div class="weeklyTableWrap">
+<div class="calendarWrap">
 
-<table class="weeklyTable" id="weeklyTable">
+<div class="calendarHeader">
 
-<thead>
+<button id="calendarPrevBtn" class="calendarNavBtn">‹</button>
 
-<tr id="weeklyTableHeaderRow"></tr>
+<span id="calendarTitle" class="calendarTitle"></span>
 
-</thead>
+<button id="calendarNextBtn" class="calendarNavBtn">›</button>
 
-<tbody>
+</div>
 
-<tr id="weeklyTableCountRow"></tr>
+<div class="calendarWeekdays" id="calendarWeekdays"></div>
 
-<tr id="weeklyTableClearedRow"></tr>
+<div class="calendarGrid" id="calendarGrid"></div>
 
-</tbody>
+<div class="calendarLegend">
 
-</table>
+<span>◎ クリア</span>
+<span>△ 未クリア</span>
+<span>本日は青枠</span>
+
+</div>
 
 </div>
 

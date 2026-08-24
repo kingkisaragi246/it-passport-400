@@ -263,6 +263,9 @@ switch(studyMode){
             ? progress.dailyChallenge.threeDayTest.questionIds
             : [];
 
+        const dailyStatusForTest =
+        (progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {};
+
         const retakeOnly =
         sessionStorage.getItem("threeDayTestRetake") === "true";
 
@@ -272,7 +275,7 @@ switch(studyMode){
 
             if (retakeOnly) {
 
-                return progress.understanding[q.id] !== "good";
+                return dailyStatusForTest[q.id] !== "good";
 
             }
 
@@ -475,7 +478,11 @@ function showQuestion(){
     result.style.display = "none";
 
     // 理解度ボタンの選択状態を、この問題の記録に合わせてリセット・復元する
-    const savedLevel = progress.understanding[q.id];
+    // （毎日の学習・3日間テストでは、専用の記録を参照する）
+    const savedLevel =
+    (studyMode === "daily" || studyMode === "threeDayTest")
+        ? ((progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {})[q.id]
+        : progress.understanding[q.id];
 
     [understandGood, understandNormal, understandBad].forEach(btn=>{
 
@@ -879,13 +886,17 @@ nextBtn.onclick = () => {
         current >= studyQuestions.length) {
 
         // 1周したら、まだ「理解できた」になっていない問題だけに絞り直す
+        // （毎日の学習専用の記録を参照する。他モードでの理解度は見ない）
+        const dailyStatusNow =
+        (progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {};
+
         const idsInSession =
         studyQuestions.map(q => q.id);
 
         const stillRemaining =
         idsInSession.filter(id =>
 
-            progress.understanding[id] !== "good"
+            dailyStatusNow[id] !== "good"
 
         );
 
@@ -964,6 +975,20 @@ function setUnderstanding(level){
     const qId = studyQuestions[current].id;
 
     progress.understanding[qId] = level;
+
+    // 「毎日の学習」「3日間テスト」は、他の機能で過去に「理解できた」に
+    // していたかどうかに関わらず、専用の記録で独立して管理する
+    if (studyMode === "daily" || studyMode === "threeDayTest") {
+
+        if (!progress.dailyChallenge.dailyStatus) {
+
+            progress.dailyChallenge.dailyStatus = {};
+
+        }
+
+        progress.dailyChallenge.dailyStatus[qId] = level;
+
+    }
 
     progress.lastStudy = new Date().toISOString();
 

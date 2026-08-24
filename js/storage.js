@@ -36,7 +36,11 @@ function defaultProgress() {
 
             usedPool: {},
 
+            dailyStatus: {},
+
             history: [],
+
+            lastTestClearedCount: 0,
 
             threeDayTest: {
 
@@ -389,6 +393,12 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     }
 
+    if (!progress.dailyChallenge.dailyStatus) {
+
+        progress.dailyChallenge.dailyStatus = {};
+
+    }
+
     const daily = progress.dailyChallenge;
 
     const today = todayDateString();
@@ -406,9 +416,11 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     if (daily.date && daily.questionIds.length > 0) {
 
+        const dailyStatus = daily.dailyStatus || {};
+
         const cleared =
         daily.questionIds.every(id =>
-            progress.understanding[id] === "good"
+            dailyStatus[id] === "good"
         );
 
         const dayOfWeek =
@@ -434,26 +446,54 @@ function ensureDailyChallenge(progress, allQuestions) {
 
         }
 
-        // 3日ごとに、直近3日分をまとめたテストを利用可能にする
-        if (daily.history.length % 3 === 0) {
+        // -------------------------------
+        // 3日間テストの発動条件：
+        // 「タスクをクリアできた日」が3の倍数に達した、その翌日に利用可能にする。
+        // すでにテストが未完了で残っている場合は、それが終わるまで上書きしない。
+        // -------------------------------
 
-            const last3 =
-            daily.history.slice(-3);
+        if (typeof daily.lastTestClearedCount !== "number") {
 
-            const combinedIds =
-            [...new Set(
-                last3.flatMap(h => h.questionIds)
-            )];
+            daily.lastTestClearedCount = 0;
 
-            daily.threeDayTest = {
+        }
 
-                available: true,
+        const testAlreadyPending =
+        daily.threeDayTest &&
+        daily.threeDayTest.available &&
+        daily.threeDayTest.questionIds.some(id =>
+            dailyStatus[id] !== "good"
+        );
 
-                questionIds: combinedIds,
+        if (!testAlreadyPending) {
 
-                cycleStartDate: last3[0].date
+            const clearedDays =
+            daily.history.filter(h => h.cleared);
 
-            };
+            if (clearedDays.length >= daily.lastTestClearedCount + 3) {
+
+                const last3Cleared =
+                clearedDays.slice(-3);
+
+                const combinedIds =
+                [...new Set(
+                    last3Cleared.flatMap(h => h.questionIds)
+                )];
+
+                daily.threeDayTest = {
+
+                    available: true,
+
+                    questionIds: combinedIds,
+
+                    cycleStartDate: last3Cleared[0].date
+
+                };
+
+                daily.lastTestClearedCount =
+                daily.lastTestClearedCount + 3;
+
+            }
 
         }
 
@@ -512,6 +552,7 @@ function ensureDailyChallenge(progress, allQuestions) {
 }
 
 // 今日の15問のうち、まだ「理解できた」になっていない問題のID一覧
+// （他の学習モードでの理解度とは独立した、毎日の学習専用の記録を参照する）
 function getDailyRemainingIds(progress) {
 
     const daily = progress.dailyChallenge;
@@ -522,9 +563,11 @@ function getDailyRemainingIds(progress) {
 
     }
 
+    const dailyStatus = daily.dailyStatus || {};
+
     return daily.questionIds.filter(id =>
 
-        progress.understanding[id] !== "good"
+        dailyStatus[id] !== "good"
 
     );
 
@@ -564,5 +607,107 @@ function getWeeklyTable(progress) {
 
     // 直近7日分だけを日付順に返す
     return combined.slice(-7);
+
+}
+
+// -------------------------------
+// 月間カレンダー（毎日の学習）
+// -------------------------------
+
+// year, month は省略時は「今月」。month は1〜12。
+// 各日について { day, date, count, cleared, isToday, hasData } の配列を、
+// カレンダーの週構成（先頭・末尾の空白セルも含む）で返す。
+function getMonthCalendarData(progress, year, month) {
+
+    const now = new Date();
+
+    const targetYear =
+    typeof year === "number" ? year : now.getFullYear();
+
+    const targetMonth =
+    typeof month === "number" ? month : now.getMonth() + 1;
+
+    const daily = progress.dailyChallenge;
+
+    const history = daily ? daily.history : [];
+
+    const today = todayDateString();
+
+    const historyByDate = {};
+
+    history.forEach(h => {
+
+        historyByDate[h.date] = h;
+
+    });
+
+    if (daily && daily.date === today) {
+
+        historyByDate[today] = {
+
+            date: today,
+
+            count: daily.questionIds.length,
+
+            cleared: isDailyComplete(progress)
+
+        };
+
+    }
+
+    const firstDay =
+    new Date(targetYear, targetMonth - 1, 1);
+
+    const daysInMonth =
+    new Date(targetYear, targetMonth, 0).getDate();
+
+    const startWeekday =
+    firstDay.getDay();
+
+    const cells = [];
+
+    // 月初の曜日調整用の空白セル
+    for (let i = 0; i < startWeekday; i++) {
+
+        cells.push(null);
+
+    }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+
+        const y = targetYear;
+        const m = String(targetMonth).padStart(2, "0");
+        const dd = String(d).padStart(2, "0");
+        const dateStr = `${y}-${m}-${dd}`;
+
+        const entry = historyByDate[dateStr];
+
+        cells.push({
+
+            day: d,
+
+            date: dateStr,
+
+            count: entry ? entry.count : 0,
+
+            cleared: entry ? entry.cleared : false,
+
+            hasData: !!entry,
+
+            isToday: dateStr === today
+
+        });
+
+    }
+
+    return {
+
+        year: targetYear,
+
+        month: targetMonth,
+
+        cells: cells
+
+    };
 
 }
