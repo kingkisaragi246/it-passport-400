@@ -335,7 +335,16 @@ function getStudyDays() {
 const DAILY_CATEGORIES =
 ["ストラテジ系", "マネジメント系", "テクノロジ系"];
 
-const DAILY_QUESTIONS_PER_CATEGORY = 5;
+// 1日10問（3分野合計）。分野ごとの内訳。
+const DAILY_QUESTIONS_PER_CATEGORY = {
+
+    "ストラテジ系": 3,
+
+    "マネジメント系": 3,
+
+    "テクノロジ系": 4
+
+};
 
 function todayDateString() {
 
@@ -349,9 +358,12 @@ function todayDateString() {
 
 }
 
-// 指定分野から、まだ出していない問題を優先して5問選ぶ
+// 指定分野から、まだ出していない問題を優先して指定数選ぶ
 // （すべて出し切っていたら、その分野だけプールをリセットして再度巡回する）
 function pickDailyQuestionsForCategory(category, usedPool, allQuestions) {
+
+    const count =
+    DAILY_QUESTIONS_PER_CATEGORY[category] || 3;
 
     const categoryQuestions =
     allQuestions.filter(q => q.category === category);
@@ -364,7 +376,7 @@ function pickDailyQuestionsForCategory(category, usedPool, allQuestions) {
 
     let poolWasReset = false;
 
-    if (candidates.length < DAILY_QUESTIONS_PER_CATEGORY) {
+    if (candidates.length < count) {
 
         // その分野を一巡したので、プールをリセットして再度全体から選び直す
         poolWasReset = true;
@@ -377,13 +389,15 @@ function pickDailyQuestionsForCategory(category, usedPool, allQuestions) {
     [...candidates].sort(() => Math.random() - 0.5);
 
     const picked =
-    shuffled.slice(0, DAILY_QUESTIONS_PER_CATEGORY);
+    shuffled.slice(0, count);
 
     return { picked, poolWasReset };
 
 }
 
-// 「今日」の状態を確認し、必要であれば新しい1日分の問題を生成する
+// 「今日」の状態を確認し、必要であれば1日分の問題を用意する。
+// 前日までに終わらなかった問題が残っている場合は、それを最優先で今日の課題とし、
+// 新しい問題には手をつけない（すべて終わってから新しい10問に進む）。
 // allQuestions（questions配列）を渡して呼び出す
 function ensureDailyChallenge(progress, allQuestions) {
 
@@ -410,13 +424,16 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     }
 
+    const dailyStatus = daily.dailyStatus || {};
+
     // -------------------------------
-    // 前回分を履歴へ記録（初回は date が null なのでスキップ）
+    // 前回分を履歴へ記録し、未消化分を把握する
+    // （初回は date が null なのでスキップ）
     // -------------------------------
+
+    let carryoverIds = [];
 
     if (daily.date && daily.questionIds.length > 0) {
-
-        const dailyStatus = daily.dailyStatus || {};
 
         const cleared =
         daily.questionIds.every(id =>
@@ -445,6 +462,12 @@ function ensureDailyChallenge(progress, allQuestions) {
             daily.history.shift();
 
         }
+
+        // 前回分のうち、まだ「理解できた」になっていない問題を繰り越す
+        carryoverIds =
+        daily.questionIds.filter(id =>
+            dailyStatus[id] !== "good"
+        );
 
         // -------------------------------
         // 3日間テストの発動条件：
@@ -499,8 +522,25 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     }
 
+    daily.date = today;
+
     // -------------------------------
-    // 今日の新しい15問（3分野×5問）を生成
+    // 前回の未消化分が残っている場合は、それを最優先で今日の課題とする
+    // （新しい問題は生成しない。usedPoolにはすでに記録済みなので触らない）
+    // -------------------------------
+
+    if (carryoverIds.length > 0) {
+
+        daily.questionIds = carryoverIds;
+
+        saveProgress(progress);
+
+        return progress;
+
+    }
+
+    // -------------------------------
+    // 前回分がすべて終わっている場合のみ、新しい10問（3分野合計）を生成
     // -------------------------------
 
     if (!daily.usedPool) {
@@ -542,7 +582,6 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     });
 
-    daily.date = today;
     daily.questionIds = newQuestionIds;
 
     saveProgress(progress);
