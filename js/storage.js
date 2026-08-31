@@ -417,9 +417,46 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     const today = todayDateString();
 
+    const expectedDailyTotal =
+    Object.values(DAILY_QUESTIONS_PER_CATEGORY)
+        .reduce((a, b) => a + b, 0);
+
     if (daily.date === today) {
 
-        // 今日の分はすでに生成済み
+        // 今日の分はすでに生成済み。
+        // ただし、更新前（1日15問だった頃）の古い形式のまま残っている場合は、
+        // まだ「理解できた」になっていない分だけを、新しい10問構成に作り直す。
+        if (daily.questionIds.length !== expectedDailyTotal) {
+
+            const dailyStatusNow = daily.dailyStatus || {};
+
+            const stillNotGood =
+            daily.questionIds.filter(id =>
+                dailyStatusNow[id] !== "good"
+            );
+
+            if (stillNotGood.length > expectedDailyTotal) {
+
+                // 古い形式の未消化分が多すぎる場合は、新しい1日分の数だけに絞り込む
+                daily.questionIds = stillNotGood.slice(0, expectedDailyTotal);
+
+            } else if (stillNotGood.length > 0) {
+
+                daily.questionIds = stillNotGood;
+
+            } else {
+
+                // 全て理解できた状態で古い形式が残っていた場合は、新しい10問を生成する
+                daily.date = null;
+
+                return ensureDailyChallenge(progress, allQuestions);
+
+            }
+
+            saveProgress(progress);
+
+        }
+
         return progress;
 
     }
