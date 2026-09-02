@@ -263,8 +263,10 @@ switch(studyMode){
             ? progress.dailyChallenge.threeDayTest.questionIds
             : [];
 
-        const dailyStatusForTest =
-        (progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {};
+        const testStatusForTest =
+        (progress.dailyChallenge &&
+         progress.dailyChallenge.threeDayTest &&
+         progress.dailyChallenge.threeDayTest.testStatus) || {};
 
         const retakeOnly =
         sessionStorage.getItem("threeDayTestRetake") === "true";
@@ -275,7 +277,7 @@ switch(studyMode){
 
             if (retakeOnly) {
 
-                return dailyStatusForTest[q.id] !== "good";
+                return testStatusForTest[q.id] !== "good";
 
             }
 
@@ -478,11 +480,26 @@ function showQuestion(){
     result.style.display = "none";
 
     // 理解度ボタンの選択状態を、この問題の記録に合わせてリセット・復元する
-    // （毎日の学習・3日間テストでは、専用の記録を参照する）
-    const savedLevel =
-    (studyMode === "daily" || studyMode === "threeDayTest")
-        ? ((progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {})[q.id]
-        : progress.understanding[q.id];
+    // （毎日の学習・3日間テストでは、それぞれ専用の記録を参照する）
+    let savedLevel;
+
+    if (studyMode === "daily") {
+
+        savedLevel =
+        ((progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {})[q.id];
+
+    } else if (studyMode === "threeDayTest") {
+
+        savedLevel =
+        ((progress.dailyChallenge &&
+          progress.dailyChallenge.threeDayTest &&
+          progress.dailyChallenge.threeDayTest.testStatus) || {})[q.id];
+
+    } else {
+
+        savedLevel = progress.understanding[q.id];
+
+    }
 
     [understandGood, understandNormal, understandBad].forEach(btn=>{
 
@@ -886,9 +903,13 @@ nextBtn.onclick = () => {
         current >= studyQuestions.length) {
 
         // 1周したら、まだ「理解できた」になっていない問題だけに絞り直す
-        // （毎日の学習専用の記録を参照する。他モードでの理解度は見ない）
-        const dailyStatusNow =
-        (progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {};
+        // （毎日の学習と3日間テストは、それぞれ専用の記録を参照する）
+        const statusNow =
+        studyMode === "daily"
+            ? ((progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {})
+            : ((progress.dailyChallenge &&
+                progress.dailyChallenge.threeDayTest &&
+                progress.dailyChallenge.threeDayTest.testStatus) || {});
 
         const idsInSession =
         studyQuestions.map(q => q.id);
@@ -896,7 +917,7 @@ nextBtn.onclick = () => {
         const stillRemaining =
         idsInSession.filter(id =>
 
-            dailyStatusNow[id] !== "good"
+            statusNow[id] !== "good"
 
         );
 
@@ -998,9 +1019,12 @@ function setUnderstanding(level){
 
     progress.understanding[qId] = level;
 
-    // 「毎日の学習」「3日間テスト」は、他の機能で過去に「理解できた」に
-    // していたかどうかに関わらず、専用の記録で独立して管理する
-    if (studyMode === "daily" || studyMode === "threeDayTest") {
+    // 「毎日の学習」は専用の記録（dailyStatus）で独立して管理する。
+    // 「3日間テスト」は、そのテストの問題がもともと日々のタスクで
+    // 「理解できた」になっていたものから選ばれているため、dailyStatusを
+    // 使い回すとテストを受ける前から「クリア済み」になってしまう。
+    // そのため、テスト専用の記録（threeDayTest.testStatus）を別に持つ。
+    if (studyMode === "daily") {
 
         if (!progress.dailyChallenge.dailyStatus) {
 
@@ -1009,6 +1033,16 @@ function setUnderstanding(level){
         }
 
         progress.dailyChallenge.dailyStatus[qId] = level;
+
+    } else if (studyMode === "threeDayTest") {
+
+        if (!progress.dailyChallenge.threeDayTest.testStatus) {
+
+            progress.dailyChallenge.threeDayTest.testStatus = {};
+
+        }
+
+        progress.dailyChallenge.threeDayTest.testStatus[qId] = level;
 
     }
 

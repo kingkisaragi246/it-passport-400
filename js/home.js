@@ -827,7 +827,7 @@ if (dailyChallengeCard && progress.dailyChallenge) {
         const testIds = daily.threeDayTest.questionIds;
 
         const testRemaining =
-        testIds.filter(id => (daily.dailyStatus || {})[id] !== "good");
+        testIds.filter(id => ((daily.threeDayTest.testStatus) || {})[id] !== "good");
 
         threeDayTestBtn.style.display = "block";
 

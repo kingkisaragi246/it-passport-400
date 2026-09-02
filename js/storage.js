@@ -48,7 +48,9 @@ function defaultProgress() {
 
                 questionIds: [],
 
-                cycleStartDate: null
+                cycleStartDate: null,
+
+                testStatus: {}
 
             }
 
@@ -522,7 +524,7 @@ function ensureDailyChallenge(progress, allQuestions) {
         daily.threeDayTest &&
         daily.threeDayTest.available &&
         daily.threeDayTest.questionIds.some(id =>
-            dailyStatus[id] !== "good"
+            (daily.threeDayTest.testStatus || {})[id] !== "good"
         );
 
         if (!testAlreadyPending) {
@@ -546,7 +548,13 @@ function ensureDailyChallenge(progress, allQuestions) {
 
                     questionIds: combinedIds,
 
-                    cycleStartDate: last3Cleared[0].date
+                    cycleStartDate: last3Cleared[0].date,
+
+                    // テストは日々のタスクとは独立した記録で正誤・理解度を管理する。
+                    // （日々のタスクではすでに「理解できた」扱いになっている問題ばかりなので、
+                    // dailyStatusをそのまま使うと、テストを受ける前から「クリア済み」に
+                    // なってしまうため、必ずここで空の状態に初期化する）
+                    testStatus: {}
 
                 };
 
