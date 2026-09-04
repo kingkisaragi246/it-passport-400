@@ -992,3 +992,40 @@ if (dailyChallengeCard && progress.dailyChallenge) {
     }
 
 }
+
+
+// -------------------------------
+// 毎日の学習のリセット
+// -------------------------------
+
+const dailyChallengeResetBtn =
+document.getElementById("dailyChallengeResetBtn");
+
+if (dailyChallengeResetBtn && typeof resetDailyChallenge === "function") {
+
+    dailyChallengeResetBtn.onclick = () => {
+
+        const confirmed = confirm(
+
+"「毎日の学習」の記録（今日の課題・カレンダーの履歴・3日間テストの状況）を\n" +
+"すべて削除して、はじめからやり直します。\n\n" +
+"※通常の学習・苦手問題・お気に入り・模擬試験の記録には影響しません。\n\n" +
+"よろしいですか？"
+
+        );
+
+        if (!confirmed) {
+
+            return;
+
+        }
+
+        resetDailyChallenge(progress);
+
+        alert("「毎日の学習」の記録をリセットしました。");
+
+        location.reload();
+
+    };
+
+}

@@ -795,3 +795,21 @@ function getMonthCalendarData(progress, year, month) {
     };
 
 }
+
+// -------------------------------
+// 毎日の学習のリセット
+// -------------------------------
+
+// 「毎日の学習」に関する記録（今日の課題、履歴、カレンダー、出題プール、
+// 3日間テストなど）だけをすべて初期状態に戻す。
+// 通常学習・苦手問題・お気に入り・模擬試験など、他の学習記録には一切影響しない。
+function resetDailyChallenge(progress) {
+
+    progress.dailyChallenge =
+    defaultProgress().dailyChallenge;
+
+    saveProgress(progress);
+
+    return progress;
+
+}

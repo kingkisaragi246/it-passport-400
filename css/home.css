@@ -864,3 +864,31 @@
     color:#888;
 
 }
+
+.dailyChallengeResetBtn{
+
+    width:100%;
+
+    margin-top:14px;
+
+    padding:10px;
+
+    background:#fff5f5;
+
+    border:1px solid #ffcdd2;
+
+    border-radius:10px;
+
+    color:#c62828;
+
+    font-size:12px;
+
+    cursor:pointer;
+
+}
+
+.dailyChallengeResetBtn:hover{
+
+    background:#ffebee;
+
+}
