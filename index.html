@@ -65,11 +65,20 @@
 
 </button>
 
-<button id="threeDayTestBtn" class="secondaryButton dailyChallengeBtn" style="display:none;">
+<div class="dailyQuestionCountSetting">
 
-📝 3日間まとめテストを受ける
+<label for="dailyQuestionCountInput">1日の問題数：</label>
 
-</button>
+<input
+type="number"
+id="dailyQuestionCountInput"
+min="1"
+max="50"
+class="dailyQuestionCountInput">
+
+<span>問（うち間違えた問題の復習を最大5問まで含みます）</span>
+
+</div>
 
 <div class="calendarWrap">
 

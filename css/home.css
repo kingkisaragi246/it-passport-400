@@ -892,3 +892,37 @@
     background:#ffebee;
 
 }
+
+.dailyQuestionCountSetting{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-bottom:14px;
+
+    font-size:12px;
+
+    color:#666;
+
+}
+
+.dailyQuestionCountInput{
+
+    width:56px;
+
+    padding:6px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    font-size:14px;
+
+}

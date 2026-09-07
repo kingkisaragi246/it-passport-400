@@ -816,44 +816,34 @@ if (dailyChallengeCard && progress.dailyChallenge) {
     }
 
     // -------------------------------
-    // 3日間まとめテスト
+    // 1日の問題数の設定
     // -------------------------------
 
-    const threeDayTestBtn =
-    document.getElementById("threeDayTestBtn");
+    const dailyQuestionCountInput =
+    document.getElementById("dailyQuestionCountInput");
 
-    if (threeDayTestBtn && daily.threeDayTest && daily.threeDayTest.available) {
+    if (dailyQuestionCountInput) {
 
-        const testIds = daily.threeDayTest.questionIds;
+        dailyQuestionCountInput.value =
+        daily.dailyQuestionCount || 10;
 
-        const testRemaining =
-        testIds.filter(id => ((daily.threeDayTest.testStatus) || {})[id] !== "good");
+        dailyQuestionCountInput.onchange = () => {
 
-        threeDayTestBtn.style.display = "block";
+            const value =
+            parseInt(dailyQuestionCountInput.value, 10);
 
-        threeDayTestBtn.textContent =
-        testRemaining.length === 0
-            ? "✅ 3日間テスト達成済み（復習する）"
-            : `📝 3日間まとめテストを受ける（${testIds.length}問）`;
+            if (!isNaN(value) && value >= 1) {
 
-        threeDayTestBtn.onclick = () => {
+                setDailyQuestionCount(progress, value);
 
-            sessionStorage.setItem(
-                "threeDayTestRetake",
+                if (descEl) {
 
-                testRemaining.length < testIds.length
-                    ? "true"
-                    : "false"
+                    descEl.textContent =
+                    `次の新しい1日分から、合計${value}問（うち間違えた問題の復習が最大5問）に切り替わります。`;
 
-            );
+                }
 
-            sessionStorage.setItem(
-                "studyMode",
-                "threeDayTest"
-            );
-
-            location.href =
-            "pages/study.html";
+            }
 
         };
 

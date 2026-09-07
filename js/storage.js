@@ -40,19 +40,9 @@ function defaultProgress() {
 
             history: [],
 
-            lastTestClearedCount: 0,
+            dailyQuestionCount: 10,
 
-            threeDayTest: {
-
-                available: false,
-
-                questionIds: [],
-
-                cycleStartDate: null,
-
-                testStatus: {}
-
-            }
+            reviewIds: []
 
         }
 
@@ -337,16 +327,11 @@ function getStudyDays() {
 const DAILY_CATEGORIES =
 ["ストラテジ系", "マネジメント系", "テクノロジ系"];
 
-// 1日10問（3分野合計）。分野ごとの内訳。
-const DAILY_QUESTIONS_PER_CATEGORY = {
+// 1日の問題数の初期値（利用者が自由に変更できる）
+const DAILY_DEFAULT_TOTAL = 10;
 
-    "ストラテジ系": 3,
-
-    "マネジメント系": 3,
-
-    "テクノロジ系": 4
-
-};
+// 1日の中で「前日までに間違えた問題」の復習に充てる最大数
+const DAILY_REVIEW_MAX = 5;
 
 function todayDateString() {
 
@@ -360,15 +345,51 @@ function todayDateString() {
 
 }
 
+// 合計問題数を3分野へできるだけ均等に振り分ける
+// （割り切れない分はテクノロジ系→ストラテジ系の順に多めに配分する）
+function splitTotalAcrossCategories(total) {
+
+    const base = Math.floor(total / 3);
+
+    let remainder = total - base * 3;
+
+    const counts = {
+
+        "ストラテジ系": base,
+
+        "マネジメント系": base,
+
+        "テクノロジ系": base
+
+    };
+
+    const order = ["テクノロジ系", "ストラテジ系", "マネジメント系"];
+
+    for (let i = 0; i < remainder; i++) {
+
+        counts[order[i % order.length]]++;
+
+    }
+
+    return counts;
+
+}
+
 // 指定分野から、まだ出していない問題を優先して指定数選ぶ
 // （すべて出し切っていたら、その分野だけプールをリセットして再度巡回する）
-function pickDailyQuestionsForCategory(category, usedPool, allQuestions) {
+function pickDailyQuestionsForCategory(category, count, usedPool, allQuestions, excludeIds) {
 
-    const count =
-    DAILY_QUESTIONS_PER_CATEGORY[category] || 3;
+    if (count <= 0) {
+
+        return { picked: [], poolWasReset: false };
+
+    }
 
     const categoryQuestions =
-    allQuestions.filter(q => q.category === category);
+    allQuestions.filter(q =>
+        q.category === category &&
+        !(excludeIds || []).includes(q.id)
+    );
 
     const usedIds =
     usedPool[category] || [];
@@ -399,7 +420,7 @@ function pickDailyQuestionsForCategory(category, usedPool, allQuestions) {
 
 // 「今日」の状態を確認し、必要であれば1日分の問題を用意する。
 // 前日までに終わらなかった問題が残っている場合は、それを最優先で今日の課題とし、
-// 新しい問題には手をつけない（すべて終わってから新しい10問に進む）。
+// 新しい問題には手をつけない（すべて終わってから新しい問題に進む）。
 // allQuestions（questions配列）を渡して呼び出す
 function ensureDailyChallenge(progress, allQuestions) {
 
@@ -417,48 +438,17 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     const daily = progress.dailyChallenge;
 
-    const today = todayDateString();
+    if (typeof daily.dailyQuestionCount !== "number" || daily.dailyQuestionCount < 1) {
 
-    const expectedDailyTotal =
-    Object.values(DAILY_QUESTIONS_PER_CATEGORY)
-        .reduce((a, b) => a + b, 0);
+        daily.dailyQuestionCount = DAILY_DEFAULT_TOTAL;
+
+    }
+
+    const today = todayDateString();
 
     if (daily.date === today) {
 
-        // 今日の分はすでに生成済み。
-        // ただし、更新前（1日15問だった頃）の古い形式のまま残っている場合は、
-        // まだ「理解できた」になっていない分だけを、新しい10問構成に作り直す。
-        if (daily.questionIds.length !== expectedDailyTotal) {
-
-            const dailyStatusNow = daily.dailyStatus || {};
-
-            const stillNotGood =
-            daily.questionIds.filter(id =>
-                dailyStatusNow[id] !== "good"
-            );
-
-            if (stillNotGood.length > expectedDailyTotal) {
-
-                // 古い形式の未消化分が多すぎる場合は、新しい1日分の数だけに絞り込む
-                daily.questionIds = stillNotGood.slice(0, expectedDailyTotal);
-
-            } else if (stillNotGood.length > 0) {
-
-                daily.questionIds = stillNotGood;
-
-            } else {
-
-                // 全て理解できた状態で古い形式が残っていた場合は、新しい10問を生成する
-                daily.date = null;
-
-                return ensureDailyChallenge(progress, allQuestions);
-
-            }
-
-            saveProgress(progress);
-
-        }
-
+        // 今日の分はすでに生成済み
         return progress;
 
     }
@@ -468,6 +458,8 @@ function ensureDailyChallenge(progress, allQuestions) {
     // -------------------------------
     // 前回分を履歴へ記録し、未消化分を把握する
     // （初回は date が null なのでスキップ）
+    // 問題数の設定が途中で変わっても、その日に実際に取り組んだ問題数（count）を
+    // そのまま履歴として残すので、カレンダー上の過去の記録は変化しない。
     // -------------------------------
 
     let carryoverIds = [];
@@ -508,63 +500,6 @@ function ensureDailyChallenge(progress, allQuestions) {
             dailyStatus[id] !== "good"
         );
 
-        // -------------------------------
-        // 3日間テストの発動条件：
-        // 「タスクをクリアできた日」が3の倍数に達した、その翌日に利用可能にする。
-        // すでにテストが未完了で残っている場合は、それが終わるまで上書きしない。
-        // -------------------------------
-
-        if (typeof daily.lastTestClearedCount !== "number") {
-
-            daily.lastTestClearedCount = 0;
-
-        }
-
-        const testAlreadyPending =
-        daily.threeDayTest &&
-        daily.threeDayTest.available &&
-        daily.threeDayTest.questionIds.some(id =>
-            (daily.threeDayTest.testStatus || {})[id] !== "good"
-        );
-
-        if (!testAlreadyPending) {
-
-            const clearedDays =
-            daily.history.filter(h => h.cleared);
-
-            if (clearedDays.length >= daily.lastTestClearedCount + 3) {
-
-                const last3Cleared =
-                clearedDays.slice(-3);
-
-                const combinedIds =
-                [...new Set(
-                    last3Cleared.flatMap(h => h.questionIds)
-                )];
-
-                daily.threeDayTest = {
-
-                    available: true,
-
-                    questionIds: combinedIds,
-
-                    cycleStartDate: last3Cleared[0].date,
-
-                    // テストは日々のタスクとは独立した記録で正誤・理解度を管理する。
-                    // （日々のタスクではすでに「理解できた」扱いになっている問題ばかりなので、
-                    // dailyStatusをそのまま使うと、テストを受ける前から「クリア済み」に
-                    // なってしまうため、必ずここで空の状態に初期化する）
-                    testStatus: {}
-
-                };
-
-                daily.lastTestClearedCount =
-                daily.lastTestClearedCount + 3;
-
-            }
-
-        }
-
     }
 
     daily.date = today;
@@ -585,7 +520,10 @@ function ensureDailyChallenge(progress, allQuestions) {
     }
 
     // -------------------------------
-    // 前回分がすべて終わっている場合のみ、新しい10問（3分野合計）を生成
+    // 前回分がすべて終わっている場合のみ、新しい1日分の問題を生成する。
+    // まず「前日までに間違えた問題」の復習を最大5問まで組み込み、
+    // 残りを新しい問題で埋める。間違えた問題が1つもなければ、
+    // 全問が新しい問題になる。
     // -------------------------------
 
     if (!daily.usedPool) {
@@ -594,7 +532,32 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     }
 
-    let newQuestionIds = [];
+    const totalCount = daily.dailyQuestionCount;
+
+    const understanding = progress.understanding || {};
+
+    // 「一度でも間違えた問題」のうち、まだ理解できたになっていないものを復習候補にする
+    const mistakePool =
+    (progress.weakQuestions || []).filter(id =>
+        understanding[id] !== "good"
+    );
+
+    const shuffledMistakes =
+    [...mistakePool].sort(() => Math.random() - 0.5);
+
+    const reviewCount =
+    Math.min(DAILY_REVIEW_MAX, totalCount, shuffledMistakes.length);
+
+    const reviewIds =
+    shuffledMistakes.slice(0, reviewCount);
+
+    const remainingCount =
+    totalCount - reviewIds.length;
+
+    const categoryCounts =
+    splitTotalAcrossCategories(remainingCount);
+
+    let newQuestionIds = [...reviewIds];
 
     DAILY_CATEGORIES.forEach(category => {
 
@@ -607,8 +570,10 @@ function ensureDailyChallenge(progress, allQuestions) {
         const { picked, poolWasReset } =
         pickDailyQuestionsForCategory(
             category,
+            categoryCounts[category],
             daily.usedPool,
-            allQuestions
+            allQuestions,
+            reviewIds
         );
 
         if (poolWasReset) {
@@ -629,13 +594,38 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     daily.questionIds = newQuestionIds;
 
+    daily.reviewIds = reviewIds;
+
     saveProgress(progress);
 
     return progress;
 
 }
 
-// 今日の15問のうち、まだ「理解できた」になっていない問題のID一覧
+// 1日の問題数を変更する（次回の新しい1日分から反映される）
+function setDailyQuestionCount(progress, count) {
+
+    if (!progress.dailyChallenge) {
+
+        progress.dailyChallenge = defaultProgress().dailyChallenge;
+
+    }
+
+    const parsed = parseInt(count, 10);
+
+    if (!isNaN(parsed) && parsed >= 1) {
+
+        progress.dailyChallenge.dailyQuestionCount = parsed;
+
+        saveProgress(progress);
+
+    }
+
+    return progress;
+
+}
+
+// 今日の問題のうち、まだ「理解できた」になっていない問題のID一覧
 // （他の学習モードでの理解度とは独立した、毎日の学習専用の記録を参照する）
 function getDailyRemainingIds(progress) {
 
@@ -805,8 +795,15 @@ function getMonthCalendarData(progress, year, month) {
 // 通常学習・苦手問題・お気に入り・模擬試験など、他の学習記録には一切影響しない。
 function resetDailyChallenge(progress) {
 
+    const preservedCount =
+    progress.dailyChallenge && progress.dailyChallenge.dailyQuestionCount
+        ? progress.dailyChallenge.dailyQuestionCount
+        : DAILY_DEFAULT_TOTAL;
+
     progress.dailyChallenge =
     defaultProgress().dailyChallenge;
+
+    progress.dailyChallenge.dailyQuestionCount = preservedCount;
 
     saveProgress(progress);
 
