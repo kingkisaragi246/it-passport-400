@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ITパスポート400 | 用語辞典</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/glossary.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="../index.html" class="backButton">
+        ← ホーム
+    </a>
+
+    <h1>📖 用語辞典</h1>
+
+</header>
+
+<main>
+
+<section class="glossarySection">
+
+<div class="glossarySearchWrap">
+
+<input
+type="text"
+id="glossarySearchInput"
+class="glossarySearchInput"
+placeholder="用語を検索（例：暗号、VPN、正規化 など）">
+
+<span id="glossaryCount" class="glossaryCount"></span>
+
+</div>
+
+<div id="glossaryList" class="glossaryList"></div>
+
+</section>
+
+<!-- 用語をタップすると表示される、関連問題の一覧パネル -->
+<div id="glossaryDetailOverlay" class="glossaryDetailOverlay">
+
+<div class="glossaryDetailPanel">
+
+<div class="glossaryDetailHeader">
+
+<h2 id="glossaryDetailTitle"></h2>
+
+<button id="glossaryDetailClose" class="glossaryDetailClose">✕</button>
+
+</div>
+
+<p id="glossaryDetailCount" class="glossaryDetailCount"></p>
+
+<button id="glossaryStudyBtn" class="primaryButton glossaryStudyBtn">
+
+この用語の問題を解く
+
+</button>
+
+<div id="glossaryQuestionList" class="glossaryQuestionList"></div>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="../data/security.js"></script>
+<script src="../data/network.js"></script>
+<script src="../data/database.js"></script>
+<script src="../data/strategy.js"></script>
+<script src="../data/projectManagement.js"></script>
+<script src="../data/systemDevelopment.js"></script>
+<script src="../data/systemHardware.js"></script>
+<script src="../data/algorithm.js"></script>
+<script src="../data/law.js"></script>
+<script src="../data/serviceManagement.js"></script>
+<script src="../data/aiCloud.js"></script>
+<script src="../data/review.js"></script>
+<script src="../data/calculation.js"></script>
+<script src="../data/latestTrend.js"></script>
+<script src="../data/businessDesign.js"></script>
+<script src="../js/questions.js"></script>
+<script src="../js/storage.js"></script>
+
+<script src="../js/glossary.js"></script>
+
+</body>
+
+</html>

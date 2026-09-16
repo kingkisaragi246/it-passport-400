@@ -240,6 +240,23 @@ switch(studyMode){
 
         break;
 
+    case "glossaryTerm":
+
+        const glossaryTermIds =
+        JSON.parse(
+
+            sessionStorage.getItem("glossaryTermQuestionIds") || "[]"
+
+        );
+
+        studyQuestions = questions.filter(q =>
+
+            glossaryTermIds.includes(q.id)
+
+        );
+
+        break;
+
     case "daily":
 
         ensureDailyChallenge(progress, questions);
@@ -428,11 +445,28 @@ function showQuestion(){
     const stars =
     "★".repeat(q.level);
 
-    category.textContent =
+    let categoryText =
     (q.subcategory
         ? `${q.category}　＞　${q.subcategory}`
         : q.category
     ) + `　${stars}`;
+
+    // 「毎日の学習」では、この問題が何日目（何回目）の出題かを表示する
+    // （同じ日に何周しても、その日1回分としてしかカウントされない）
+    if (studyMode === "daily" && typeof getQuestionAppearanceCount === "function") {
+
+        const appearanceCount =
+        getQuestionAppearanceCount(progress, q.id);
+
+        if (appearanceCount >= 2) {
+
+            categoryText += `　（${appearanceCount}回目の出題）`;
+
+        }
+
+    }
+
+    category.textContent = categoryText;
 
     text.textContent =
     q.question;
@@ -857,7 +891,9 @@ nextBtn.onclick = () => {
     if (studyMode === "daily" &&
         current >= studyQuestions.length) {
 
-        // 1周したら、まだ「理解できた」になっていない問題だけに絞り直す
+        // 1周したら、まだ1度も回答していない問題だけに絞り直す。
+        // 「理解できた」以外（普通・苦手）を選んだ問題は、その日のうちに
+        // 再度やり直す必要はない（翌日以降の復習対象にはなる）。
         const statusNow =
         (progress.dailyChallenge && progress.dailyChallenge.dailyStatus) || {};
 
@@ -867,13 +903,13 @@ nextBtn.onclick = () => {
         const stillRemaining =
         idsInSession.filter(id =>
 
-            statusNow[id] !== "good"
+            !(id in statusNow)
 
         );
 
         if (stillRemaining.length === 0) {
 
-            alert("🎉 本日の学習はすべて「理解できた」になりました！お疲れさまでした。");
+            alert("🎉 本日の学習は完了しました！お疲れさまでした。");
 
             location.href = "../index.html";
 
@@ -881,7 +917,7 @@ nextBtn.onclick = () => {
 
         }
 
-        // まだ「理解できた」になっていない問題が残っている場合も、
+        // まだ1度も回答していない問題が残っている場合も、
         // 続けて自動で次の周へ進まず、一度ホームに戻る。
         // 続きはホーム画面から改めて選んで再開できる。
         alert(

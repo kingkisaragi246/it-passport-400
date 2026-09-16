@@ -42,7 +42,11 @@ function defaultProgress() {
 
             dailyQuestionCount: 10,
 
-            reviewIds: []
+            reviewIds: [],
+
+            isCarryover: false,
+
+            appearanceLog: {}
 
         }
 
@@ -448,7 +452,33 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     if (daily.date === today) {
 
-        // 今日の分はすでに生成済み
+        // 今日の分はすでに生成済み。
+        // ただし、以下の条件をすべて満たす場合は、設定変更をすぐに反映するため
+        // 今日の分を作り直す：
+        // ・繰り越し（前日までの未消化分）ではない＝新規に生成された今日の分である
+        // ・今日の問題数が、現在の設定と異なる
+        // ・今日の問題に、まだ1問も回答（理解度の記録）がない
+        //   （すでに一部でも取り組んでいる場合は、進行中の課題を壊さないよう
+        //   そのまま維持し、次の新しい日から新しい設定を反映する）
+        const notCarryover =
+        daily.isCarryover !== true;
+
+        const countMismatch =
+        daily.questionIds.length !== daily.dailyQuestionCount;
+
+        const nothingAnsweredYet =
+        daily.questionIds.every(id =>
+            !(id in (daily.dailyStatus || {}))
+        );
+
+        if (notCarryover && countMismatch && nothingAnsweredYet) {
+
+            daily.date = null;
+
+            return ensureDailyChallenge(progress, allQuestions);
+
+        }
+
         return progress;
 
     }
@@ -466,9 +496,13 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     if (daily.date && daily.questionIds.length > 0) {
 
+        // 「その日のタスクをクリアしたか」は、理解度の自己評価が「理解できた」かに
+        // 関わらず、その日のうちに一度でも回答（理解度の記録）をしたかどうかで判定する。
+        // 「理解できた」以外（普通・苦手）を選んだ問題は、その日のうちに
+        // 再度やり直す必要はないが、翌日以降の「間違えた問題の復習」対象には含まれる。
         const cleared =
         daily.questionIds.every(id =>
-            dailyStatus[id] === "good"
+            id in dailyStatus
         );
 
         const dayOfWeek =
@@ -494,10 +528,11 @@ function ensureDailyChallenge(progress, allQuestions) {
 
         }
 
-        // 前回分のうち、まだ「理解できた」になっていない問題を繰り越す
+        // 前回分のうち、まだ1度も回答していない問題だけを繰り越す
+        // （回答済みなら、理解度に関わらずその日の分としては完了扱い）
         carryoverIds =
         daily.questionIds.filter(id =>
-            dailyStatus[id] !== "good"
+            !(id in dailyStatus)
         );
 
     }
@@ -512,6 +547,10 @@ function ensureDailyChallenge(progress, allQuestions) {
     if (carryoverIds.length > 0) {
 
         daily.questionIds = carryoverIds;
+
+        daily.isCarryover = true;
+
+        recordDailyAppearances(daily);
 
         saveProgress(progress);
 
@@ -536,10 +575,29 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     const understanding = progress.understanding || {};
 
-    // 「一度でも間違えた問題」のうち、まだ理解できたになっていないものを復習候補にする
+    // 復習対象とする問題：
+    // ・4択で実際に間違えた問題（progress.weakQuestions）
+    // ・4択には正解していても、「理解できた」以外（普通・苦手）を
+    //   自己評価で選んだ問題
+    // のいずれかに該当し、かつ、まだ「理解できた」になっていないもの。
+    const selfAssessedNotGood =
+    Object.keys(understanding).filter(id =>
+
+        understanding[id] === "normal" ||
+        understanding[id] === "bad"
+
+    ).map(id => Number(id));
+
     const mistakePool =
-    (progress.weakQuestions || []).filter(id =>
+    [...new Set([
+
+        ...(progress.weakQuestions || []),
+        ...selfAssessedNotGood
+
+    ])].filter(id =>
+
         understanding[id] !== "good"
+
     );
 
     const shuffledMistakes =
@@ -596,9 +654,57 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     daily.reviewIds = reviewIds;
 
+    daily.isCarryover = false;
+
+    recordDailyAppearances(daily);
+
     saveProgress(progress);
 
     return progress;
+
+}
+
+// その日出題された問題について、「その日に初めて出題された」場合だけ
+// 出現履歴（何日目に出たか）に日付を記録する。
+// 同じ日に複数回（周回）出題されても、1日につき1回しかカウントしない。
+function recordDailyAppearances(daily) {
+
+    if (!daily.appearanceLog) {
+
+        daily.appearanceLog = {};
+
+    }
+
+    daily.questionIds.forEach(id => {
+
+        if (!daily.appearanceLog[id]) {
+
+            daily.appearanceLog[id] = [];
+
+        }
+
+        if (!daily.appearanceLog[id].includes(daily.date)) {
+
+            daily.appearanceLog[id].push(daily.date);
+
+        }
+
+    });
+
+}
+
+// 指定した問題が、毎日の学習の中でこれまで何日分（何回目）出題されたかを返す
+function getQuestionAppearanceCount(progress, questionId) {
+
+    const daily = progress.dailyChallenge;
+
+    if (!daily || !daily.appearanceLog || !daily.appearanceLog[questionId]) {
+
+        return 0;
+
+    }
+
+    return daily.appearanceLog[questionId].length;
 
 }
 
@@ -639,9 +745,12 @@ function getDailyRemainingIds(progress) {
 
     const dailyStatus = daily.dailyStatus || {};
 
+    // その日のうちにまだ1度も回答していない問題だけを「残り」とする。
+    // 「理解できた」以外（普通・苦手）を選んだ問題も、その日の分としては
+    // 完了扱いになる（その代わり、翌日以降の復習対象には含まれる）。
     return daily.questionIds.filter(id =>
 
-        dailyStatus[id] !== "good"
+        !(id in dailyStatus)
 
     );
 

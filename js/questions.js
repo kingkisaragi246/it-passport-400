@@ -204,3 +204,115 @@ function getLevelCount(level){
     ).length;
 
 }
+
+// ===============================
+// 用語辞典（Glossary）
+// ===============================
+
+// 各問題の explanation.related（関連用語）を集計して、
+// 「用語名 → その用語が関連する問題ID一覧」の索引を作る。
+// 一度作った索引はキャッシュして使い回す。
+let _glossaryIndexCache = null;
+
+function buildGlossaryIndex() {
+
+    if (_glossaryIndexCache) {
+
+        return _glossaryIndexCache;
+
+    }
+
+    const index = {};
+
+    questions.forEach(q => {
+
+        const relatedTerms =
+        (q.explanation && q.explanation.related) || [];
+
+        relatedTerms.forEach(term => {
+
+            const key = term.trim();
+
+            if (!key) return;
+
+            if (!index[key]) {
+
+                index[key] = {
+
+                    term: key,
+
+                    questionIds: []
+
+                };
+
+            }
+
+            if (!index[key].questionIds.includes(q.id)) {
+
+                index[key].questionIds.push(q.id);
+
+            }
+
+        });
+
+    });
+
+    _glossaryIndexCache =
+    Object.values(index);
+
+    return _glossaryIndexCache;
+
+}
+
+// 全用語を五十音（文字コード）順に並べて返す
+function getAllGlossaryTerms() {
+
+    const index = buildGlossaryIndex();
+
+    return [...index].sort((a, b) =>
+
+        a.term.localeCompare(b.term, "ja")
+
+    );
+
+}
+
+// キーワードで用語を絞り込む（用語名の部分一致）
+function searchGlossaryTerms(keyword) {
+
+    const all = getAllGlossaryTerms();
+
+    if (!keyword || keyword.trim() === "") {
+
+        return all;
+
+    }
+
+    const kw = keyword.trim().toLowerCase();
+
+    return all.filter(entry =>
+
+        entry.term.toLowerCase().includes(kw)
+
+    );
+
+}
+
+// 指定した用語に関連する問題の一覧（本文抜粋つき）を返す
+function getQuestionsForGlossaryTerm(term) {
+
+    const index = buildGlossaryIndex();
+
+    const entry = index.find(e => e.term === term);
+
+    if (!entry) {
+
+        return [];
+
+    }
+
+    return entry.questionIds
+        .map(id => questions.find(q => q.id === id))
+        .filter(q => !!q);
+
+}
