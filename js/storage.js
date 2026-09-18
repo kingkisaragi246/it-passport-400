@@ -496,13 +496,13 @@ function ensureDailyChallenge(progress, allQuestions) {
 
     if (daily.date && daily.questionIds.length > 0) {
 
-        // 「その日のタスクをクリアしたか」は、理解度の自己評価が「理解できた」かに
-        // 関わらず、その日のうちに一度でも回答（理解度の記録）をしたかどうかで判定する。
-        // 「理解できた」以外（普通・苦手）を選んだ問題は、その日のうちに
-        // 再度やり直す必要はないが、翌日以降の「間違えた問題の復習」対象には含まれる。
+        // 「その日のタスクをクリアした（カレンダーに◎がつく）」かどうかは、
+        // 全問が明確に「理解できた」になっているかで厳格に判定する。
+        // 「普通」「苦手」を選んだ問題が残っていれば、回答済みであっても
+        // クリア扱いにはしない（△として記録される）。
         const cleared =
         daily.questionIds.every(id =>
-            id in dailyStatus
+            dailyStatus[id] === "good"
         );
 
         const dayOfWeek =
@@ -528,8 +528,11 @@ function ensureDailyChallenge(progress, allQuestions) {
 
         }
 
-        // 前回分のうち、まだ1度も回答していない問題だけを繰り越す
-        // （回答済みなら、理解度に関わらずその日の分としては完了扱い）
+        // 一方、「翌日に持ち越すかどうか（繰り越し）」は別の基準で判定する。
+        // その日のうちに一度でも回答していれば、理解度が「理解できた」でなくても
+        // その日の分としては完了扱いとし、繰り越さない
+        // （「普通」「苦手」の問題は、繰り越しではなく、翌日以降の
+        // 「間違えた問題の復習」対象として新しい日の課題に組み込まれる）。
         carryoverIds =
         daily.questionIds.filter(id =>
             !(id in dailyStatus)
@@ -763,6 +766,29 @@ function isDailyComplete(progress) {
 
 }
 
+// 今日の分が、カレンダー上で「クリア（◎）」と表示すべき状態かどうか。
+// isDailyComplete（その日のセッションを一通り終えたか）とは別の、
+// より厳格な基準：全問が明確に「理解できた」になっている必要がある。
+function isDailyCleared(progress) {
+
+    const daily = progress.dailyChallenge;
+
+    if (!daily || !daily.questionIds || daily.questionIds.length === 0) {
+
+        return false;
+
+    }
+
+    const dailyStatus = daily.dailyStatus || {};
+
+    return daily.questionIds.every(id =>
+
+        dailyStatus[id] === "good"
+
+    );
+
+}
+
 // 直近7日分の履歴（今日を含む）を、月曜始まりで並べて返す
 function getWeeklyTable(progress) {
 
@@ -780,7 +806,7 @@ function getWeeklyTable(progress) {
 
         count: daily ? daily.questionIds.length : 0,
 
-        cleared: isDailyComplete(progress),
+        cleared: isDailyCleared(progress),
 
         isToday: true
 
@@ -832,7 +858,7 @@ function getMonthCalendarData(progress, year, month) {
 
             count: daily.questionIds.length,
 
-            cleared: isDailyComplete(progress)
+            cleared: isDailyCleared(progress)
 
         };
 
